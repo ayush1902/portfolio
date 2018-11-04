@@ -7,12 +7,26 @@
 	<link rel="stylesheet" href="stylesheets/normalize.css">
 	<link rel="stylesheet" href="stylesheets/sass/style.css">	
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300i,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 </head>
 <body>
 	<div class="container">
+		<div id="side-nav" class="side-nav">
+		    <p>Check</p><p>check</p>
+		  </div>
+  <div class="nav">
+      <div id="toggle-nav" onclick="toggle_nav(this)">
+        <div class="animated-icon">
+          <div class="bar-1"></div>
+          <div class="bar-2"></div>
+          <div class="bar-3"></div>
+        </div>
+      </div>
+    </div>
 		<div class="left-nav">
 			<div class="logo">
-				<p>Ayush Sharma</p>
+				<p>Ayush <span style="color:#999;">Sharma</span></p>
 			</div>
 			<div class="nav-items">
 				<div class="menu">
@@ -26,62 +40,219 @@
 		<div class="main">
 			<div class="tabs">
 				<div id="home" class="tab active">
-					<h2>Hi.</h2>
-					<h3>I am Ayush and I design <span id="app" class="typewrite">experiences</span></h3>
-					<h4>Currently pursuing Master's in Human-Centered Design and Engineering at University of Washington, Seattle.</h4>
-					<a href="#" class="btn fill">Learn More</a>				
+					<div class="tab-container">
+						<h2>Hi.</h2>
+						<h3>I am Ayush and I design <span id="app" class="typewrite">experiences</span></h3>
+						<h4>Currently pursuing Master's in Human-Centered Design and Engineering at University of Washington, Seattle.</h4>
+						<a href="#about" id="learn-more" class="btn fill">Learn More</a>
+					</div>
 				</div>
 				<div id="about" class="tab">
-					<h4>I am a multi-discplinary front-end developer/designer living in Greater Seattle Area. </h4>
-					<h3>Focus</h3>
-					<h4>Lately&rarr; User-Centered Design, Design Systems.</h4>
-					<h4>Broadly&rarr; Responsive Design. Accessibilty, Visual Design.</h4>
-					<br>
-					<h4>Learn more about my <span class="underline"><a href="#work">work</a></span>. Currently available for intern positions starting Summer, 2019.</h4>
-					<a href="https://drive.google.com/file/d/1vVUi1CInjOX3PeGS60-g2-9Gtuww0X0l/view?usp=sharing" target="_blank" class="btn fill">Resume</a>
+					<div class="tab-container">
+						<h4>I am a multi-discplinary front-end developer/designer living in Greater Seattle Area. </h4>
+						<div class="focus">
+							<h3>Focus</h3>
+							<h4>Lately &rarr; User-Centered Design, Design Systems.</h4>
+							<h4>Broadly &rarr; Responsive Design, Accessibilty, Visual Design.</h4>	
+						</div>
+						<h4>Learn more about my <span class="underline"><a id="work_link" href="#work">work</a></span>. Currently available for intern positions starting Summer, 2019.</h4>
+						<a href="https://drive.google.com/file/d/1vVUi1CInjOX3PeGS60-g2-9Gtuww0X0l/view?usp=sharing" target="_blank" class="btn fill">Resume</a>
+					</div>
 				</div>
 				<div id="work" class="tab">
+					<div class="tab-container">												
+						<h2>Design</h2>
+					<div class="card-div">												
+					    <div class="col">
+					        <a class="card card-3 stacked--up" href="#merken-modal">
+					        	<i class="fas fa-external-link-alt"></i>
+					            <div class="content">
+					            	<img src="images/ucdfall.png" alt="">
+					                <h4>TraumaWise</h4>
+					                <p>How to make driving more comfortable for people returning after a brain injury.</p>
+					            </div>
+					            <div id="merken-modal" class="modal-window">
+								  <div>
+								    <a href="#" title="Close" class="modal-close">Close</a>
+								    <h1>TraumaWise</h1>
+								    <div class="breadcrumb">
+								    	<p>User-Centered Design</p><p>User Research</p>
+								    </div>
+								    <div class="modal-content">
+								    	<h3><span class="underline">Problem</span></h3>
+								    	<h4>Learning is hard, and even harder is the task of memorising something completely novel. How might we approach a problem that makes stuff stick in user's head?</h4>
+								    	<h3><span class="underline">Solution</span></h3>
+								    	<h4>Creating an application that preaches three tenets: Flashcards, gamification, and rewards, to keep user engaged.</h4>
+								    	<h3><span class="underline">Impact</span></h3>
+								    	<h4>While most of the people liked the application and the idea behind enhancing the learning process, the app return rate was low due to a specific reason.</h4>
+								    	<a href="merken.html" class="modal-action">Dive in</a>
+								    </div>
+								    </div>
+								</div>
+					        </a>
+					    </div>
+					    <div class="col">
+					        <a class="card card-3 stacked--up" href="#merken-modal">
+					        	<i class="fas fa-external-link-alt"></i>
+					            <div class="content">
+					            	<img src="images/okashi.png" alt="">
+					                <h4>Okashi</h4>
+					                <p>Designing a vending machine interface for japanese students in a different country</p>
+					            </div>
+					            <div id="merken-modal" class="modal-window">
+								  <div>
+								    <a href="#" title="Close" class="modal-close">Close</a>
+								    <h1>Okashi</h1>
+								    <div class="breadcrumb">
+								    	<p>Visual Design</p><p>Front-end Development</p><p>Learning Technologies</p>
+								    </div>
+								    <div class="modal-content">
+								    	<h3><span class="underline">Problem</span></h3>
+								    	<h4>Learning is hard, and even harder is the task of memorising something completely novel. How might we approach a problem that makes stuff stick in user's head?</h4>
+								    	<h3><span class="underline">Solution</span></h3>
+								    	<h4>Creating an application that preaches three tenets: Flashcards, gamification, and rewards, to keep user engaged.</h4>
+								    	<h3><span class="underline">Impact</span></h3>
+								    	<h4>While most of the people liked the application and the idea behind enhancing the learning process, the app return rate was low due to a specific reason.</h4>
+								    	<a href="merken.html" class="modal-action">Dive in</a>
+								    </div>
+								    </div>
+								</div>
+					        </a>
+					    </div>
+					</div>
+					<h2>Development</h2>
 					<div class="card-div">
-						<div class="col">
-					        <a href="#" class="card card-3 stacked--up">
+					    <div class="col">
+					        <a class="card card-3 stacked--up" href="#merken-modal">
+					        	<i class="fas fa-external-link-alt"></i>
 					            <div class="content">
 					            	<img src="images/merken.png" alt="">
 					                <h4>Merken</h4>
 					                <p>An e-learning tool that accentuates learning process of the user.</p>
 					            </div>
+					            <div id="merken-modal" class="modal-window">
+								  <div>
+								    <a href="#" title="Close" class="modal-close">Close</a>
+								    <h1>Merken</h1>
+								    <div class="breadcrumb">
+								    	<p>Visual Design</p><p>Front-end Development</p><p>Learning Technologies</p>
+								    </div>
+								    <div class="modal-content">
+								    	<h3><span class="underline">Problem</span></h3>
+								    	<h4>Learning is hard, and even harder is the task of memorising something completely novel. How might we approach a problem that makes stuff stick in user's head?</h4>
+								    	<h3><span class="underline">Solution</span></h3>
+								    	<h4>Creating an application that preaches three tenets: Flashcards, gamification, and rewards, to keep user engaged.</h4>
+								    	<h3><span class="underline">Impact</span></h3>
+								    	<h4>While most of the people liked the application and the idea behind enhancing the learning process, the app return rate was low due to a specific reason.</h4>
+								    	<a href="merken.html" class="modal-action">Dive in</a>
+								    </div>
+								    </div>
+								</div>
 					        </a>
 					    </div>
 					    <div class="col">
-					        <a href="#" class="card card-3 stacked--up">
-					            <div class="content">
-					            	<img src="images/ml-thesis.png" alt="">
-					                <h4>Design Interfaces for Autism</h4>
-					                <p>Supervised models for breast cancer diagnosis and prognosis.</p>
-					            </div>
-					        </a>
-					    </div>
-					    <div class="col">
-					        <a href="#" class="card card-3 stacked--up">
+					        <a class="card card-3 stacked--up" href="#rec-modal">
+					        	<i class="fas fa-external-link-alt"></i>
 					            <div class="content">
 					            	<img src="images/rec-sys.png" alt="">
-					                <h4>Design Interfaces for Autism</h4>
+					                <h4>Recommender System</h4>
 					                <p>Using collaborative filtering to recommend courses.</p>
 					            </div>
+					            <div id="rec-modal" class="modal-window">
+								  <div>
+								    <a href="#" title="Close" class="modal-close">Close</a>
+								    <h1>Recommender System</h1>
+								    <div class="breadcrumb">
+								    	<p>Collaborative Filtering</p><p>Front-end Development</p><p>UX Design</p>
+								    </div>
+								    <div class="modal-content">
+								    	<h3><span class="underline">Problem</span></h3>
+								    	<h4>Many students are unsure what major to pursue after freshman year. Therefore, what college could analyse a students performance and let them know what subjects to pick?</h4>
+								    	<h3><span class="underline">Solution</span></h3>
+								    	<h4>Developing a recommendation system that suggest courses to students by evaluating their performance in previous terms, along with a well-designed college website that does not intimidates the users.</h4>
+								    	<h3><span class="underline">Impact</span></h3>
+								    	<h4>Students liked the idea and the redesign, however the website itself was in a nascent stage, which slowly became an impediment in scalabilty. </h4>
+								    	<a href="#" class="modal-action">Dive in</a>
+								    </div>
+								    </div>
+								</div>
+					        </a>
+					    </div>
+					</div>
+					<h2>Research</h2>
+					<div class="card-div">
+						<div class="col">
+					        <a class="card card-3 stacked--up" href="#cancer-modal">
+					        	<i class="fas fa-external-link-alt"></i>
+					            <div class="content">
+					            	<img src="images/ml-thesis.png" alt="">
+					                <h4>Cancer Detection and Machine Learning</h4>
+					                <p>Supervised models for breast cancer diagnosis and prognosis.</p>
+					            </div>
+					            <div id="cancer-modal" class="modal-window">
+								  <div>
+								    <a href="#" title="Close" class="modal-close">Close</a>
+								    <h1>Cancer Detection and Machine Learning</h1>
+								    <div class="breadcrumb">
+								    	<p>Research</p><p>Machine Learning</p><p>Supervised Learning</p>
+								    </div>
+								    <div class="modal-content">
+								    	<h3><span class="underline">Problem</span></h3>
+								    	<h4>Breast cancer continues to afflict people with irreversible damage. However, if diagnosed early, it is found to be treatable in most of the scenarios. Can a machine learning model help hospitals model patients better in detecting cancer early?</h4>
+								    	<h3><span class="underline">Solution</span></h3>
+								    	<h4>Using supervised machine learning techniques on breast cancer data set consisting of tumour information in order to classify cancer as bening or malignant. Furthermore, predicting recurrance of the same in patients diagnosed with one.</h4>
+								    	<h3><span class="underline">Impact</span></h3>
+								    	<h4>Why limit to breast cancer? Extending the functionality to four major types of cancer and evaluating and hypothesisng a general rule of thumb while evaluating models.</h4>	
+								    	<a href="#" class="modal-action">Dive in</a>
+								    </div>
+								    </div>
+								</div>
 					        </a>
 					    </div>
 					    <div class="col">
-					        <a href="#" class="card card-3 stacked--up">
+					        <a class="card card-3 stacked--up" href="#autism-modal">
+					        	<i class="fas fa-external-link-alt"></i>
 					            <div class="content">
 					            	<img src="images/autism.png" alt="">
 					                <h4>Design Interfaces for Autism</h4>
 					                <p>HCI challenges when designing for a differently-abled audience.</p>
 					            </div>
+					            <div id="autism-modal" class="modal-window">
+								  <div>
+								    <a href="#" title="Close" class="modal-close">Close</a>
+								    <h1>Design interfaces for Autism</h1>
+								    <div class="breadcrumb">
+								    	<p>Research</p><p>Accessibility</p><p>User Research</p><p>UX Design</p>
+								    </div>
+								    <div class="modal-content">
+								    	<h3><span class="underline">Problem</span></h3>
+								    	<h4>There is no one-size-fits all approach for interface design, especially when the target audience is differently-abled. How might we aprpoach the design of learning application that feels more human to autistic children?</h4>
+								    	<h3><span class="underline">Solution</span></h3>
+								    	<h4>An application design process that uses gamification and includes the user at every stage; from intervirews, to contextual inquiries, to observations and even feedback on wireframes/prototypes.</h4>
+								    	<h3><span class="underline">Impact</span></h3>
+								    	<h4>The game metaphor proved to be a winning strategy amongst the children, bolstering engagement. However, there were some key outcomes pertaining to teachers and the limitations of the topics that could be taught.</h4>								    	
+								    	<a href="#" class="modal-action">Dive in</a>
+								    </div>
+								    </div>
+								</div>
 					        </a>
 					    </div>
 				    </div>
 				</div>
+				</div>
 				<div id="contact" class="tab">
-					<p>This is contact.</p>
+					<div class="tab-container">
+						<h2>Let's Talk</h2>
+						<h4>If you have a project in mind or are simply interested in finding out more, get in touch and let’s get things moving.</h4>
+						<h3 style="margin: 1em 0 3em 0;"><span class="underline">ayush95@uw.edu</span></h3>
+
+						<h4>Elsewhere</h4>
+						<div class="social-handles">
+							<a href="https://linkedin.com/in/ayush95" target="_blank"><img src="images/linkedin.png" alt=""></a>
+							<a href="https://github.com/ayushsharma95" target="_blank"><img src="images/github.png" alt=""></a>
+							<a href="https://behance.net/ayush95" target="_blank"><img src="images/behance.png" alt=""></a>
+						</div>
+				</div>
 				</div>
 			</div>
 		</div>
