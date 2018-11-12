@@ -1,12 +1,13 @@
-$bg-color: #37474F;
-$nav-color: #263238;
-$logo-color: #222D32;
+$bg-color: #333;
+$nav-color: #222;
+$logo-color: #111;
+$dark: #111;
 $break-1: 700px;
 $underline: #FFF176;
 $primary-text: #fff;
 $secondary-text: #eee;
 $tertiary-text: #777;
-$card-bg: #ECEFF1;
+$card-bg: #fff;
 //type effect main screen
 .typewrite {
 	font-family: Space Mono;
@@ -21,7 +22,7 @@ $card-bg: #ECEFF1;
   padding: 3vh 3.5vh 0 0;
 }
 #toggle-nav {
-	background: #111;
+	background: $dark;
 	width: 45px;
 	height: 45px;
 	z-index: 2 !important;
@@ -63,7 +64,7 @@ $card-bg: #ECEFF1;
 	overflow-y: hidden;
 	background: $logo-color;
 	position: fixed;
-	color: #fff;
+	color: $primary-text;
 	text-align: center;
 	font-size: 2.2rem;
 	letter-spacing: normal;
@@ -72,7 +73,19 @@ $card-bg: #ECEFF1;
 	-webkit-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
 	opacity: 0.97;
 }
-
+.mobile-nav {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;	
+}
+.mobile-nav li {
+	font-size: 0.6em;
+	margin: 1em 0;
+}
 //universal rules
 body {
 	font-family: 'Rubik';	
@@ -479,7 +492,58 @@ a {
 .social-handles img {
 	width: 100px;	
 }
+:root {
+  --duration: 400ms;
+  --ease: cubic-bezier(0.19, 1, 0.22, 1);
+  --bounce: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
 
+
+.copy-click {
+  position: relative;
+  padding-bottom: 0.15em;
+  text-decoration: none;
+  cursor: copy;
+  color: $underline;
+  border-bottom: 1px dashed $underline;
+  transition: background-color calc(var(--duration) * 2) var(--ease);
+  
+  &:after {
+    content: attr(data-tooltip-text);
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 50%;
+    padding: 0.5em;
+    font-size: 0.45em;
+    white-space: nowrap;
+    background-color: #111;
+    border-radius: 4px;
+    box-shadow: 0 0 0 -12px rgba(0,0,0,0);
+    pointer-events: none;
+    backface-visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, 12px);
+    transition: 
+      box-shadow calc(var(--duration) / 1.5) var(--bounce),
+      opacity calc(var(--duration) / 1.5) var(--bounce),
+      transform calc(var(--duration) / 1.5) var(--bounce);
+  }
+ 
+  &.is-hovered {    
+    &:after {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.10);
+      opacity: 1;
+      transform: translate(-50%, 0);
+      transition-timing-function: var(--ease);
+    }
+  }
+  
+  &.is-copied {
+    &:after { 
+      content: attr(data-tooltip-text-copied); 
+    }
+  }
+}
 @media screen and (max-width: $break-1) {
 	.left-nav {
 		display: none;
