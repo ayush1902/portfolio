@@ -1,0 +1,40 @@
+$underline: #FFF176;
+.ct {
+	width: 80%;
+	padding: 5em 0;
+	margin: auto; 
+	h1 {
+		font-size: 2.5em;
+		font-weight: 500;
+		margin-bottom: 0.25em;
+	}
+	h2 {
+		font-size: 1.5em;		
+		font-weight: 500;
+		margin-bottom: 0.5em;
+	}
+	h3 {
+		font-size: 1.65em;
+		margin: 1em 0 0.5em 0;
+		font-weight: 500
+	}
+	p {
+		color: #eee;
+		font-size: 1.25em;
+		line-height: 1.65em;
+		margin-bottom: 2em;
+	}
+	.emp {
+		border-left: 2px solid $underline;
+		color: $underline;
+		width: 80%;
+		margin: auto;
+		padding-left: 1em;
+		font-style: italic;
+		margin-bottom: 2em;
+	}
+	img {
+		width: 100%;
+		margin-bottom: 1.5em;
+	}
+}

@@ -1,0 +1,34 @@
+.ct {
+  width: 80%;
+  padding: 5em 0;
+  margin: auto; }
+  .ct h1 {
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-bottom: 0.25em; }
+  .ct h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 0.5em; }
+  .ct h3 {
+    font-size: 1.65em;
+    margin: 1em 0 0.5em 0;
+    font-weight: 500; }
+  .ct p {
+    color: #eee;
+    font-size: 1.25em;
+    line-height: 1.65em;
+    margin-bottom: 2em; }
+  .ct .emp {
+    border-left: 2px solid #FFF176;
+    color: #FFF176;
+    width: 80%;
+    margin: auto;
+    padding-left: 1em;
+    font-style: italic;
+    margin-bottom: 2em; }
+  .ct img {
+    width: 100%;
+    margin-bottom: 1.5em; }
+
+/*# sourceMappingURL=work.css.map */

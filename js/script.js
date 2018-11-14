@@ -1,5 +1,7 @@
 var app = document.getElementById('app');
 var typewriter = new Typewriter(app, {
+    strings: ['interfaces', 'websites', 'experiences'],
+    autoStart: true,
     loop: true
 });
 var toggle_nav = function(x) {
@@ -16,15 +18,7 @@ var toggle_nav = function(x) {
     button.classList.toggle('animate');
   }
 }
-typewriter.typeString('websites.')	
-    .pauseFor(500)
-    .deleteAll()
-    .typeString('interfaces.')
-    .pauseFor(500)
-    .deleteAll()
-    .typeString('experiences.')
-    .pauseFor(500)
-    .start();
+
 
 var navigate = function(e) {
 		var currentAttrValue = $(this).attr('href');		
