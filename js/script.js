@@ -19,11 +19,14 @@ var toggle_nav = function(x) {
   }
 }
 
+var spliceUp = function (link) {
+  var url = link.indexOf('/');
+  console.log(link.slice(url + 1, link.length));
+}
 
 var navigate = function(e) {
 		var currentAttrValue = $(this).attr('href');		
 		// Show/Hide Tabs
-
 		$(currentAttrValue).addClass('active').fadeIn().siblings().hide().removeClass('active');
 		// // Change/remove current tab to active
 		$(this).addClass('highlighted').siblings().removeClass('highlighted');
@@ -31,14 +34,20 @@ var navigate = function(e) {
 	}
 var redirect = function(e) {
 	var currentAttrValue = $(this).attr('href');
-	$(currentAttrValue).addClass('active').fadeIn().siblings().hide().removeClass('active');
-	$('a[href="' + currentAttrValue + '"]').addClass('highlighted').siblings().removeClass('highlighted');
+  if(currentAttrValue.indexOf('/') != -1) {
+    spliceUp(currentAttrValue);
+  }
+
+  $(currentAttrValue).addClass('active').fadeIn().siblings().hide().removeClass('active');
+  $('a[href="' + currentAttrValue + '"]').addClass('highlighted').siblings().removeClass('highlighted');  
 }
 $(document).ready(function() {
 	$('#home').siblings().hide();
 	$("#learn-more").on('click', redirect)
 	$('.menu a').on('click', navigate);
 	$('#work_link').on('click', redirect);
+  $("#back").on('click', redirect)
+
 });
 const links = document.querySelectorAll('.copy-click');
 const cls = {

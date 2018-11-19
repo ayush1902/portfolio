@@ -1,29 +1,41 @@
 $underline: #FFF176;
-.ct {
+
+.ct {	
 	width: 80%;
 	padding: 5em 0;
 	margin: auto; 
+	color: #fff;
 	h1 {
 		font-size: 2.5em;
 		font-weight: 500;
 		margin-bottom: 0.25em;
 	}
 	h2 {
+		padding-top: 1em;
 		font-size: 1.5em;		
 		font-weight: 500;
 		margin-bottom: 0.5em;
 	}
 	h3 {
-		font-size: 1.65em;
-		margin: 1em 0 0.5em 0;
+		font-size: 1.35em;
+		margin: 1em 0;
 		font-weight: 500
 	}
 	p {
 		color: #eee;
 		font-size: 1.25em;
-		line-height: 1.65em;
+		line-height: 1.75em;
 		margin-bottom: 2em;
 	}
+	ul {
+		list-style-type: circle;
+		margin-left: 1em;
+	}
+	li {
+		margin-bottom: 1em;
+		font-size: 1.25em;
+		line-height: 1.75em;		
+	}		
 	.emp {
 		border-left: 2px solid $underline;
 		color: $underline;
@@ -35,6 +47,8 @@ $underline: #FFF176;
 	}
 	img {
 		width: 100%;
-		margin-bottom: 1.5em;
+		margin-bottom: 2.5em;
+		border-radius: 4px;
+		box-shadow: 3px 3px 7px 0 #222;
 	}
 }

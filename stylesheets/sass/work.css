@@ -1,24 +1,33 @@
 .ct {
   width: 80%;
   padding: 5em 0;
-  margin: auto; }
+  margin: auto;
+  color: #fff; }
   .ct h1 {
     font-size: 2.5em;
     font-weight: 500;
     margin-bottom: 0.25em; }
   .ct h2 {
+    padding-top: 1em;
     font-size: 1.5em;
     font-weight: 500;
     margin-bottom: 0.5em; }
   .ct h3 {
-    font-size: 1.65em;
-    margin: 1em 0 0.5em 0;
+    font-size: 1.35em;
+    margin: 1em 0;
     font-weight: 500; }
   .ct p {
     color: #eee;
     font-size: 1.25em;
-    line-height: 1.65em;
+    line-height: 1.75em;
     margin-bottom: 2em; }
+  .ct ul {
+    list-style-type: circle;
+    margin-left: 1em; }
+  .ct li {
+    margin-bottom: 1em;
+    font-size: 1.25em;
+    line-height: 1.75em; }
   .ct .emp {
     border-left: 2px solid #FFF176;
     color: #FFF176;
@@ -29,6 +38,8 @@
     margin-bottom: 2em; }
   .ct img {
     width: 100%;
-    margin-bottom: 1.5em; }
+    margin-bottom: 2.5em;
+    border-radius: 4px;
+    box-shadow: 3px 3px 7px 0 #222; }
 
 /*# sourceMappingURL=work.css.map */

@@ -2,14 +2,20 @@ $bg-color: #333;
 $nav-color: #222;
 $logo-color: #111;
 $break-1: 700px;
-$underline: #FFF176;
+$underline: #FDD835;
 $primary-text: #fff;
 $secondary-text: #eee;
 $tertiary-text: #777;
 $card-bg: #fff;
+$modal-action: #66BB6A;
 html {
 	background: $nav-color;
 	scroll-behavior: smooth;
+}
+.yellow {
+	background: $underline;
+	color: #222;	
+	padding: 0.15em;
 }
 
 //type effect main screen
@@ -376,7 +382,7 @@ a {
 }
 .content h4 {
 	margin: 1em 0 0.5em 0;
-	color: #546E7A;
+	color: $tertiary-text;
 	font-weight: 400;
 }
 .content img {
@@ -407,7 +413,7 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 2.5em;
-    background: #ffffff;
+    background: $primary-text;
     color: #333333;
   }
   header {
@@ -439,17 +445,15 @@ a {
 	width: 20%;
 	font-weight: 300;
 	margin: auto;
-	border: 1px solid #888;
-	color: #888;	
+	background: $modal-action ;
+	color: $primary-text;
 	transition: 0.2s ease;
 	padding: 0.75em;
 	display: flex;
 	justify-content: center;
 }
 .modal-action:hover {
-	background: #66BB6A;
-	border: 1px solid #66BB6A;
-	color: #fff;
+	letter-spacing: 1.5px;
 }
 
 .modal-content h3 {
