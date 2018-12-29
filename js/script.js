@@ -1,9 +1,11 @@
 var app = document.getElementById('app');
+
 var typewriter = new Typewriter(app, {
     strings: ['interfaces', 'websites', 'experiences'],
     autoStart: true,
-    loop: true
+    loop: true  
 });
+
 var toggle_nav = function(x) {
   nav = document.getElementById("side-nav");
   button = document.getElementById("toggle-nav");
@@ -18,37 +20,26 @@ var toggle_nav = function(x) {
     button.classList.toggle('animate');
   }
 }
-
 var spliceUp = function (link) {
   var url = link.indexOf('/');
   console.log(link.slice(url + 1, link.length));
 }
-
+spliceUp('index.html/#work')
 var navigate = function(e) {
 		var currentAttrValue = $(this).attr('href');		
 		// Show/Hide Tabs
+    console.log(currentAttrValue);
 		$(currentAttrValue).addClass('active').fadeIn().siblings().hide().removeClass('active');
 		// // Change/remove current tab to active
 		$(this).addClass('highlighted').siblings().removeClass('highlighted');
 		e.preventDefault();
-	}
+}
 var redirect = function(e) {
 	var currentAttrValue = $(this).attr('href');
-  if(currentAttrValue.indexOf('/') != -1) {
-    spliceUp(currentAttrValue);
-  }
-
   $(currentAttrValue).addClass('active').fadeIn().siblings().hide().removeClass('active');
   $('a[href="' + currentAttrValue + '"]').addClass('highlighted').siblings().removeClass('highlighted');  
 }
-$(document).ready(function() {
-	$('#home').siblings().hide();
-	$("#learn-more").on('click', redirect)
-	$('.menu a').on('click', navigate);
-	$('#work_link').on('click', redirect);
-  $("#back").on('click', redirect)
 
-});
 const links = document.querySelectorAll('.copy-click');
 const cls = {
   copied: 'is-copied',
@@ -87,5 +78,10 @@ Array.from(links).forEach(link => {
     }
   });
 });
-
+$(document).ready(function() {
+  $('#home').siblings().hide();
+  $("#learn-more").on('click', redirect);
+  $('.menu a').on('click', navigate);
+  $('#work_link').on('click', redirect);
+});
 
