@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ayush Sharma | Designer, Developer, Thinker.</title>
+	<link rel="stylesheet" href="stylesheets/reset.css">
+	<link rel="stylesheet" href="stylesheets/normalize.css">
+	<link rel="stylesheet" href="stylesheets/sass/style.css">
+	<link rel="stylesheet" href="stylesheets/sass/work.css">	
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300i,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="stylesheets/lightslider.css">
+</head>
+<body>
+	<div class="container">
+		<div id="side-nav" class="side-nav">
+		    <ul class="mobile-nav">
+		    	<li>Home</li>
+		    	<li>About</li>
+		    	<li>Work</li>
+		    	<li>Contact</li>
+		    </ul>
+		</div>
+	  	<div class="nav">
+	      <div id="toggle-nav" onclick="toggle_nav(this)">
+	        <div class="animated-icon">
+	          <div class="bar-1"></div>
+	          <div class="bar-2"></div>
+	          <div class="bar-3"></div>
+	        </div>
+	      </div>
+	    </div>
+		<div class="left-nav">
+			<div class="logo">
+				<p>&larr; <a id="back" href="index.html#work">projects</a> </p>
+			</div>
+			<div class="nav-items">
+				<div class="index">
+					<a href="#one" class="highlighted hover">Background</a>
+					<a href="#two" class="hover">Methods</a>
+					<a href="#three" class="hover">Solution</a>
+					<a href="#four" class="hover">Effect</a>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+		<img class="top-bg" src="images/merken-cover.png" alt="">
+			<div class="ct">	
+				<h1>Merken</h1>
+				<p style="color: #999;">Design Systems and Front-end Development, Fall 2015.</p>			
+				<h2 id="intro">Introduction</h2>
+				<p>As part of my junior year minor thesis, the following project helped me transition from a developer to a designer. While I loved working on web applications, I began thinking on the 'why' aspect of every design rather than 'what'; why is this application being built, why is it being built in a particular way, and why people would consider using it.</p>			
+				<h2 id="one">1. Background and Context</h2>
+				<p>The idea was conceived for a couple of reasons. As a student myself, I found it extremely hard to memorize stuff that I did not like to study in the first place. There was a dearth of applications that aimed at enhancing learning process and it became evident that there is a need for an application that can help the user learn anything, especially the seemingly mundane things, with ease. A simple dive into the current techniques and tips to improve learning like highlighting or rereading the text gave insight as to why they are not as effective as they might seem.</p>
+				<ul>
+					<li>Research indicates that highlighting can get in the way of learning; because it draws attention to individual facts, which may act as an impediment in the process of making connections and drawing inferences.</li>
+					<li>Nearly as bad is the practice of rereading, a common exercise that is much less effective than some of the better techniques we can use.</li>
+				</ul>
+				<h2>2. Methods used</h2>
+				<p>A shift from the norm was evident, therefore after conducting some secondary research we decided to experiment with the techniques of flashcards and gamification, both of which are explained below.</p>
+				<h3><span class="underline">2.1 Flashcards</span></h3>
+				<p>Flash cards are designed to enhance and encourage active recall. The format, usually a question on one side of the card and the answer on the other, requires learners to look at one side and recall the information from the other side. Practicing active recall creates stronger neural connections in the brain — making it a very effective method for improving memory. Combined with spaced repetition, it can work wonders.</p>
+				<img src="images/merken-methods.png" alt="">
+				<h3><span class="underline">2.2 Gamification</span></h3>
+				<p>The second method was gamification - the process of integrating game mechanics to the already existing web/mobile application. It uses data driven techniques and applies them to non-game contexts to increase user engagement.</p>
+				<img src="images/merken-methods2.png" alt="">
+				
+				<h2 id="two">3. A Design Systems Approach</h2>
+				<p>While solving problems through design it seems fairly simple to design tailor-made solutions. However, that directly becomes an impediment in scaling design in future.</p>
+				<p class="emp">"Bespoke design simply doesn't scale."</p>
+				<p>A design system is a collection of reusable components, guided by clear standards, that can be assembled together to build any number of applications. The reason for incorporating such an approach was simple; avoiding design debt by building for short-term, designing consistently, improving usability not just for users but for developers as well (avoiding countless CSS declarations for every element), and finally the added benefit of scaling up.</p>
+				<h3><span class="underline">3.1 A Visual Design Language</span></h3>
+				<p>Defining a purpose and style of color, typography, icononography, illustrations is essential to create a consistent user experience. It should express the personality of the application itself. When it comes to learning, most of us are familiar with the good old chalkboard; therefore, we decided incorporate the same in our visual design language to have the just the right balance between fun and formal.</p>
+				<h3><span class="underline">3.1.1 Color</span></h3>
+				<p>Our brains are programmed to reject both under and over stimulating information, so it’s essential to create a color palette that delivers both visual interest and a sense of order. By starting with a base framework and combining tint-tone-shade method to generate different color schemes, we arrived at the color palette shown below.</p>
+				<img src="images/merken-color.png" alt="">
+				<h3><span class="underline">3.1.2 Typography</span></h3>
+				<p>The typeface we select has a great impact on both the brand identity as well as the overall user experience. While we initially decided to select one of the familiar font faces (like Roboto, Helvetica etc.) all of them felt a tad too formal and didn't communicate with the overall design language we were trying to express. We finally decided on 'Dosis' typeface, which is rounded Sans-Serif font family. It seemed to have just the right balance between presentable and fun.</p>
+				<img src="images/merken-type.png" alt="">
+				<h3><span class="underline">3.1.3 Illustrations</span></h3>
+				<p>Illustrations add character to the product. They are also a great way to attract visual interest. But most importantly, illustrations should be designed such that their meaning remains obvious, even without the text, else they become just another source for cognitive load. Finally, they are also a neat way to explain the product intent to new users, and maintain user engagement on empty states, loading screens, modals etc.</p>
+				<img src="images/merken-illus.png" alt="">
+				<h3><span class="underline">3.1.4 Components and Visual Form</span></h3>
+				<p>While design language is all about the approach and how things look at a visual level, the form brings them together to create a meaning out of it. For the following design, we decided to approach it at an atomic level, starting from the very fundamental units called elements, then moving up towards components, and finally towards layouts and architechture. This technique is called atomic design and it provided us flexibility and time before diving into the entire design altogether.</p>
+				<div class="slider">
+	                <ul id="merken-gallery" class="gallery list-unstyled cS-hidden">
+	                    <li data-thumb="images/thumb/home-amazon.png"> 
+	                        <img src="images/merken-vf1.png" alt="">
+	                         </li>
+	                    <li data-thumb="images/thumb/contact-amazon.png"> 
+	                        <img src="images/merken-vf2.png" alt="">
+	                     </li>	                         	                    
+	                </ul>
+            	</div>
+				<h2>Final Design and Impact</h2>
+				<p>After defining our system, it was time to bring everything together. With everything clearly defined, creating the final design was a breeze as our design system laid down the guiding path towards prototypes and development.</p>
+				<div class="slider">
+	                <ul id="final-gallery" class="gallery list-unstyled cS-hidden">
+	                    <li data-thumb="images/thumb/m1.png"> 
+	                        <img src="images/m1.png" alt="">
+	                         </li>
+	                    <li data-thumb="images/thumb/m2.png"> 
+	                        <img src="images/m2.png" alt="">
+	                     </li>	                       
+	                     <li data-thumb="images/thumb/m3.png"> 
+	                        <img src="images/m3.png" alt="">
+	                     </li>	                       
+	                     <li data-thumb="images/thumb/m4.png"> 
+	                        <img src="images/m4.png" alt="">
+	                     </li>	                       
+	                     <li data-thumb="images/thumb/m5.png"> 
+	                        <img src="images/m5.png" alt="">
+	                     </li>	                       
+	                     <li data-thumb="images/thumb/m6.png"> 
+	                        <img src="images/m6.png" alt="">
+	                     </li>	                       
+	                     <li data-thumb="images/thumb/m7.png"> 
+	                        <img src="images/m7.png" alt="">
+	                     </li>                                                                                        
+	                </ul>
+            	</div>
+            	<a href="#" class="btn fill">View Website</a>
+            	<p>In terms of the application idea, students welcomed the intent behind studying anything, however, they found it cumbersome to enter each and every word and its meaning. While we assumed manually entering it would further help the user to memorize it, the user testing dictated otherwise. Therefore, we planned on including a provision to share sets amongst your friends and search them in the application itself.</p>
+			</div>					
+		</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/lightslider.js"></script>	
+	<script>
+		var changeLink = function(e) {
+			$(this).addClass("highlighted").siblings().removeClass("highlighted");
+		}
+		$(".index a").on('click', changeLink);
+		$(document).ready(function() {
+			
+            $('#merken-gallery').lightSlider({                                
+                item:1,                
+                slideMargin: 0,                
+                thumbMargin: 50,
+                speed:500,                
+                onSliderLoad: function() {
+                    $('#merken-gallery').removeClass('cS-hidden');
+                }  
+            });
+            $('#final-gallery').lightSlider({   
+            	gallery: true,
+            	thumbItem: 7,                             
+                item:1,                
+                slideMargin: 0,                
+                thumbMargin: 50,
+                speed:500,                
+                onSliderLoad: function() {
+                    $('#final-gallery').removeClass('cS-hidden');
+                }  
+            });
+            
+		});
+	</script>
+</body>		

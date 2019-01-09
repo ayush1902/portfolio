@@ -14,10 +14,10 @@
 	<div class="container">
 		<div id="side-nav" class="side-nav">
 		    <ul class="mobile-nav">
-		    	<li>Home</li>
-		    	<li>About</li>
-		    	<li>Work</li>
-		    	<li>Contact</li>
+		    	<li><a href="#home" onclick="toggle_nav();">Home</a></li>
+		    	<li><a href="#about" onclick="toggle_nav();">About</a></li>
+		    	<li><a href="#work" onclick="toggle_nav();">Work</a></li>
+		    	<li><a href="#contact" onclick="toggle_nav();">Contact</a></li>
 		    </ul>
 		</div>
 	  	<div class="nav">
@@ -69,14 +69,14 @@
 						<h2>Recent</h2>
 						<div class="card-div">												
 						    <div class="col">
-						        <a class="card card-3 stacked--up" href="#merken-modal">
+						        <a class="card card-3 stacked--up" href="#ucd-modal">
 						        	<i class="fas fa-external-link-alt"></i>
 						            <div class="content">
 						            	<img src="images/ucdfall.png" alt="">
 						                <h4>TraumaWise</h4>
 						                <p>How to make driving more comfortable for people returning after a brain injury.</p>
 						            </div>
-						            <div id="merken-modal" class="modal-window">
+						            <div id="ucd-modal" class="modal-window">
 									  <div>
 									    <a href="#!" title="Close" class="modal-close">Close</a>
 									    <h1>TraumaWise</h1>
@@ -109,15 +109,15 @@
 									    <a href="#!" title="Close" class="modal-close">Close</a>
 									    <h1>Redesigning Amazon for Russsia</h1>
 									    <div class="breadcrumb">
-									    	<p>Culture-Centered Design</p><p>User Research</p><p>Storyboards</p>
+									    	<p>Culture-Centered Design</p><p>User Research</p><p>Visual Design</p>
 									    </div>
 									    <div class="modal-content">
 									    	<h3><span class="underline">Problem</span></h3>
-									    	<h4>As an international student, the last thing you want is worrying about food. How can we bring the taste of home to students studying in a different country?</h4>
+									    	<h4>Amazon is one of the biggest e-commerce websites in the world. Why has the company not been able to establish its presence in Russia?</h4>
 									    	<h3><span class="underline">Solution</span></h3>
-									    	<h4>Designing a vending machine interface that aims to provide customizable quick meals to Japanese students living on-campus.</h4>
+									    	<h4>Redesigning amazon.com website to accommodate various cultural dimensions that play an important role in how people percieve experiences.</h4>
 									    	<h3><span class="underline">Impact</span></h3>
-									    	<h4>Initially begining with snacks, our user research informed the shift in design idea from snacks to ready to eat meals not only by Japanese students, but local students as well. </h4>
+									    	<h4>When it comes to culture, a one-size-fits all approach is never the right approach.</h4>
 									    	<a href="amazon.html" class="modal-action">Dive in</a>
 									    </div>
 									    </div>
@@ -140,7 +140,7 @@
 								    <a href="#!" title="Close" class="modal-close">Close</a>
 								    <h1>Merken</h1>
 								    <div class="breadcrumb">
-								    	<p>Visual Design</p><p>Front-end Development</p><p>Learning Technologies</p>
+								    	<p>Design Systems</p><p>Front-end Development</p><p>Learning Technologies</p>
 								    </div>
 								    <div class="modal-content">
 								    	<h3><span class="underline">Problem</span></h3>
@@ -261,5 +261,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
 	<script src="js/script.js"></script>
+	<script>
+		var typewriter = new Typewriter(app, {
+		    strings: ['interfaces', 'websites', 'experiences'],
+		    autoStart: true,
+		    loop: true  
+		});
+		
+	</script>
 </body>
 </html>

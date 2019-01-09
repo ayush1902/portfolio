@@ -419,11 +419,13 @@ a {
   transition: 0.2s ease;
   padding: 0.75em;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  border-radius: 2px; }
 
 .modal-action:hover {
   background: #388E3C;
-  transition: 0.2s ease; }
+  transition: 0.2s ease;
+  letter-spacing: 1px; }
 
 .modal-content h3 {
   font-size: 1.15em;
@@ -522,8 +524,7 @@ a {
     margin-left: 0; }
 
   .btn {
-    width: 38%;
-    font-size: 1.2em; }
+    font-size: 1em; }
 
   #home h3,
   #about h3 {

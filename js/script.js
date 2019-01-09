@@ -1,11 +1,5 @@
 var app = document.getElementById('app');
 
-var typewriter = new Typewriter(app, {
-    strings: ['interfaces', 'websites', 'experiences'],
-    autoStart: true,
-    loop: true  
-});
-
 var toggle_nav = function(x) {
   nav = document.getElementById("side-nav");
   button = document.getElementById("toggle-nav");
@@ -20,23 +14,21 @@ var toggle_nav = function(x) {
     button.classList.toggle('animate');
   }
 }
-var spliceUp = function (link) {
-  var url = link.indexOf('/');
-  console.log(link.slice(url + 1, link.length));
-}
-spliceUp('index.html/#work')
+// var spliceUp = function (link) {
+//   var url = link.indexOf('/');
+//   console.log(link.slice(url + 1, link.length));
+// }
+// spliceUp('index.html/#work')
 var navigate = function(e) {
 		var currentAttrValue = $(this).attr('href');		
 		// Show/Hide Tabs
-    console.log(currentAttrValue);
-		$(currentAttrValue).addClass('active').fadeIn().siblings().hide().removeClass('active');
+		$(currentAttrValue).addClass('active').fadeIn().siblings().fadeOut().removeClass('active');    
 		// // Change/remove current tab to active
-		$(this).addClass('highlighted').siblings().removeClass('highlighted');
-		e.preventDefault();
+		$(this).addClass('highlighted').siblings().removeClass('highlighted');		
 }
 var redirect = function(e) {
 	var currentAttrValue = $(this).attr('href');
-  $(currentAttrValue).addClass('active').fadeIn().siblings().hide().removeClass('active');
+  $(currentAttrValue).addClass('active').fadeIn().siblings().fadeOut().removeClass('active');
   $('a[href="' + currentAttrValue + '"]').addClass('highlighted').siblings().removeClass('highlighted');  
 }
 
@@ -45,7 +37,6 @@ const cls = {
   copied: 'is-copied',
   hover: 'is-hovered'
 }
-
 const copyToClipboard = str => {
   const el = document.createElement('input');
   str.dataset.copyString ? el.value = str.dataset.copyString : el.value = str.text;
@@ -65,7 +56,6 @@ const clickInteraction = (e) => {
   setTimeout(() => e.target.classList.remove(cls.copied), 1000);
   setTimeout(() => e.target.classList.remove(cls.hover), 700);  
 }
-
 Array.from(links).forEach(link => {
   link.addEventListener('click', e => clickInteraction(e));
   link.addEventListener('keypress', e => {
@@ -78,10 +68,14 @@ Array.from(links).forEach(link => {
     }
   });
 });
+
 $(document).ready(function() {
   $('#home').siblings().hide();
   $("#learn-more").on('click', redirect);
   $('.menu a').on('click', navigate);
-  $('#work_link').on('click', redirect);
+  $(".mobile-nav a").on('click', navigate);
+  $('#work_link').on('click', redirect);  
+  $("#back").on('click', redirect);
+  // window.addEventListener('popstate', function(e){console.log('url changed')});
 });
 
