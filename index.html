@@ -44,7 +44,7 @@
 		</div>
 		<div class="main">
 			<div class="tabs">
-				<div id="home" class="tab active">
+				<div id="home" class="tab">
 					<div class="tab-container">
 						<h2>Hi.</h2>
 						<h3>I am Ayush and I design <span id="app" class="typewrite">experiences</span></h3>
@@ -54,7 +54,7 @@
 				</div>
 				<div id="about" class="tab">
 					<div class="tab-container">
-						<h4>I am a multi-discplinary front-end developer/designer living in Greater Seattle Area. </h4>
+						<h4>I am a multi-disciplinary front-end developer/designer living in Greater Seattle Area. </h4>
 						<div class="focus">
 							<h3>Focus</h3>
 							<h4>Lately &rarr; User-Centered Design, Design Systems.</h4>
@@ -66,7 +66,7 @@
 				</div>
 				<div id="work" class="tab">
 					<div class="tab-container">												
-						<h2>Recent</h2>
+						<h2>Work</h2>
 						<div class="card-div">												
 						    <div class="col">
 						        <a class="card card-3 stacked--up" href="#ucd-modal">
@@ -124,10 +124,7 @@
 									</div>
 						        </a>
 						    </div>
-						</div>
-					<h2>Previous</h2>
-					<div class="card-div">
-					    <div class="col">
+						    <div class="col">
 					        <a class="card card-3 stacked--up" href="#m-modal">
 					        	<i class="fas fa-external-link-alt"></i>
 					            <div class="content">
@@ -177,12 +174,15 @@
 								    	<h4>Developing a recommendation system that suggest courses to students by evaluating their performance in previous terms, along with the complete redesign of the existing college website.</h4>
 								    	<h3><span class="underline">Impact</span></h3>
 								    	<h4>Students liked the idea and the redesign, however the lack of student data became an impediment in the website's scalability.</h4>
-								    	<a href="rec-sys.html" class="modal-action">Dive in</a>
+								    	<a href="recommender.html" class="modal-action">Dive in</a>
 								    </div>
 								    </div>
-								</div>
-					        
+								</div>					        
 					    </div>
+						</div>
+					<!-- <h2>Previous</h2>
+					<div class="card-div">
+					    
 					    <div class="col">
 					        <a class="card card-3 stacked--up" href="#cancer-modal">
 					        	<i class="fas fa-external-link-alt"></i>
@@ -239,7 +239,7 @@
 								</div>
 					        </a>
 					    </div>
-					</div>
+					</div> -->
 				</div>
 				</div>
 				<div id="contact" class="tab">
@@ -267,6 +267,31 @@
 		    autoStart: true,
 		    loop: true  
 		});
+		$( document ).ready(function() {
+		   var index = getParameterByName('index')
+		   if(index) {
+		   	back(index);	
+		   }
+		   else {
+		   	$('#home').addClass('active').fadeIn().siblings().fadeOut().removeClass('active');    
+		   }
+		   // $('ul > li').not('#target' + index).hide()
+		   // $('div').not('#div' + index).hide()
+		   // $('#div'+ index).show();
+		   // $('#target' + index).addClass('active');
+		   
+		   
+		   // window.location = 'index.html#work';
+		});
+		function getParameterByName(name) {
+		    url = window.location.href;
+		    name = name.replace(/[\[\]]/g, "\\$&");
+		    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+		        results = regex.exec(url);
+		    if (!results) return null;
+		    if (!results[2]) return '';
+		    return decodeURIComponent(results[2].replace(/\+/g, " "));
+		}
 		
 	</script>
 </body>

@@ -1,5 +1,4 @@
 var app = document.getElementById('app');
-
 var toggle_nav = function(x) {
   nav = document.getElementById("side-nav");
   button = document.getElementById("toggle-nav");
@@ -14,11 +13,6 @@ var toggle_nav = function(x) {
     button.classList.toggle('animate');
   }
 }
-// var spliceUp = function (link) {
-//   var url = link.indexOf('/');
-//   console.log(link.slice(url + 1, link.length));
-// }
-// spliceUp('index.html/#work')
 var navigate = function(e) {
 		var currentAttrValue = $(this).attr('href');		
 		// Show/Hide Tabs
@@ -31,7 +25,13 @@ var redirect = function(e) {
   $(currentAttrValue).addClass('active').fadeIn().siblings().fadeOut().removeClass('active');
   $('a[href="' + currentAttrValue + '"]').addClass('highlighted').siblings().removeClass('highlighted');  
 }
+var back = function(a) {
+  var target = '#' + a;
+  $(target).siblings().hide().removeClass('active')
+  $(target).addClass('active').fadeIn();
+  $('a[href="' + target + '"]').addClass('highlighted').siblings().removeClass('highlighted');  
 
+}
 const links = document.querySelectorAll('.copy-click');
 const cls = {
   copied: 'is-copied',
@@ -75,7 +75,5 @@ $(document).ready(function() {
   $('.menu a').on('click', navigate);
   $(".mobile-nav a").on('click', navigate);
   $('#work_link').on('click', redirect);  
-  $("#back").on('click', redirect);
-  // window.addEventListener('popstate', function(e){console.log('url changed')});
 });
 

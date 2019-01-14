@@ -81,4 +81,27 @@
   .ct .slider ul {
     margin-left: 0 !important; }
 
+@media screen and (max-width: 800px) {
+  .flex {
+    display: block !important; }
+    .flex p {
+      font-size: 1rem;
+      width: 100% !important; }
+    .flex img {
+      width: 80% !important; }
+
+  .ct h1 {
+    font-size: 2rem; }
+  .ct h2 {
+    font-size: 1.35rem; }
+  .ct h3 {
+    font-size: 1.15rem; }
+  .ct p,
+  .ct li {
+    font-size: 1rem; }
+  .ct .card-dark {
+    display: block; }
+  .ct .emp {
+    font-size: 1.15rem; } }
+
 /*# sourceMappingURL=work.css.map */

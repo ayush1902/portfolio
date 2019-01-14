@@ -1,7 +1,7 @@
 $bg-color: #222;
 $nav-color: #1D1D1D;
 $logo-color: #111;
-$break-1: 700px;
+$break-1:800px;
 $break-2: 1050px;
 $underline: #FDD835;
 $primary-text: #fff;
@@ -597,7 +597,7 @@ a {
 	.col {
 		width: 100%;
 		margin: 2.5em auto;
-		font-size: 1em;
+		font-size: 0.85rem;
 	}
 	.modal-window {
 		&>div {
@@ -606,7 +606,7 @@ a {
 		}
 	}
 	.modal-content {
-		font-size: 0.8em !important;
+		font-size: 0.9rem !important;
 	}
 	.breadcrumb p {
 		font-size: 0.7em;

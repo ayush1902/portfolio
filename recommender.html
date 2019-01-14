@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ayush Sharma | Designer, Developer, Thinker.</title>
+	<link rel="stylesheet" href="stylesheets/reset.css">
+	<link rel="stylesheet" href="stylesheets/normalize.css">
+	<link rel="stylesheet" href="stylesheets/sass/style.css">
+	<link rel="stylesheet" href="stylesheets/sass/work.css">	
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300i,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="stylesheets/lightslider.css">
+</head>
+<body>
+	<div class="container">
+		<div id="side-nav" class="side-nav">
+		    <ul class="mobile-nav">
+		    	<li>Home</li>
+		    	<li>About</li>
+		    	<li>Work</li>
+		    	<li>Contact</li>
+		    </ul>
+		</div>
+	  	<div class="nav">
+	      <div id="toggle-nav" onclick="toggle_nav(this)">
+	        <div class="animated-icon">
+	          <div class="bar-1"></div>
+	          <div class="bar-2"></div>
+	          <div class="bar-3"></div>
+	        </div>
+	      </div>
+	    </div>
+		<div class="left-nav">
+			<div class="logo">
+				<p>Ayush <span style="color:#999;">Sharma</span></p>				
+			</div>
+			<div class="nav-items">
+				<div class="index">
+					<a href="#one" class="highlighted hover">Background</a>
+					<a href="#two" class="hover">Challenges</a>
+					<a href="#three" class="hover">Implementation</a>
+					<a href="#four" class="hover">Impact</a>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+		<img class="top-bg" src="images/rec-cover.png" alt="">
+			<div class="ct">
+				<p><a id="back" href="index.html?index=work" style="font-size: 0.75rem;">&larr; BACK TO WORK</a></p>
+				<h1>Recommender Systems</h1>
+				<p style="color: #999;">Visual Design and Front-end Development, Winter 2016.</p>			
+				<h2 id="intro">Introduction</h2>
+				<p>Every student dreads the infamous course registration process; selecting courses every term, navigating around a UI plagued with rich text and no helpers to guide you, making you feel like you lack web litracy. This project was taken as a personal dissatisfaction against the university student dashboards and the user experience surrounding one.</p>			
+				<h2 id="one">1. Background</h2>
+				<p>While the overall design of the main page is fairly usable, the problems begin to unearth as one dives deeper into the nested pages, especially the students page. There was no clear segregation between prospective or current students. The visual design finally breaks apart in the login screen, and the student's dashboard.</p>
+				<img src="images/rec-1.png" alt="">
+				<p>The deeper problem was not just design, it was the implementation. There was dearth of resources that could advise students on what courses would be appropriate for them in the following term. A quick chat with my fellow peers revealed the most obvious problems within the system:</p>
+				<p class="emp">"The website is practically unsuable on the day of registration."</p>
+				<p class="emp">"This one time I accidentally dropped a course I wanted to take in the middle of registration because there was no feedback on any click."</p>
+				<p class="emp">"I had no idea what to take so I blocked a couple of extra courses just to be sure they don't run out."</p>
+				<p>The aim of this project became clear; we wanted to redesign the college website that addresses majority of these qualms so as to improve their overall registration process experience.</p>
+				
+				<h2 id="two">2. Challenges</h2>
+				<h3><span class="underline">2.1 Not a Landing Page</span></h3>
+				<p>A University website is very different from a usual landing page; there are tons of things to keep in mind. Moreover, it has to be dependable as many of the students and faculty look up to it to keep themselves updated about what is happening in the university. Therefore, we wanted to start small and let the feedback dictate where it leads us; starting with creating the home page, the students page, and the students dashboard and moving accordingly.</p>
+				<h3><span class="underline">2.2 Student Data</span></h3>
+				<p>Recommendation engines rely heavily on data for accurate results, therefore garnering student data that told us about their interests and skills was a challenge. We initially decided to get user data as we more and more users.</p>
+				<h3><span class="underline">2.3 Visual Redesign was not the Solution</span></h3>
+				<p>While it seemed easier to just make the university website pretty and expect it to be a huge redesign, there was nothing novel in the functionality. Therefore, after evaluating what is within our reach, we decided to create a mini recommender system that suggests courses to students based on their interests and their performance in the previous terms. The technique used was collaborative filtering, which is a method for making predictions about the interests of a user by collecting preferences from many users.</p>
+				
+				<p></p>
+				<img src="images/rec-2.png" alt="">
+				<h2 id="three">3. Implementation</h2>
+				<h3><span class="underline">3.1 Homepage Redesign</span></h3>
+				<p>Starting from ground up, we streamlined the homepage experience to have a full-width jumbotron that displays immediate information about the univeristy website, with an action button; information about univeristy, academics, student life and research initiatives, along with a horizontal navbar for quick access to the same. The second section was all about the current events happening in the college, followed by the footer.</p>
+				<div class="slider">
+	                <ul id="web-gallery" class="gallery list-unstyled cS-hidden">
+	                    <li data-thumb="images/thumb/survey-1.png"> 
+	                        <img src="images/home-search.gif" />
+	                         </li>
+	                    <li data-thumb="images/thumb/survey-2.png"> 
+	                        <img src="images/rec-4.png" />
+	                     </li>
+	                     <li data-thumb="images/thumb/survey-2.png"> 
+	                        <img src="images/rec-5.png" />
+	                     </li>     
+	                    <li data-thumb="images/thumb/survey-2.png"> 
+	                        <img src="images/footer-animation.gif" />
+	                     </li>	                                    	                     
+	                </ul>
+            	</div>
+            	<h3><span class="underline">3.2 Dashboard Redesign</span></h3>
+            	<p>The dashboard was also revamped by including the important information first, based from the user interviews what sections they accessed the most. The most common ones were 'subject registration' and 'teaching assistantship application', along with a non-persistent sidebar that was less intrusive in comparison to a persistent one.</p>
+				<div class="slider">
+	                <ul id="dash-gallery" class="gallery list-unstyled cS-hidden">
+	                    <li data-thumb="images/thumb/survey-1.png"> 
+	                        <img src="images/dash-1.png" />
+	                         </li>
+	                    <li data-thumb="images/thumb/survey-2.png"> 
+	                        <img src="images/dash-2.png" />
+	                     </li>
+	                     <li data-thumb="images/thumb/survey-2.png"> 
+	                        <img src="images/dash-3.png" />
+	                     </li>     	                                                   	                     
+	                </ul>
+            	</div>
+            	<h3><span class="underline">3.3 Recommendation System</span></h3>
+            	<p>The final step was to implemenet the recommendation engine within the dashboard itself. Since this was our first time working with collaborative filtering, we wanted to test it out first; initially we decided to have users enter some details and enter their skills and interests in an input box (comma-separated). Then the system would contact them via email with the links to the recommended courses.</p>
+            	<img src="images/select-course.png" alt="">
+            	<h2 id="four">Impact</h2>
+            	<h3><span class="underline">4.1 Key Learnings</span></h3>
+            	<ul>
+            		<li>Ease of use: Users don't really care how big of a functionality you are implementing, unless it is implemented in a complete and coherent manner. In our case, we thought the recommender system would be a game changer, but the effort behind entering every skill/interests weared them off.</li>
+            		<li>Design from the ground-up: Designing and developing from scratch within a small team helped us design with developer constraints in mind; not everything that can be designed is feasible in code. </li>
+            	</ul>
+            	<h3><span class="underline">What's Next</span></h3>
+            	<p>The next step is to improve upon our recommender system; instead of asking the user to input every information, we plan on synchronising user information via there google accounts by using 'Google OAuth' integration in our application. Secondly, we plan on rolling out the website to more and more students to get more feedback on the overall visual design and the idea behind getting course recommendations.</p>
+			</div>					
+		</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/lightslider.js"></script>	
+	<script>
+		var changeLink = function(e) {
+			$(this).addClass("highlighted").siblings().removeClass("highlighted");
+		}
+		$(".index a").on('click', changeLink);
+		$(document).ready(function() {			
+            $('#web-gallery').lightSlider({                                
+                item:1,                
+                slideMargin: 0,                
+                thumbMargin: 50,
+                speed:500,                
+                onSliderLoad: function() {
+                    $('#web-gallery').removeClass('cS-hidden');
+                }  
+            });
+            $('#dash-gallery').lightSlider({                                
+                item:1,                
+                slideMargin: 0,                
+                thumbMargin: 50,
+                speed:500,                
+                onSliderLoad: function() {
+                    $('#dash-gallery').removeClass('cS-hidden');
+                }  
+            });
+            
+		});
+	</script>
+</body>		

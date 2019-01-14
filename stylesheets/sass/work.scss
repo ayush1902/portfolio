@@ -100,3 +100,36 @@ $underline: #FFF176;
 	}
 
 }
+@media screen and (max-width: 800px) {
+	.flex {
+		display: block !important;
+		p {
+			font-size: 1rem;
+			width: 100% !important;
+		}
+		img {
+			width: 80% !important;
+		}
+	}
+	.ct {
+		h1 {
+			font-size: 2rem;
+		}
+		h2 {
+			font-size: 1.35rem;
+		}
+		h3 {
+			font-size: 1.15rem;
+		}
+		p, 
+		li {
+			font-size: 1rem;
+		}
+		.card-dark {
+			display: block;
+		}
+		.emp {
+			font-size: 1.15rem;
+		}
+	}
+}

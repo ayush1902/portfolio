@@ -546,14 +546,14 @@ a {
   .col {
     width: 100%;
     margin: 2.5em auto;
-    font-size: 1em; }
+    font-size: 0.85rem; }
 
   .modal-window > div {
     width: 80%;
     padding: 1.5em; }
 
   .modal-content {
-    font-size: 0.8em !important; }
+    font-size: 0.9rem !important; }
 
   .breadcrumb p {
     font-size: 0.7em; }
