@@ -1,7 +1,7 @@
 $bg-color: #222;
 $nav-color: #1D1D1D;
 $logo-color: #111;
-$break-1:800px;
+$break-1: 812px;
 $break-2: 1050px;
 $underline: #FDD835;
 $primary-text: #fff;
@@ -25,7 +25,7 @@ html {
 	padding: 0.15em;
 }
 body {
-	font-family: 'Rubik';	
+	font-family: hero-new, sans-serif;
 }
 a {
 	text-decoration: none;
@@ -35,7 +35,7 @@ a {
 	border-bottom: 3px solid $underline;
 }
 .highlighted {
-	font-weight: 400;
+	font-weight: 500;
 	color: $primary-text;
 }
 //Responsive mobile navbar
@@ -147,7 +147,7 @@ a {
 }
 .hover.active {
 	color: $primary-text;
-	font-weight: 500;
+	font-weight: 400;
 }
 .hover:hover:after {
 	width: 35%;
@@ -196,19 +196,19 @@ a {
 .logo p {
 	width: 55%;	
 	margin: auto;	
-	font-size: 0.8em;	
+	font-size: 0.75em;	
 	font-weight: 400;
-	text-transform: uppercase;
-	letter-spacing: -0.5px;
+	// text-transform: uppercase;
+	letter-spacing: 1.5px;
 	color: $secondary-text;
 	text-align: center;
-	border: 1px solid $tertiary-text;
-	border-radius: 2px;
+	// border: 1px solid #333;
+	// // border-radius: 2px;
 	padding: 1em;
 }
 //desktop nav items
 .nav-items {
-	color: $tertiary-text;
+	color: #444;
 	width: 100%;
 	height: 90vh;
 	display: flex;	
@@ -221,14 +221,14 @@ a {
 	flex-direction: column;
 	width: content;
 	text-align: left;	
-	font-weight: 300;
+	font-weight: 500;
 	margin: auto;
-	font-size: 1.15em;	
+	font-size: 1.05rem;	
 }
 .menu a,
 .index a {
 	margin: 1em 0;	
-	padding: 0.25em 0;	
+	padding: 0.5em 0;	
 }
 /* Tab Content*/
 #home, 
@@ -245,8 +245,9 @@ a {
 }
 #work h2 {
 	font-size: 1.4em;
-	font-weight: 500;
+	font-weight: 800;
 	margin: 2em 0 1em 0;
+	letter-spacing: 3px; text-transform: uppercase; font-size: 1em;
 	&:first-child {
 		margin-top: 4em;
 	}
@@ -261,18 +262,18 @@ a {
 }
 #home h2 {
 	font-size:3.5em;	
-	font-weight: 700;
+	font-weight: 800;
 }
 #home h3 {
-	font-size: 2.15em;
-	letter-spacing: 0.5px;
+	font-size: 2em;	
+	font-weight: 400;
 }
 #home h4,
 #contact h4 {
-	font-size: 1.35em;
+	font-size: 1.25em;
 	color: $secondary-text;
-	line-height: 1.75em;
-	font-weight: 300;
+	line-height: 2em;
+	font-weight: 100;
 }
 #home *, 
 #about *,
@@ -280,13 +281,16 @@ a {
 	margin-bottom: 1em;
 }
 #about h4 {
-	font-size: 1.5rem;
-	line-height: 1.75em;
+	font-size: 1.4rem;
+	line-height: 1.75em;	
+	font-weight: 300;
 }
 #about h3 {
-	font-size: 1.75em;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	letter-spacing: 3px;
 	margin: 0em 0 0.5em 0;
-	font-weight: 700;
+	font-weight: 800;
 	color: $primary-text;
 }
 .focus {
@@ -303,7 +307,7 @@ a {
 }
 .col {
 	flex-basis: 45%;
-	margin: 0.5em 0 2.5em 0;
+	margin: 1.5em 0 2.5em 0;
 }
 .card {
   display: block; 
@@ -316,6 +320,7 @@ a {
 .card-3 .content {
   background-color: $card-bg !important;
   border-radius: 3px;
+  font-weight: 300;
 }
 .card-3:before, .card-3:after {
   border-radius: 2px;
@@ -371,18 +376,20 @@ a {
           transform: translate(0, 10px) scale(0.9);
 }
 .content {
-	padding-bottom: 1em;
+	padding-bottom: 1.25em;
 	color: #90A4AE;
-	line-height: 1.5em;
+	line-height: 1.75em;
+	font-size: 0.9rem; 
 }
 .content h4,
 .content p {
-	padding: 0 1em;
+	padding: 0 1.25em;
 }
 .content h4 {
 	margin: 1em 0 0.5em 0;
 	color: #666;
 	font-weight: 400;
+	font-size: 1rem;
 }
 .content img {
 	width: 100%;
@@ -441,7 +448,7 @@ a {
 }
 .modal-action {	
 	display: inline-block;
-	font-weight: 300;
+	font-weight: 400;
 	margin-bottom: 1em;
 	background: $modal-action ;
 	color: $primary-text;
@@ -456,14 +463,16 @@ a {
 }
 
 .modal-content h3 {
-	font-size: 1.15em;	
-	line-height: 1.75em;
+	font-size: 1.1em;	
+	line-height: 2em;
+	font-weight: 500;
 }
 .modal-content h4 {
-	color: #888;	
-	line-height: 1.75em;
+	color: #777;	
+	line-height: 2em;
 	margin-bottom: 1.5em;
 	font-weight: 300;
+	font-size: 0.95rem;
 	&:nth-child(6) {
 		margin-bottom: 2.25em;
 	}
@@ -473,8 +482,8 @@ a {
 	margin: 1.25em 0;
 }
 .breadcrumb p {
-	font-size: 0.8em;
-	font-weight: 300;	
+	font-size: 0.75em;
+	font-weight: 300;		
 	background: #eee;
 	color: #888;	
 	border-radius: 5px;
@@ -482,7 +491,7 @@ a {
 	margin-right: 0.5em;
 }
 #contact h2 {
-	font-size: 3em;
+	font-size: 2.5em;
 	font-weight: bold;
 }
 #contact h3 {
@@ -556,6 +565,7 @@ a {
 	.typewrite {
 		display: block;
 	}
+	
 }
 @media screen and (max-width: $break-1) {
 	.left-nav {
