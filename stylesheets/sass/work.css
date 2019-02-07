@@ -91,6 +91,9 @@ body {
       font-family: Playfair Display; }
   .ct .slider ul {
     margin-left: 0 !important; }
+  .ct .bullet {
+    font-weight: 600;
+    font-style: italic; }
 
 @media screen and (max-width: 800px) {
   .flex {
