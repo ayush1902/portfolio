@@ -95,7 +95,7 @@ body {
     font-weight: 600;
     font-style: italic; }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .flex {
     display: block !important; }
     .flex p {
@@ -104,18 +104,22 @@ body {
     .flex img {
       width: 80% !important; }
 
+  .project-info p {
+    margin-top: 2em;
+    font-size: 1.5em !important; }
+
   .ct h1 {
-    font-size: 2rem; }
+    font-size: 4rem; }
   .ct h2 {
-    font-size: 1.35rem; }
+    font-size: 2.5rem; }
   .ct h3 {
-    font-size: 1.15rem; }
+    font-size: 2rem; }
   .ct p,
   .ct li {
-    font-size: 1rem; }
+    font-size: 1.75rem; }
   .ct .card-dark {
     display: block; }
   .ct .emp {
-    font-size: 1.15rem; } }
+    font-size: 2.5rem; } }
 
 /*# sourceMappingURL=work.css.map */
