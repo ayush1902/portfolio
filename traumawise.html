@@ -14,13 +14,16 @@
 </head>
 <body>
 	<div class="container">
-		<div id="side-nav" class="side-nav">
-		    <ul class="mobile-nav">
-		    	<li><a href="#one">1. Problem</a></li>
-		    	<li><a href="#two">2. Research</a></li>
-		    	<li><a href="#three">3. Ideation</a></li>
-		    	<li><a href="#four">4. Prototyping</a></li>
-		    </ul>
+		<div class="hot-nav">
+			<div id="side-nav" class="side-nav">			
+			    <ul>
+			    	<li><a href="#one" onclick="toggle_nav();">Problem</a></li>
+			    	<li><a href="#two" onclick="toggle_nav();">Research</a></li>
+			    	<li><a href="#three" onclick="toggle_nav();">Ideation</a></li>
+			    	<li><a href="#four" onclick="toggle_nav();">Prototyping</a></li>
+			    </ul>
+			</div>
+			<p><a id="back" href="index.html?index=work" style="font-size: 0.75rem;">&larr; WORK</a></p>
 		</div>
 	  	<div class="nav">
 	      <div id="toggle-nav" onclick="toggle_nav(this)">
@@ -47,7 +50,8 @@
 		<div class="main">
 		<img class="top-bg" src="images/bg-traumawise.png" alt="">
 			<div class="ct">	
-				<p><a id="back" href="index.html?index=work" style="font-size: 0.75rem;">&larr; BACK TO WORK</a></p>
+				
+
 				<div class="flex">
 					<div style="flex-basis: 70%;">
 						<h1>Traumawise</h1>

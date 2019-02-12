@@ -63,8 +63,7 @@ a {
 .bar-1, .bar-2, .bar-3 {
 	margin: 10px auto;
 	background: #fff;
-	width: 40%;
-	border-radius: 1px;
+	width: 40%;	
 	height: 5px;
 	transition: 0.4s;
 	-webkit-transition: 0.2s ease-in;
@@ -105,9 +104,35 @@ a {
 	justify-content: center;
 	text-align: center;	
 }
+.hot-nav {
+	ul {
+		width: 90%;
+		margin: auto;
+		li {
+			padding: 1.25em 0;
+			font-weight: 300;
+			font-size: 1em;
+		}		
+	}
+	p {
+		display: inline-block;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		background: #000;
+		color: #fff;
+		margin: 0 0 3vh 3.5vh;
+		padding: 2em;
+		z-index: 2;
+		a {
+			display: inline-block;
+			font-size: 1.75em !important;
+		}
+	}
+}
 .mobile-nav li {
-	font-size: 0.6em;
-	margin: 1em 0;
+	font-size: 0.9em;
+	margin: 1.5em 0;
 }
 //universal rules
 .container {
@@ -375,7 +400,7 @@ a {
           transform: translate(0, 10px) scale(0.9);
 }
 .content {
-	padding-bottom: 1.25em;
+	padding-bottom: 1.2em;
 	color: #90A4AE;
 	line-height: 1.75em;
 	font-size: 0.9rem; 
@@ -432,13 +457,13 @@ a {
   }
 }
 .modal-close {
-  color: #aaa;
+  color: #999;
   line-height: 50px;
   font-size: 80%;
   position: absolute;
-  right: 0;
-  text-align: center;
-  top: 0;
+  right: 10px;
+  text-align: left;
+  top: 10px;
   width: 70px;
   text-decoration: none;
   &:hover {
@@ -501,12 +526,11 @@ a {
 .social-handles {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	width: 35%;	
+	width: 30%;	
 }
 
 .social-handles img {
-	width: 100px;	
+	width: 65%;
 }
 :root {
   --duration: 400ms;
@@ -619,7 +643,7 @@ a {
 	}
 	.col {
 		width: 100%;
-		margin: 5em auto;
+		margin: 7em 0 !important;
 		font-size: 0.85rem;
 	}
 	.modal-window {
@@ -651,11 +675,9 @@ a {
 		display: flex;
 	}	
 	.social-handles {
-		width: 85%;		
+		width: 80%;		
 	}
-	.social-handles a {
-		margin-right: 0.5em;
-	}
+	
 	#contact {
 		h2 {
 			font-size: 5em;

@@ -14,13 +14,16 @@
 </head>
 <body>
 	<div class="container">
-		<div id="side-nav" class="side-nav">
-		    <ul class="mobile-nav">
-		    	<li>Home</li>
-		    	<li>About</li>
-		    	<li>Work</li>
-		    	<li>Contact</li>
-		    </ul>
+		<div class="hot-nav">
+			<div id="side-nav" class="side-nav">			
+			    <ul>
+			    	<li><a href="#one" onclick="toggle_nav();">Problem</a></li>
+			    	<li><a href="#two" onclick="toggle_nav();">Research</a></li>
+			    	<li><a href="#three" onclick="toggle_nav();">Solution</a></li>
+			    	<li><a href="#four" onclick="toggle_nav();">Reflection</a></li>
+			    </ul>
+			</div>
+			<p><a id="back" href="index.html?index=work" style="font-size: 0.75rem;">&larr; WORK</a></p>
 		</div>
 	  	<div class="nav">
 	      <div id="toggle-nav" onclick="toggle_nav(this)">
@@ -133,6 +136,7 @@
 			</div>					
 		</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/script.js"></script>	
 	<script src="js/lightslider.js"></script>	
 	<script>
 		var changeLink = function(e) {
