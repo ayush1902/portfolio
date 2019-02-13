@@ -78,7 +78,7 @@ body {
     .ct .card-dark .card-content {
       background: #333;
       margin-bottom: 1em;
-      padding: 1.5em 1.5em 0.5em 2.5em;
+      padding: 1.5em 2em 0.5em 2em;
       margin-right: 1.5em;
       display: flex;
       align-items: center;
@@ -87,8 +87,8 @@ body {
       border-radius: 5px; }
     .ct .card-dark p {
       margin-bottom: 1em !important;
-      font-weight: 700;
-      font-family: Playfair Display; }
+      font-weight: 500;
+      font-size: 1.1em; }
   .ct .slider ul {
     margin-left: 0 !important; }
   .ct .bullet {

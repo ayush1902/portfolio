@@ -108,11 +108,13 @@ a {
   background: #000;
   color: #fff;
   margin: 0 0 3vh 3.5vh;
-  padding: 2em;
+  padding: 1.25em;
   z-index: 2; }
   .hot-nav p a {
     display: inline-block;
-    font-size: 1.75em !important; }
+    font-size: 0.7em !important;
+    letter-spacing: 2px;
+    font-weight: 300; }
 
 .mobile-nav li {
   font-size: 0.9em;
@@ -577,6 +579,9 @@ a {
   .content p {
     font-size: 2rem;
     line-height: 3.5rem; }
+
+  .hot-nav p {
+    font-size: 2em; }
 
   .content p {
     margin-bottom: 1em; }
