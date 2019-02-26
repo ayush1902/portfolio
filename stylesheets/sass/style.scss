@@ -1,6 +1,6 @@
-$bg-color: #222;
-$nav-color: #1D1D1D;
-$logo-color: #111;
+$bg-color: #111;
+$nav-color: #000;
+$logo-color: #000;
 $break-1: 812px;
 $break-2: 1050px;
 $underline: #FDD835;
@@ -9,6 +9,31 @@ $secondary-text: #eee;
 $tertiary-text: #777;
 $card-bg: #fff;
 $modal-action: #66BB6A;
+@font-face {
+	src: url('fonts/CalibreTest-Bold.woff');
+	font-family: 'Calibre';
+	font-weight: 700;
+}
+@font-face {
+	src: url('fonts/CalibreTest-Medium.woff');
+	font-family: 'Calibre';
+	font-weight: 400;
+}
+@font-face {
+	src: url('fonts/CalibreTest-Regular.woff');
+	font-family: 'Calibre';
+	font-weight: 300;
+}
+@font-face {
+	src: url('fonts/CalibreTest-Light.woff');
+	font-family: 'Calibre';
+	font-weight: 100;
+}
+@font-face {
+	src: url('fonts/CalibreTest-Semibold.woff');
+	font-family: 'Calibre';
+	font-weight: 500;
+}
 html {
 	background: $nav-color;
 	scroll-behavior: smooth;
@@ -18,6 +43,7 @@ html {
 	font-family: Space Mono;
 	font-weight: 700;
 	margin-top: 0.5em;
+	font-size: 2rem;	
 }
 .yellow {
 	background: $underline;
@@ -25,7 +51,7 @@ html {
 	padding: 0.15em;
 }
 body {
-	font-family: hero-new, sans-serif;
+	font-family: 'Calibre', sans-serif;
 }
 a {
 	text-decoration: none;
@@ -34,8 +60,9 @@ a {
 .underline {
 	border-bottom: 3px solid $underline;
 }
+
 .highlighted {
-	font-weight: 500;
+	font-weight: 400;
 	color: $primary-text;
 }
 //Responsive mobile navbar
@@ -88,7 +115,7 @@ a {
 	position: fixed;
 	color: $primary-text;
 	text-align: center;
-	font-size: 2.2rem;
+	font-size: 2.25rem;
 	letter-spacing: normal;
 	display: flex;
 	transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
@@ -174,7 +201,7 @@ a {
 }
 .hover.active {
 	color: $primary-text;
-	font-weight: 400;
+	font-weight: 300;
 }
 .hover:hover:after {
 	width: 35%;
@@ -184,9 +211,11 @@ a {
 	border: 2px solid $primary-text;
 	color: $primary-text;
 	display: inline-block;
+	letter-spacing: 1px;
 	width: auto;
+	font-weight: 300;
+	font-size: 1.1em;
 	padding: 0.75em 1em;
-	font-size: inherit;
 	position: relative;
 	overflow: hidden;
 	text-align: center;
@@ -223,14 +252,11 @@ a {
 .logo p {
 	width: 55%;	
 	margin: auto;	
-	font-size: 0.75em;	
-	font-weight: 400;
-	// text-transform: uppercase;
+	font-size: 0.8em;	
+	font-weight: 400;	
 	letter-spacing: 1.5px;
 	color: $secondary-text;
 	text-align: center;
-	// border: 1px solid #333;
-	// // border-radius: 2px;
 	padding: 1em;
 }
 //desktop nav items
@@ -248,9 +274,9 @@ a {
 	flex-direction: column;
 	width: content;
 	text-align: left;	
-	font-weight: 500;
+	font-weight: 400;
 	margin: auto;
-	font-size: 1.05rem;	
+	font-size: 1.15rem;	
 }
 .menu a,
 .index a {
@@ -274,7 +300,8 @@ a {
 	font-size: 1.4em;
 	font-weight: 800;
 	margin: 2em 0 1em 0;
-	text-transform: uppercase; font-size: 1em;
+	text-transform: uppercase; font-size: 1.25em;
+	letter-spacing: 2px;
 	&:first-child {
 		margin-top: 4em;
 	}
@@ -289,18 +316,19 @@ a {
 }
 #home h2 {
 	font-size:3.5em;	
-	font-weight: 800;
+	font-weight: 700;
 }
 #home h3 {
-	font-size: 2em;	
-	font-weight: 400;
+	font-size: 2.25em;	
+	font-weight: 200;
+	letter-spacing: 1px;
 }
 #home h4,
 #contact h4 {
-	font-size: 1.25em;
-	color: $secondary-text;
+	font-size: 1.2em;
+	letter-spacing: 0.75px;			
 	line-height: 2em;
-	font-weight: 100;
+	font-weight: 200;	
 }
 #home *, 
 #about *,
@@ -308,16 +336,17 @@ a {
 	margin-bottom: 1em;
 }
 #about h4 {
-	font-size: 1.4rem;
-	line-height: 1.75em;	
-	font-weight: 300;
+	font-size: 1.5rem;
+	line-height: 2em;	
+	font-weight: 200;
 }
 #about h3 {
-	font-size: 1.3em;
+	font-size: 1.55em;
 	text-transform: uppercase;	
 	margin: 0em 0 0.5em 0;
 	font-weight: 800;
 	color: $primary-text;
+	letter-spacing: 2px;
 }
 .focus {
 	margin: 2.5em 0 !important;
@@ -403,19 +432,20 @@ a {
 }
 .content {
 	padding-bottom: 1.2em;
-	color: #90A4AE;
+	color: #aaa;
 	line-height: 1.75em;
-	font-size: 0.9rem; 
+	font-size: 1.15rem; 		
 }
+
 .content h4,
 .content p {
 	padding: 0 1.25em;
 }
 .content h4 {
-	margin: 1em 0 0.5em 0;
+	margin: 1em 0 0.35em 0;
 	color: #666;
 	font-weight: 400;
-	font-size: 1rem;
+	font-size: 1.25rem;	
 }
 .content img {
 	width: 100%;
@@ -459,11 +489,11 @@ a {
   }
 }
 .modal-close {
-  color: #999;
+  color: #777;
   line-height: 50px;
   font-size: 80%;
   position: absolute;
-  right: 10px;
+  right: 0;
   text-align: left;
   top: 10px;
   width: 70px;
@@ -474,7 +504,7 @@ a {
 }
 .modal-action {	
 	display: inline-block;
-	font-weight: 400;
+	font-weight: 300;
 	margin-bottom: 1em;
 	background: $modal-action ;
 	color: $primary-text;
@@ -489,16 +519,16 @@ a {
 }
 
 .modal-content h3 {
-	font-size: 1.1em;	
+	font-size: 1.25em;	
 	line-height: 2em;
-	font-weight: 500;
+	font-weight: 400;
 }
 .modal-content h4 {
-	color: #777;	
-	line-height: 2em;
+	color: #888;	
+	line-height: 1.75em;
 	margin-bottom: 1.5em;
-	font-weight: 300;
-	font-size: 0.95rem;
+	font-weight: 200;
+	font-size: 1.15rem;
 	&:nth-child(6) {
 		margin-bottom: 2.25em;
 	}
@@ -508,13 +538,14 @@ a {
 	margin: 1.25em 0;
 }
 .breadcrumb p {
-	font-size: 0.75em;
+	font-size: 0.85em;
 	font-weight: 300;		
 	background: #eee;
-	color: #888;	
+	color: #999;	
 	border-radius: 5px;
 	padding: 0.75em 1em;
 	margin-right: 0.5em;
+	letter-spacing: 1px;
 }
 #contact h2 {
 	font-size: 2.5em;

@@ -1,26 +1,47 @@
+@font-face {
+  src: url("fonts/CalibreTest-Bold.woff");
+  font-family: 'Calibre';
+  font-weight: 700; }
+@font-face {
+  src: url("fonts/CalibreTest-Medium.woff");
+  font-family: 'Calibre';
+  font-weight: 400; }
+@font-face {
+  src: url("fonts/CalibreTest-Regular.woff");
+  font-family: 'Calibre';
+  font-weight: 300; }
+@font-face {
+  src: url("fonts/CalibreTest-Light.woff");
+  font-family: 'Calibre';
+  font-weight: 100; }
+@font-face {
+  src: url("fonts/CalibreTest-Semibold.woff");
+  font-family: 'Calibre';
+  font-weight: 500; }
 .top-bg {
   width: 100%; }
 
 body {
-  font-family: hero-new, sans-serif; }
+  font-family: 'Calibre', sans-serif; }
 
 .project-info p {
   margin-bottom: 0.75em !important;
   padding-bottom: 0.75em;
-  font-size: 0.8rem !important;
-  border-bottom: 1px solid #444; }
+  font-size: 1rem !important;
+  border-bottom: 1px solid #444;
+  font-weight: 200; }
   .project-info p:first-child {
-    font-family: Playfair Display;
-    font-weight: 700;
+    font-weight: 600;
     border-bottom: none;
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    margin-bottom: 0 !important; }
 
 .ct {
   width: 80%;
   padding: 3em 0;
   margin: auto;
   color: #fff;
-  font-family: hero-new, sans-serif; }
+  font-family: 'Calibre', sans-serif; }
   .ct .flex {
     display: flex;
     align-items: center; }
@@ -28,21 +49,26 @@ body {
       width: 34%;
       padding-left: 1em; }
   .ct h1, .ct h2, .ct h3, .ct h4 {
-    font-family: Playfair Display; }
+    font-weight: 700; }
   .ct h1 {
     font-size: 2.75em;
     margin-bottom: 0.25em; }
   .ct h2 {
-    padding-top: 1.5em;
+    padding-top: 1.75em;
     font-size: 1.45em;
-    margin-bottom: 0.75em; }
+    letter-spacing: 0.5px;
+    margin-bottom: 0.75em;
+    font-weight: 600;
+    font-weight: 500; }
   .ct h3 {
     font-size: 1.25em;
+    letter-spacing: 0.5px;
     margin: 1.25em 0;
-    padding-top: 1em; }
+    padding-top: 1em;
+    font-weight: 500; }
   .ct p {
     color: #eee;
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     font-weight: 200;
     line-height: 2em;
     margin-bottom: 2em; }
@@ -50,10 +76,10 @@ body {
     list-style-type: circle;
     margin-left: 1em; }
   .ct li {
+    font-size: 1.2em;
     margin-bottom: 1em;
-    font-size: 1.1em;
     line-height: 2em;
-    font-weight: 200; }
+    font-weight: 300; }
   .ct .emp {
     border-left: 2px solid #FFF176;
     color: #FFF176;
@@ -62,33 +88,35 @@ body {
     padding-left: 1em;
     font-style: italic;
     margin-bottom: 2em;
-    font-size: 1.15em;
-    font-weight: 400; }
+    font-size: 1.35em;
+    font-weight: 300; }
   .ct img {
     width: 100%;
     margin-bottom: 2em;
     border-radius: 4px;
-    box-shadow: 3px 3px 7px 0 #222; }
+    box-shadow: 3px 3px 7px 0 #000; }
   .ct .card-dark {
     width: 100%;
-    font-size: 0.85em;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 3em; }
     .ct .card-dark .card-content {
-      background: #333;
+      background: #222;
       margin-bottom: 1em;
       padding: 1.5em 2em 0.5em 2em;
       margin-right: 1.5em;
       display: flex;
       align-items: center;
       justify-content: left;
-      box-shadow: 2px 2px 7px 0 #222;
+      box-shadow: 2px 2px 7px 0 #000;
       border-radius: 5px; }
     .ct .card-dark p {
       margin-bottom: 1em !important;
       font-weight: 500;
-      font-size: 1.1em; }
+      font-size: 1.15em; }
+    .ct .card-dark li {
+      font-size: 1em;
+      letter-spacing: 0.25px; }
   .ct .slider ul {
     margin-left: 0 !important; }
   .ct .bullet {
