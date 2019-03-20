@@ -330,6 +330,9 @@ a {
 	line-height: 2em;
 	font-weight: 200;	
 }
+#home h4 {
+	color: #999;
+}
 #home *, 
 #about *,
 #contact * {
@@ -339,6 +342,7 @@ a {
 	font-size: 1.5rem;
 	line-height: 2em;	
 	font-weight: 200;
+	letter-spacing: 0.5px;
 }
 #about h3 {
 	font-size: 1.55em;
@@ -346,7 +350,7 @@ a {
 	margin: 0em 0 0.5em 0;
 	font-weight: 800;
 	color: $primary-text;
-	letter-spacing: 2px;
+	letter-spacing: 3px;
 }
 .focus {
 	margin: 2.5em 0 !important;
@@ -375,7 +379,7 @@ a {
 .card-3 .content {
   background-color: $card-bg !important;
   border-radius: 3px;
-  font-weight: 300;
+  font-weight: 200; 
 }
 .card-3:before, .card-3:after {
   border-radius: 2px;
@@ -431,10 +435,10 @@ a {
           transform: translate(0, 10px) scale(0.9);
 }
 .content {
-	padding-bottom: 1.2em;
-	color: #aaa;
+	padding-bottom: 1.75em;
+	color: #888;
 	line-height: 1.75em;
-	font-size: 1.15rem; 		
+	font-size: 1.1rem; 		
 }
 
 .content h4,
@@ -442,18 +446,28 @@ a {
 	padding: 0 1.25em;
 }
 .content h4 {
-	margin: 1em 0 0.35em 0;
-	color: #666;
-	font-weight: 400;
+	margin: 1em 0 0.75em 0;
+	color: #444;
+	font-weight: 500;
 	font-size: 1.25rem;	
 }
 .content img {
 	width: 100%;
 }
+.content span {
+	background-color: #eee;
+	padding: 0.65em;
+	margin: 1em 0.5em 0 0;
+	border-radius: 4px;
+	font-weight: 300;
+	color: #999;
+	font-size: 0.9em;
+	// display: inline-block;
+}
 //Modal CSS
 .modal-window {
   position: fixed;
-  background-color: rgba(34, 34, 34, 0.9);
+  background-color: rgba(10, 10, 10, 0.95);
   top: 0;
   right: 0;
   bottom: 0;
@@ -484,7 +498,7 @@ a {
   }
   h1 {
     font-size: 1.25em;
-    font-weight: 700;
+    font-weight: 500;
     color: #333333;
   }
 }
@@ -505,6 +519,7 @@ a {
 .modal-action {	
 	display: inline-block;
 	font-weight: 300;
+	letter-spacing: 1px;
 	margin-bottom: 1em;
 	background: $modal-action ;
 	color: $primary-text;
@@ -512,10 +527,17 @@ a {
 	padding: 1em;
 	border-radius: 2px;
 }
+.disabled {
+	display: inline-block;
+	padding: 1em;
+	margin-bottom: 1em;
+	background: #ddd !important;
+	color: #999;
+}
 .modal-action:hover {
 	background: #388E3C;
 	transition: 0.2s ease;
-	letter-spacing: 0.5px;
+	letter-spacing: 1.5px;
 }
 
 .modal-content h3 {
