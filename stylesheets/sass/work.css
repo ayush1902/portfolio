@@ -27,14 +27,13 @@ body {
 .project-info p {
   margin-bottom: 0.75em !important;
   padding-bottom: 0.75em;
-  font-size: 1rem !important;
+  font-size: 0.9rem !important;
   border-bottom: 1px solid #444;
   font-weight: 200; }
-  .project-info p:first-child {
-    font-weight: 600;
-    border-bottom: none;
-    padding-bottom: 0;
-    margin-bottom: 0 !important; }
+.project-info h3 {
+  font-size: 0.9rem !important;
+  margin: 0.5em 0 0.25em 0 !important;
+  padding: 0 !important; }
 
 .ct {
   width: 80%;
