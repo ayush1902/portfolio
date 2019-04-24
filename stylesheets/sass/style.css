@@ -271,8 +271,7 @@ a {
   font-size: 1.4em;
   font-weight: 800;
   margin: 2em 0 1em 0;
-  font-size: 1.25em;
-  letter-spacing: 2px; }
+  font-size: 1.25em; }
   #work h2:first-child {
     margin-top: 4em; }
 
@@ -285,13 +284,12 @@ a {
   justify-content: center; }
 
 #home h2 {
-  font-size: 3.5em;
+  font-size: 3.25em;
   font-weight: 700; }
 
 #home h3 {
-  font-size: 2.25em;
-  font-weight: 200;
-  letter-spacing: 1px; }
+  font-size: 2.5em;
+  font-weight: 100; }
 
 #home h4,
 #contact h4 {
@@ -318,8 +316,7 @@ a {
   font-size: 1.55em;
   margin: 0em 0 0.5em 0;
   font-weight: 800;
-  color: #fff;
-  letter-spacing: 3px; }
+  color: #fff; }
 
 .focus {
   margin: 2.5em 0 !important; }
@@ -416,8 +413,7 @@ a {
   margin: 1em 0 0.75em 0;
   color: #fff;
   font-weight: 400;
-  font-size: 1.25rem;
-  letter-spacing: 0.03em; }
+  font-size: 1.25rem; }
 
 .content img {
   width: 100%;
@@ -428,8 +424,9 @@ a {
   padding: 0.65em;
   margin: 1em 0.5em 0 0;
   border-radius: 4px;
-  font-weight: 300;
-  color: #aaa;
+  font-weight: 200;
+  letter-spacing: 1px;
+  color: #999;
   font-size: 0.9em; }
 
 .modal-window {
