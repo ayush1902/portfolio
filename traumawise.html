@@ -168,11 +168,23 @@
             	</div>
             	<h2 id="three">3. Insights to Ideas</h2>
             	<p>To address the varying degrees of need from our users at the same time being wary of the fact that a possible solution for one user could be a major distractions for another, we structured most of our design features in the heart of the Settings view of the application. This would allow each user to customize everything - from the frequency and and type of reminders/cues, goals, and breaks - according to their needs.</p>
-            	<img src="images/ideation-518.png" alt="">
-            	<div class="flex" style="margin: 2em 0 1em 0;">
-            		<p> The car infotainment system would work in tandem with the smartphone or wearable application - the smartphone application would keep a track of the sleeping habits, heart rate and based on that data it would seamlessly synchronize to the dashboard interface and alert the user if any of the above mentioned executive function levels are below the optimal. We tried to reduce the cognitive load as the driver has to interact with a singular interface in a particular context, thereby reducing the need to interact with other mobile/wearable interfaces.</p>
-            		<img src="images/sketch-2.jpg" alt="">
-            	</div>            	
+            	<div class="slider">
+	                <ul id="idea-gallery" class="gallery list-unstyled cS-hidden">
+	                    <li data-thumb="images/thumb/idea-1.png"> 
+	                        <img src="images/idea-1.png" />
+	                         </li>
+	                    <li data-thumb="images/thumb/idea-2.png"> 
+	                        <img src="images/idea-2.png" />
+	                         </li>
+	                    <li data-thumb="images/thumb/idea-3.png"> 
+	                        <img src="images/idea-3.png" />
+	                     </li>                    
+	                     <li data-thumb="images/thumb/idea-4.png"> 
+	                        <img src="images/idea-4.png" />
+	                     </li>                    
+	                </ul>
+            	</div>
+            	<p> The car infotainment system would work in tandem with the smartphone or wearable application - the smartphone application would keep a track of the sleeping habits, heart rate and based on that data it would seamlessly synchronize to the dashboard interface and alert the user if any of the above mentioned executive function levels are below the optimal. We tried to reduce the cognitive load as the driver has to interact with a singular interface in a particular context, thereby reducing the need to interact with other mobile/wearable interfaces.</p>
             	<h2 id="four">4. Protyping</h2>
             	<h3><span class="underline">4.1 Paper Prototype</span></h3>
             	<p>After having some initial ideas about what goes in the application, we deicided to bring that to life by making a paper prototype, coupled with a scenario. The scenario was predominantly fixed to give context to non-TBI participants and also to get an initial hint of whether the users are able to perform atleast one task that they know beforehand. The scenario was as follows:</p>
@@ -270,7 +282,7 @@
             	<p>Given the time frame of the entire project was only a quarter, the user research could've been more extensive with more time. Moreover, the specificity of the target audience made it harder, as our only means to approach TBI survivors was through Google forms and spreading the word across the campus via social media.</p>
             	<h3><span class="underline">6.3 What's next?</span></h3>
             	<p>From the moment the application idea as conceived , we always had the future prospect on our mind. One of the ideas was to link user's wearable device with our application, that mirrors the functionality from the mobile devices, but instead helps provide much more robust data about user vitals, and gives another medium to remind users - i.e haptics. In addition, after talking with therapists we discovered that having two separate login screens; one for user and one for their therapist, allowing therapist to better track patient progress and goals. </p>
-            	<img src="images/concept.png" alt="">
+            	
 			</div>					
 		</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -322,6 +334,17 @@
                 speed:500,                
                 onSliderLoad: function() {
                     $('#hifi-gallery').removeClass('cS-hidden');
+                }  
+            });
+            $('#idea-gallery').lightSlider({                
+                gallery: true,
+                thumbItem: 4,
+                thumbMargin: 50,          
+                item:1,             
+                slideMargin: 0,                              
+                speed:500,                
+                onSliderLoad: function() {
+                    $('#idea-gallery').removeClass('cS-hidden');
                 }  
             });
             $('#medfi-gallery').lightSlider({                
