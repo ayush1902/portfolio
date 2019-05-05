@@ -247,7 +247,7 @@ a {
   text-align: left;
   font-weight: 400;
   margin: auto;
-  font-size: 1.15rem; }
+  font-size: 1.1rem; }
 
 .menu a,
 .index a {
@@ -307,7 +307,7 @@ a {
   margin-bottom: 1em; }
 
 #about h4 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 2em;
   font-weight: 200;
   letter-spacing: 0.5px; }
@@ -412,8 +412,9 @@ a {
 .content h4 {
   margin: 1em 0 0.75em 0;
   color: #fff;
-  font-weight: 400;
-  font-size: 1.25rem; }
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  font-size: 1.15rem; }
 
 .content img {
   width: 100%;
@@ -421,12 +422,13 @@ a {
 
 .content span {
   background-color: #333;
-  padding: 0.65em;
-  margin: 1em 0.5em 0 0;
+  padding: 0.75em;
+  margin: 1em 0.75em 0 0;
   border-radius: 4px;
-  font-weight: 200;
-  color: #999;
-  font-size: 0.9em; }
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: #aaa;
+  font-size: 0.75em; }
 
 .modal-window {
   position: fixed;
@@ -506,8 +508,8 @@ a {
   color: #888;
   line-height: 1.75em;
   margin-bottom: 1.5em;
-  font-weight: 200;
-  font-size: 1.15rem; }
+  font-weight: 300;
+  font-size: 1.1rem; }
   .modal-content h4:nth-child(6) {
     margin-bottom: 2.25em; }
 

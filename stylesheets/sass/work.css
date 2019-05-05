@@ -70,7 +70,8 @@ body {
     font-size: 1.2rem;
     font-weight: 200;
     line-height: 2em;
-    margin-bottom: 2em; }
+    margin-bottom: 2em;
+    letter-spacing: 0.5px; }
   .ct ul {
     list-style-type: circle;
     margin-left: 1em; }
