@@ -1,99 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-	<meta charset="UTF-8">
-	<title>Work :: TraumaWise</title>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-139042266-1');
-	</script>
-	<link rel="stylesheet" href="stylesheets/reset.css">
-	<link rel="stylesheet" href="stylesheets/normalize.css">
-	<link rel="stylesheet" href="stylesheets/sass/work.css">
-	<link rel="stylesheet" href="stylesheets/sass/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
-	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-	<link rel="stylesheet" href="stylesheets/lightslider.css">
+  <meta charset="UTF-8">
+  <title>Traumawise :: Ayush Sharma</title>
+  <meta name="viewport" content="width=700"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css'>
+  <link rel="stylesheet" href="stylesheets/reset.css">
+  <link rel="stylesheet" href="stylesheets/sass/style.css">
+  <link rel="stylesheet" href="stylesheets/lightslider.css">
 </head>
 <body>
-	<div class="container">
-		<div class="hot-nav">
-			<div id="side-nav" class="side-nav">			
+<div class="work-container">
+	<div class="hot-nav">
+			<!-- <div id="side-nav" class="side-nav">			
 			    <ul>
-			    	<li><a href="#one" onclick="toggle_nav();">Problem</a></li>
-			    	<li><a href="#two" onclick="toggle_nav();">Research</a></li>
-			    	<li><a href="#three" onclick="toggle_nav();">Ideation</a></li>
-			    	<li><a href="#four" onclick="toggle_nav();">Prototyping</a></li>
+			    	<li><a href="#one" onclick="toggle_nav();">Product</a></li>
+			    	<li><a href="#two" onclick="toggle_nav();">Methods</a></li>
+			    	<li><a href="#three" onclick="toggle_nav();">Study</a></li>
+			    	<li><a href="#four" onclick="toggle_nav();">Impact</a></li>
 			    </ul>
-			</div>
+			</div> -->
 			<p><a id="back" href="index.html?index=work" style="font-size: 0.75rem;">&larr; BACK TO WORK</a></p>
 		</div>
-	  	<div class="nav">
-	      <div id="toggle-nav" onclick="toggle_nav(this)">
-	        <div class="animated-icon">
-	          <div class="bar-1"></div>
-	          <div class="bar-2"></div>
-	          <div class="bar-3"></div>
-	        </div>
-	      </div>
-	    </div>
-		<div class="left-nav">
-			<div class="logo">
-				<p>ayush<span style="color:#666;">sharma</span></p>				
-			</div>
-			<div class="nav-items">
-				<div class="index">
-					<a href="#one" class="highlighted hover">Problem</a>
-					<a href="#two" class="hover">Research</a>
-					<a href="#three" class="hover">Ideation</a>
-					<a href="#four" class="hover">Prototyping</a>
-				</div>
-			</div>
-		</div>
-		<div class="main">
-		<img class="top-bg" src="images/bg-traumawise.png" alt="">
-			<div class="ct">	
-				
 
-				<div class="flex">
+	<div class="fixed-nav">
+		<nav class="toc">
+		<p class="back-link"><a id="back" href="index.html?index=work"><i class="fas fa-arrow-left"></i> Back to work</a></p>
+		<br>
+		<ul>
+			<li><a href="#intro">Problem</a></li>
+			<li>
+				<a href="#approach">Approach</a>
+				<ul>
+					<li><a href="#approach-1">Surveys</a></li>
+					<li><a href="#approach-2">Interviews</a></li>
+					<li><a href="#approach-3">Competitive Analysis</a></li>
+					<li><a href="#approach-4">Insight Summary</a></li>					
+				</ul>
+			</li>
+			<li>
+				<a href="#ideation">Ideation</a>
+			      <ul>
+			      	<li><a href="#opportunity">Design Opportunity</a></li>
+			        <li><a href="#personas">Personas</a></li>
+			        <li><a href="#sketches">Early Sketches</a></li>			      
+			        <li><a href="#prototypes">Prototyping</a></li>
+			      </ul>
+			</li>
+			<li>
+				<a href="#evolving">Evolving</a>
+			      <ul>
+			      	<li><a href="#refining">Refining</a></li>			        
+			        <li><a href="#reflections">Reflections</a></li>			      			        
+			      </ul>
+			</li>
+			
+		</ul>
+	  <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+	    <path stroke="#444" stroke-width="2" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+	  </svg>
+	</nav>
+	</div>
+	<article class="contents">
+		<img class="cover" src="images/518-bg.png" alt="">
+		<section id="intro">	 
+	    <div class="flex">
 					<div style="flex-basis: 70%;">
-						<h1>Traumawise</h1>
-						<p style="color: #999; margin-bottom: 1em; font-size: 1em;">User-Centered Design</p>	
-						<a href="https://docs.google.com/presentation/d/1J7fwxGC3divAdGWOIlPwt9-fmBFeMSjTAmXv3Ct_fYU/edit?usp=sharing" target="_blank" class="btn fill">Design Specification</a>
+						<h1>In-car Experience Design</h1>
+						<h5>University of Washington</h5>						
+						<br>
+						<a href="https://docs.google.com/presentation/d/1J7fwxGC3divAdGWOIlPwt9-fmBFeMSjTAmXv3Ct_fYU/edit?usp=sharing" target="_blank" class="btn">Design Specification<i class="fas fa-arrow-right"></i></a>
+
 					</div>			
 					<div style="flex-basis: 30%;" class="project-info">								
-						<h3>Role</h3>
-						<p>User Research, Interaction Design & Prototyping, Usablity Testing</p>
+						<h3>Domain</h3>
+						<p>User Research, Interaction Design and Prototyping, Usability Testing</p>
 						<h3>Type</h3>
-						<p>Group Project: Team of 4</p>
+						<p>Graduate Coursework [Group]</p>
 						<h3>Timeline</h3>						
-						<p>Sep, 2018 - Dec, 2018 (3 Months)</p>
+						<p>Sept, 2018 - Dec, 2018 [3 Months]</p>
+
 					</div>
 				</div>
-								
-				<h2 id="one" style="margin-top: 1.5em;">Problem</h2>
-				<p>The current state of car interfaces is increasingly digital - big bold touch screens, voice commands, and seamless media transfer from phone to the car. Despite these advancements, there have been few that address user's executive functioning. Returning to driving after a traumatic brain injury (TBI) can be intimidating - especially when every interaction is digital. For this project we wanted to find out:</p>
-					<ul>
-						<li>What were the main issues faced by TBI survivors while driving</li>
-						<li>What kind of cues would they be comfortable recieving while driving</li>
-						<li>How big of a role do digital interfaces play in their driving/day-to-day experience</li>
-					</ul>
-					<br>
-					<br>
-				<p class="emp">"How can we support traumatic brain injury survivors as they return to driving?"</p>
-				<img src="images/process.png" alt="">
-				<p>Throughout the entire process, I found myself shifting gears - from conclusive observations to highly abstract thinking, and then back again into the nuts and bolts of the prototype. With every cycle of diverging and converging, I found myself a little but closer to the solution that is appropriate for the people I am designing for.</p>
-				<h2 id="two">2. Our Approach</h2>
-				<p>Before proceeding, it was crucial to know who we are designing for. Our primary stakeholders were traumatic brain injury survivors who are returning to driving. Thinking through, we made an assumption - making sure to validate it from the initital insights - that our experience would affect more than just TBI survivors. Therefore, our secondary stakeholders were anyone involved in the user's life in any form - from Occupational Therapists, Speech-Language Pathologists, to their friends, family members, or caregivers.
-				</p>
-				<img src="images/timeline.png" alt="">
-				<h3><span class="underline">2.1 Surveys</span></h3>
-				<p>We created a survey with 32 questions targeting individuals with TBIs who are currently driving. The survey included questions about a participant’s demographics, medical history, challenges with driving, driving habits, and their suggestions of what could improve their driving experience. There was a combination of short answer responses, long answer responses, and selection questions.</p>
-				<div class="slider">
+	    <h2>1. Problem</h2>
+	    <p>
+	      The current state of car interfaces is increasingly digital - big bold touch screens, voice commands, and seamless media transfer from phone to the car. Despite these advancements, there have been few that address user's executive functioning. Returning to driving after a traumatic brain injury (TBI) can be intimidating - especially when every interaction is digital. For this project our team wanted to find out:
+	    </p>
+	    <ul>
+	    	<li>What were the main issues faced by TBI survivors while driving</li>
+	    	<li>What kind of cues would they be comfortable recieving while driving</li>
+	    	<li>How big of a role do digital interfaces play in their driving/day-to-day experience</li>
+	    </ul>
+		<blockquote>
+			<p>"How can we support traumatic brain injury survivors as they return to driving?"</p>
+		</blockquote>
+		<p>Throughout the entire process, we found ourselves shifting gears - from conclusive observations to highly abstract thinking, and then back again into the nuts and bolts of the prototype. With every cycle of diverging and converging steps, we found ourselves a little but closer to the solution that fit the people we were designing for.</p>
+	</section>
+
+	<section>
+		<div id="approach">
+			<h2>2. Approach</h2>
+			<p>
+				Before proceeding, it was crucial to know who we were designing for; our primary stakeholders were traumatic brain injury survivors who are returning to driving. Thinking through, we made an assumption - making sure to validate it from the initital insights - that our experience was likely to affect more than just TBI survivors. Therefore, our secondary stakeholders were anyone involved in the user's life in any form - from Occupational Therapists, Speech-Language Pathologists, to their friends, family members, or caregivers.
+			</p>
+	      	<img src="images/timeline.png" alt="">
+	    </div>
+
+		<div id="approach-1">
+			<h3>2.1 Surveys</h3>
+			<p>We created a survey with 32 questions targeting individuals with TBIs who are currently driving. The survey included questions about a participant’s demographics, medical history, challenges with driving, driving habits, and their suggestions of what could improve their driving experience. There was a combination of short answer responses, long answer responses, and selection questions.</p>
+
+			<div class="slider">
 	                <ul id="research-gallery" class="gallery list-unstyled cS-hidden">
 	                    <li data-thumb="images/thumb/survey-1.png"> 
 	                        <img src="images/survey-1.png" />
@@ -112,62 +130,54 @@
 	                     </li>                    	                     
 	                </ul>
             	</div>
-				<h3><span class="underline">2.2 Interviews</span></h3>
-				<p style="margin-bottom: 1em !important;">The next step was following up with people. We were able to interview nine TBI survivors, understanding the intricacies of their injury and its repercussions, asking about their personal inventory when they drive, their pain points, and their initial impressions of our design approach. In addition, we also interviewed some of the professionals in the field such as a Driving Rehabilitation Specialist, Occupational Therapist, and a Speech Language Pathologist to further gain insight into the details of a brain injury and its effect on cognitive processes. </p>				
-				<a href="https://docs.google.com/document/d/1-zkbWCCj9UWn9ACeC8BUpAa40faWekmiD4Xq1EgJowI/edit?usp=sharing" target="_blank" class="btn fill" style="margin-bottom: 2.5em;">Interview Notes</a>
-				<p class="emp" style="margin-bottom: 2.5em;">"You should avoid imposing anything and curating solutions based on user suggestions as a suggestion from one use could potentially become a distraction for another."
-					<span style="display: block; font-size: 0.9rem; color: #fff; font-style: normal;">Speech Language Pathologist at UW</span></p>
-
-				<h3><span class="underline">2.3 Competitive Product Analysis</span></h3>
-				<p>We looked up existing tools or programs that addressed driving safety for individuals with cognitive impairments.</p>
-				<img src="images/cpa.png" alt="">
-				<h3><span class="underline">2.4 Streamlining the Insights</span></h3>
-				<ul>
-					<li><span style="font-weight: 500;">Anxiety</span> - This is a recurring issue with TBI survivors. However, they are not necessarily anxious about their skills as a driver. Some cannot articulate their source of their anxiety - at times it was a chain reaction set off by one thing. Many cited memory and distractions as causes and often, anxiety led to fatigue or frustration.</li>
-					<li><span style="font-weight: 500;">Memory</span> - While their ability to drive is unaffected, some experienced forgetfulness as related to driving specifically (e.g. forgetting to check their blind spot or for traffic before making a right turn at a stop light); others forget generic tasks (e.g. an intended destination or purpose for being there)</li>
-					<li><span style="font-weight: 500;">Distractability</span> - For TBI survivors, anything can become a distraction, inside or outside of the car, moving or stationary. As a result, their reasons for distractions are highly individualized, at times even the things meant to reduce distraction.</li>
-					<li style="margin-bottom: 2.5em;"><span style="font-weight: 500;">Independence</span> - When asked why driving was important, “independence” was repeatedly a top hit. This not only confirmed the second part of our design rationale but also helped us understand the conflict TBI survivors are experiencing as they re-enter their lives.</li>
-				</ul>
-				
-				<h3><span class="underline">2.5 Design Opportunities</span></h3>
-				<p>Based on our research findings, we found a recurring theme that popped out from the interviews; i.e. individualized. Instead of giving users a set of options, it was essential to give them the freedom to customize according to their comfort. This helped us further scope down the original design question to:</p>
-				<p class="emp">"How can we support traumatic brain injury survivors by reducing their cognitive load as they return to driving?"</p>
-				<div class="card-dark">
-					<div class="card-content" style="flex-basis: 25%;">
-						<div><p>Address Executive Functions</p>
-						<ul>
-							<li>Attention</li>
-							<li>Planning</li>
-							<li>Organization</li>
-							<li>Prioritization</li>
-						</ul>
-						</div>
-					</div>
-					<div class="card-content"  style="flex-basis: 25%;">
-						<div><p>Audio Visual Cues</p>
-						<ul>
-							<li>Navigation and Driving</li>
-							<li>Task Completion</li>
-							<li>Breaks between sessions</li>
-							<li>Vital Checks</li>
-						</ul>
-						</div>
-					</div>
-					<div class="card-content"  style="flex-basis: 25%;">
-						<div><p>Therapy Plan Extension</p>
-						<ul>
-							<li>Tracking user activity</li>
-							<li>Fading Cues</li>
-							<li>Setting Goals</li>
-							<li>Postitive Reinforcement</li>
-						</ul>
-						</div>
-					</div>
-				</div>
-				<img src="images/uflow1.png" alt="">
-				<h3><span class="underline">2.6 Personas</h3>
-				<br>
-				<div class="slider">
+		</div>
+		
+		<div id="approach-2">
+			<h3>2.2 Interviews</h3>
+			<p>
+				The next step was following up with people. We were able to interview nine TBI survivors, understanding the intricacies of their injury and its repercussions, asking about their personal inventory when they drive, their pain points, and their initial impressions of our design approach. In addition, we also interviewed some of the professionals in the field such as a Driving Rehabilitation Specialist, Occupational Therapist, and a Speech Language Pathologist to further gain insight into the details of a brain injury and its effect on cognitive processes.
+			</p>
+			<a href="https://docs.google.com/document/d/1-zkbWCCj9UWn9ACeC8BUpAa40faWekmiD4Xq1EgJowI/edit?usp=sharing" target="_blank" class="btn">View Interview notes<i class="fas fa-arrow-right"></i></a>
+			<br>
+			<blockquote>
+				<p>"You should avoid imposing anything and curating solutions based on user suggestions as a suggestion from one use could potentially become a distraction for another."</p>
+			</blockquote>					
+		</div>
+		<div id="approach-3">
+			<h3>2.3 Competitive Analyis</h3>
+			<p>
+				We looked up existing tools or programs that addressed driving safety for individuals with cognitive impairments.
+			</p>
+			<img src="images/cpa.png" alt="">
+		</div>
+		<div id="approach-4">
+			<h3>2.4 Insight summary</h3>
+			<ul>
+				<li>Anxiety - This is a recurring issue with TBI survivors. However, they are not necessarily anxious about their skills as a driver. Some cannot articulate their source of their anxiety - at times it was a chain reaction set off by one thing. Many cited memory and distractions as causes and often, anxiety led to fatigue or frustration.</li>				
+				<li>Memory - While their ability to drive is unaffected, some experienced forgetfulness as related to driving specifically (e.g. forgetting to check their blind spot or for traffic before making a right turn at a stop light); others forget generic tasks (e.g. an intended destination or purpose for being there)</li>
+				<li>Distractability - For TBI survivors, anything can become a distraction, inside or outside of the car, moving or stationary. As a result, their reasons for distractions are highly individualized, at times even the things meant to reduce distraction.</li>
+				<li>Independence - When asked why driving was important, “independence” was repeatedly a top hit. This not only confirmed the second part of our design rationale but also helped us understand the conflict TBI survivors are experiencing as they re-enter their lives.</li>
+			</ul>		
+		</div>
+		
+	</section>
+	<section>
+		<div id="ideation">
+			<h2>3. Ideation</h2>
+			<p>Once we narrowed down the insights and found out where the users are struggling the most, it was important to find where we, as designers, can intervene, and help remediate that possible bottleneck.</p>
+		</div>
+		<div id="opportunity">
+			<h3>3.1 Design Opportunity</h3>
+				<p>Based on our research findings, we found a recurring theme that popped out from the interviews; i.e. individualization. Instead of giving users a set of options, it was essential to give them the freedom to customize according to their comfort. This helped us further scope down the original design question to:</p>
+			<blockquote>
+				<p>"How can we support traumatic brain injury survivors by reducing their cognitive load as they return to driving?"</p>
+			</blockquote>
+			<img src="images/uflow1.png" alt="">
+		</div>
+		<div id="personas">
+			<h2>3.2 Personas</h2>
+			<p>I personally feel that personas are more than just stock images; they reflect a group of users that and assigning a single image on an entire demographic is a little over the top. Therefore, we decidedn to use illustrations rather than real images, so that you focus not on the person, but on the group needs and pain points.</p>
+			<div class="slider">
 	                <ul id="persona-gallery" class="gallery list-unstyled cS-hidden">
 	                    <li data-thumb="images/thumb/persona-1.png"> 
 	                        <img src="images/persona-1.png" />
@@ -180,12 +190,13 @@
 	                     </li>                    
 	                </ul>
             	</div>
-            	<h2 id="three">3. Insights to Ideas</h2>
-            	<p>To address the varying degrees of need from our users at the same time being wary of the fact that a possible solution for one user could be a major distractions for another, we structured most of our design features in the heart of the Settings view of the application. This would allow each user to customize everything - from the frequency and and type of reminders/cues, goals, and breaks - according to their needs.</p>
-            	<div class="slider">
-	                <ul id="idea-gallery" class="gallery list-unstyled cS-hidden">
-	                    
-	                    
+		</div>
+		<div id="sketches">
+			<h2>3.3 Insights to Ideas</h2>
+			<p>To address the varying degrees of need from our users at the same time being wary of the fact that a possible solution for one user could be a major distractions for another, we structured most of our design features in the heart of the Settings view of the application. This would allow each user to customize everything - from the frequency and and type of reminders/cues, goals, and breaks - according to their needs.</p>
+			<!-- <img src="images/idea-2.png" alt=""> -->
+			<div class="slider">
+	                <ul id="idea-gallery" class="gallery list-unstyled cS-hidden">	                                
 	                    <li data-thumb="images/thumb/idea-2.png"> 
 	                        <img src="images/idea-2.png" />
 	                         </li>
@@ -202,18 +213,16 @@
 	                        <img src="images/idea-4.png" />
 	                     </li>                    
 	                </ul>
-            	</div>
-            	<p> The car infotainment system would work in tandem with the smartphone or wearable application - the smartphone application would keep a track of the sleeping habits, heart rate and based on that data it would seamlessly synchronize to the dashboard interface and alert the user if any of the above mentioned executive function levels are below the optimal. We tried to reduce the cognitive load as the driver has to interact with a singular interface in a particular context, thereby reducing the need to interact with other mobile/wearable interfaces.</p>
-            	<h2 id="four">4. Protyping</h2>
-            	<h3><span class="underline">4.1 Paper Prototype</span></h3>
-            	<p>After having some initial ideas about what goes in the application, we deicided to bring that to life by making a paper prototype, coupled with a scenario. The scenario was predominantly fixed to give context to non-TBI participants and also to get an initial hint of whether the users are able to perform atleast one task that they know beforehand. The scenario was as follows:</p>
-            	<div class="card-dark">
-            		<div class="card-content">
-            			<div><span style="display: block; margin-bottom: 0.75em; font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">Scenario</span>
-            			<li style="list-style-type: none;">"You’ve recently recovered from a traumatic brain injury. You have been actively working with a therapist so as to return to driving. Based on their evaluation, they have made some recommendations for you such as learning information best by listening to prompts, avoiding any strenuous activity for no longer than 30 minutes, practising driving by completing atleast 2 errands a day, and working on your breathing exercises."</li></div>
-            		</div>
-            	</div>
-            	<div class="slider">
+	            </div>
+			<p>The car infotainment system would work in tandem with the smartphone or wearable application - the smartphone application would keep a track of the sleeping habits, heart rate and based on that data it would seamlessly synchronize to the dashboard interface and alert the user if any of the above mentioned executive function levels are below the optimal. We tried to reduce the cognitive load as the driver has to interact with a singular interface in a particular context, thereby reducing the need to interact with other mobile/wearable interfaces.</p>
+		</div>
+		<div id="prototypes">
+			<h2>3.4 Prototyping</h2>
+			<h3>3.4.1 Paper Prototyping</h3>
+			<p>After having some initial ideas about what goes in the application, we deicided to bring that to life by making a paper prototype, coupled with a scenario. The scenario was predominantly fixed to give context to non-TBI participants and also to get an initial hint of whether the users are able to perform atleast one task that they know beforehand. The scenario was as follows:</p>			
+			<p class="card-dark"><span style="font-family: Ubuntu Mono; monospace; color: #FFF59D;">Scenario</span> <br>
+			"You’ve recently recovered from a traumatic brain injury. You have been actively working with a therapist so as to return to driving. Based on their evaluation, they have made some recommendations for you such as learning information best by listening to prompts, avoiding any strenuous activity for no longer than 30 minutes, practising driving by completing atleast 2 errands a day, and working on your breathing exercises."</p>
+			<div class="slider">
 	                <ul id="paper-gallery" class="gallery list-unstyled cS-hidden">	                    
 	                     <li data-thumb="images/thumb/paper-4.png"> 
 	                    	<img src="images/paper-4.png" />
@@ -228,22 +237,11 @@
 	                        <img src="images/paper-1.png" />
 	                     </li>	                     
 	                </ul>
-            	</div>
-				<h3><span class="underline">4.2 Usability Testing</span></h3>
-				<p>With the constraint of time along with having such a niche target audience, the usability testing had a sample size of only 5 participants. However, the feedback garnered from the testing was very insightful and helped us look at the project from a totally different perspective:</p>
-				<p class="emp">1. "How intrusive are the cues? Can I set that?" </p>
-				<p>Only two out of all the participants pointed out that there was no option to toggle the frequency of visual/audio cues inside the application settings, which was a big feedback as the application was meant to customize every user settings according to their needs.</p>
-				<p class="emp">2. "Do I have to enter each and every goal?"</p>
-				<p>Every participant pointed out that typing each and every goal recommended by their therapist was taxing and suggested whether there was an option to ease that.</p>
-				<p class="emp">3. "There is a lot going on in the settings. So much text!"</p>
-				<p>While the settings did put the user in command for most of the tasks, the text along with the description for those settings overwhlemed the users at times. Two users also reported the secondary text being too small.</p>
-				<p class="emp">4. "Should I press the green light to begin driving?"</p>
-				<p>The primary action button in the dashboard threw many people offguard, who were unable to decide whether to press the 'Green light' button looking signifier or the label 'Drive Now'</p>
-				<p class="emp">5. "Does the pre-driving checklist appear everytime before driving?"</p>
-				<p>While the intent was to make the user aware of their inventory before driving, it became frustrating for them to view it every time before clicking on the 'Drive Now' button. Therefore, one of them suggested to allow to ability to toggle it, as well as decide for themselves what goes on that list rather than us making an exhaustive list.</p>
-				<h3><span class="underline">4.3 Medium-fidelity Prototype</span></h3>
-				<p>The primary aim of the hi-fidelity prototype was to address the user pain points from the paper prototype, along with allowing participants to interact with a more close to end-product experience. While the design was bare bones, it gave user the idea of what they are getting into and got us valuable feedback.</p>
-				<div class="slider">
+            </div>
+            <img src="images/usability-paper.png" alt="">
+			<h3>3.4.2 Turning the fidelity up</h3>
+			<p>The primary aim of the hi-fidelity prototype was to address the user pain points from the paper prototype, along with allowing participants to interact with a more close to end-product experience. While the design was bare bones, it gave user the idea of what they are getting into and got us valuable feedback.</p>
+			<div class="slider">
 	                <ul id="medfi-gallery" class="gallery list-unstyled cS-hidden">
 	                    <li data-thumb="images/thumb/settings.png"> 
 	                        <img src="images/settings.png" />
@@ -255,25 +253,24 @@
 	                        <img src="images/progress.png" />
 	                     </li>                    
 	                </ul>
-            	</div>
-				<h3><span class="underline">4.4 Assessing and Refining</span></h3>
-				<p style="margin-bottom: 1em !important">By giving the participants a scenario and a task list to work upon, we discovered some important insights from their usage and decided to assign severities to each of those findings for prioritization</p>
-				<ul>
-					<li>Severity 1: Two participants found ‘Positive reinforcements’ in the middle of a driving session to be distracting and suggested they appear post completion of the session along with more stress on safety and navigation.</li>
-					<li>Severity 2: All participants appreciated the ability to customize every setting in the setup screens but they also found the font on the setup screens to be small for proper readability.</li>
-					<li>Severity 3: One of the participants was confused whether to wait for the in-driving visual cue to disappear or to dismiss them manually.</li>
-					<li>Severity 4: Two out of the three participants suggested app wide ‘Dark Mode’ for better readability but that did not prevent them from using the app.</li>
-				</ul>
-				<img src="images/iterating.png" alt="">
-				<a href="https://docs.google.com/document/d/1FhsBFwTuYzW0j3QMUQ6pyqjlcIFcl6AWX7MK8uyeMtQ/edit?usp=sharing" class="btn fill" target="_blank">View Detailed Report</a>
-            	<p></p>
-            	<h2>5. Evolving and Staying Human-Centered</h2>
-            	<p>Be it any stage of the design process, it was essential to avoid our own biases. Every user feedback gave a new perspective on what we were designing, thereby improving it constantly and making it more close to being usable.</p>
-            	<img src="images/evolution.png" alt="">
-            	<a href="https://xd.adobe.com/view/5e9d8ef5-1339-47c8-70a7-a5343dd7bf9a-28ac/" target="_blank" class="btn fill" style="margin-bottom: 2em;">View Prototype</a>
-            	<p>Making sure to not get carried away with the fidelity of the experience, the final designs addressed most of the qualms that user testing with paper and medium fidelity prototype revealed. Some of the major changes includede introducing application on-boarding and tips - to make users at ease with what they are dealing with, reducing verbosity in every function, while at the same time not deviating from our original design solution - to provide users all the provisions to customize their driving experience.</p>
+            </div>
+            <img src="images/usability-ii.png" alt="">
+            <a href="https://docs.google.com/document/d/1FhsBFwTuYzW0j3QMUQ6pyqjlcIFcl6AWX7MK8uyeMtQ/edit?usp=sharing" target="_blank" class="btn">View prototyping and testing report <i class="fas fa-arrow-right"></i></a>
+		</div>
+		<div id="evolving">
+			<h2>4. Evolving and Staying human-centered</h2>
+			<p>Be it any stage of the design process, it was essential to avoid our own biases. Every user feedback gave a new perspective on what we were designing, thereby improving it constantly and making it more close to being usable.</p>
+		
+			<img src="images/evolution.png" alt="">
+			</div>
+			<div id="refining">
+				<h2>4.1 Refining</h2>
+				<p>The final designs tried to address most of the qualms that user testing with paper and medium fidelity prototype revealed. Some of the major changes includede introducing application on-boarding and tips - to make users at ease with what they are dealing with, reducing verbosity in every function, while at the same time not deviating from our original design solution - to provide users all the provisions to customize their driving experience.</p>				
 				<div class="slider">
 	                <ul id="hifi-gallery" class="gallery list-unstyled cS-hidden">
+	                    <li data-thumb='images/thumb/iterating.png'>
+	                     	<img src="images/iterating.png" alt="">
+	                     </li>                    
 	                    <li data-thumb="images/thumb/onboard.png"> 
 	                        <img src="images/onboard.png" />
 	                         </li>
@@ -285,55 +282,38 @@
 	                     </li>
 	                     <li data-thumb="images/thumb/settings-new.png"> 
 	                        <img src="images/settings-new.png" />
-	                     </li>                    
+	                     </li>	                     
 	                </ul>
             	</div>
-            	
-            	<h2>6. Reflections</h2>
-            	<h3><span class="underline">6.1 What Worked</span></h3>
-            	<ul>
-            		<li>Proceed with insight <br> From being an idea, to a paper recreation, to low fidelity prototype and finally a usable application prototype, every design decision was informed by real users. In addition, every bit of input from secondary stakeholders acted as a check on our design solutions. </li>
-            		<li>Pragmatism <br> It is easy to get carried away when you are experimenting with research methods, which makes it even more crucial to decide what method would you use. We used competitive analysis because methods like 'Fly on the wall' or 'Contextual Inquiry', though provide an in-depth insight, can take time. </li>
-            		<li>Iterate, Iterate, Iterate <br> No matter how trivial the feedback is, it is essential to reflect the same in the final experience you are creating. </li>
-            	</ul>
-            	
-            	<h3><span class="underline">6.2 What could've been better</span></h3>
-            	<p>Given the time frame of the entire project was only a quarter, the user research could've been more extensive with more time. Moreover, the specificity of the target audience made it harder, as our only means to approach TBI survivors was through Google forms and spreading the word across the campus via social media.</p>
-            	<h3><span class="underline">6.3 What's next?</span></h3>
-            	<p>From the moment the application idea as conceived , we always had the future prospect on our mind. One of the ideas was to link user's wearable device with our application, that mirrors the functionality from the mobile devices, but instead helps provide much more robust data about user vitals, and gives another medium to remind users - i.e haptics. In addition, after talking with therapists we discovered that having two separate login screens; one for user and one for their therapist, allowing therapist to better track patient progress and goals. </p>
-            	
-			</div>					
-		</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+			</div>
+			<div id="reflections">
+				<h2>4.2 Reflections</h2>
+				<h3>4.2.1 What worked?</h3>
+				<ul>
+					<li>Proceed with insight <br>
+						From being an idea, to a paper recreation, to low fidelity prototype and finally a usable application prototype, every design decision was informed by real users. In addition, every bit of input from secondary stakeholders acted as a check on our design solutions.</li>
+					<li>Pragmatism <br>
+					It is easy to get carried away when you are experimenting with research methods, which makes it even more crucial to decide what method would you use. We used competitive analysis because methods like 'Fly on the wall' or 'Contextual Inquiry', though provide an in-depth insight, can take time.</li>
+					<li>Iterate, Iterate, Iterate <br>
+						No matter how trivial the feedback is, it is essential to reflect the same in the final experience you are creating.</li>
+				</ul>
+				<h3>4.2.2. What could've been better?</h3>
+				<p>Given the time frame of the entire project was only a quarter, the user research could've been more extensive with more time. Moreover, the specificity of the target audience made it harder, as our only means to approach TBI survivors was through Google forms and spreading the word across the campus via social media.</p>
+				<h3>4.2.3 What's next?</h3>
+				<p>From the moment the application idea as conceived , we always had the future prospect on our mind. One of the ideas was to link user's wearable device with our application, that mirrors the functionality from the mobile devices, but instead helps provide much more robust data about user vitals, and gives another medium to remind users - i.e haptics. In addition, after talking with therapists we discovered that having two separate login screens; one for user and one for their therapist, allowing therapist to better track patient progress and goals.</p>
+			</div>
+					
+	</section>
+</article>
+</div>
+
+<!-- partial -->
+	<script src="js/scroll.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
 	<script src="js/script.js"></script>
 	<script src="js/lightslider.js"></script>
 	<script>
-		var changeLink = function(e) {
-			$(this).addClass("highlighted").siblings().removeClass("highlighted");
-		}
-		$(".index a").on('click', changeLink);
-		$(document).ready(function() {
-			
-            $('#persona-gallery').lightSlider({                
-                item:1,                
-                slideMargin: 0,                               
-                speed:500,                
-                onSliderLoad: function() {
-                    $('#persona-gallery').removeClass('cS-hidden');
-                }  
-            });
-            $('#paper-gallery').lightSlider({
-                gallery:true,
-                item:1,
-                thumbItem:4,
-                slideMargin: 0,                
-                thumbMargin: 50,
-                speed:500,                
-                onSliderLoad: function() {
-                    $('#paper-gallery').removeClass('cS-hidden');
-                }  
-            });
-            $('#research-gallery').lightSlider({
+		$('#research-gallery').lightSlider({
                 gallery:true,
                 item:1,
                 thumbItem:5,
@@ -344,18 +324,15 @@
                     $('#research-gallery').removeClass('cS-hidden');
                 }  
             });
-            $('#hifi-gallery').lightSlider({                
-                gallery: true,
-                thumbItem: 4,
-                thumbMargin: 50,          
-                item:1,             
-                slideMargin: 0,                              
+		$('#persona-gallery').lightSlider({                
+                item:1,                
+                slideMargin: 0,                               
                 speed:500,                
                 onSliderLoad: function() {
-                    $('#hifi-gallery').removeClass('cS-hidden');
+                    $('#persona-gallery').removeClass('cS-hidden');
                 }  
             });
-            $('#idea-gallery').lightSlider({                
+		$('#idea-gallery').lightSlider({                
                 gallery: true,
                 thumbItem: 5,
                 thumbMargin: 50,          
@@ -366,7 +343,18 @@
                     $('#idea-gallery').removeClass('cS-hidden');
                 }  
             });
-            $('#medfi-gallery').lightSlider({                
+		$('#paper-gallery').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:4,
+                slideMargin: 0,                
+                thumbMargin: 50,
+                speed:500,                
+                onSliderLoad: function() {
+                    $('#paper-gallery').removeClass('cS-hidden');
+                }  
+            });
+		$('#medfi-gallery').lightSlider({                
                 item:1,             
                 slideMargin: 0,                              
                 speed:500,                
@@ -374,15 +362,18 @@
                     $('#medfi-gallery').removeClass('cS-hidden');
                 }  
             });
-            $('#flow-gallery').lightSlider({                
+		$('#hifi-gallery').lightSlider({                
+                gallery: true,
+                thumbItem: 5,
+                thumbMargin: 50,          
                 item:1,             
                 slideMargin: 0,                              
                 speed:500,                
                 onSliderLoad: function() {
-                    $('#flow-gallery').removeClass('cS-hidden');
+                    $('#hifi-gallery').removeClass('cS-hidden');
                 }  
             });
-            
-		});
 	</script>
+	
 </body>
+</html>

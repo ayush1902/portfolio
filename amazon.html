@@ -1,104 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-	<meta charset="UTF-8">
-	<title>Work :: Redesigning Amazon</title>
-	<link rel="stylesheet" href="stylesheets/reset.css">
-	<link rel="stylesheet" href="stylesheets/normalize.css">
-	<link rel="stylesheet" href="stylesheets/sass/style.css">
-	<link rel="stylesheet" href="stylesheets/sass/work.css">	
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
-	
-	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-	<link rel="stylesheet" href="stylesheets/lightslider.css">
+  <meta charset="UTF-8">
+  <title>Culture-centered Design :: Ayush Sharma</title>
+  <meta name="viewport" content="width=700"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css'>
+  <link rel="stylesheet" href="stylesheets/reset.css">
+  <link rel="stylesheet" href="stylesheets/sass/style.css">
+  <link rel="stylesheet" href="stylesheets/lightslider.css">
 </head>
 <body>
-	<div class="container">
-		<div class="hot-nav">
-			<div id="side-nav" class="side-nav">			
+
+<div class="work-container">
+	<div class="hot-nav">
+			<!-- <div id="side-nav" class="side-nav">			
 			    <ul>
-			    	<li><a href="#one" onclick="toggle_nav();">Problem</a></li>
-			    	<li><a href="#two" onclick="toggle_nav();">Research</a></li>
-			    	<li><a href="#three" onclick="toggle_nav();">Solution</a></li>
-			    	<li><a href="#four" onclick="toggle_nav();">Reflection</a></li>
+			    	<li><a href="#one" onclick="toggle_nav();">Product</a></li>
+			    	<li><a href="#two" onclick="toggle_nav();">Methods</a></li>
+			    	<li><a href="#three" onclick="toggle_nav();">Study</a></li>
+			    	<li><a href="#four" onclick="toggle_nav();">Impact</a></li>
 			    </ul>
-			</div>
+			</div> -->
 			<p><a id="back" href="index.html?index=work" style="font-size: 0.75rem;">&larr; BACK TO WORK</a></p>
 		</div>
-	  	<div class="nav">
-	      <div id="toggle-nav" onclick="toggle_nav(this)">
-	        <div class="animated-icon">
-	          <div class="bar-1"></div>
-	          <div class="bar-2"></div>
-	          <div class="bar-3"></div>
-	        </div>
-	      </div>
-	    </div>
-		<div class="left-nav">
-			<div class="logo">
-				<p>ayush<span style="color:#666;">sharma</span></p>
-			</div>
-			<div class="nav-items">
-				<div class="index">
-					<a href="#one" class="highlighted hover">Problem</a>
-					<a href="#two" class="hover">Research</a>
-					<a href="#three" class="hover">Solution</a>
-					<a href="#four" class="hover">Reflection</a>
-				</div>
-			</div>
-		</div>
-		<div class="main">
-		<img class="top-bg" src="images/amazon-thumb.png" alt="">
-			<div class="ct">	
-				<div class="flex">
+	<div class="fixed-nav">
+		<nav class="toc">
+		<p class="back-link"><a id="back" href="index.html?index=work"><i class="fas fa-arrow-left"></i> Back to work</a></p>
+		<br>
+		<ul>			
+			<li>
+				<a href="#background">Background</a>
+				<ul>
+					<li><a href="#dimension">Hofstede's Dimensions</a></li>
+					<li><a href="#mapping">Mapping dimensions</a></li>									
+				</ul>
+			</li>
+			<li>
+				<a href="#current">Current scenario</a>
+			      <ul>
+			      	<li><a href="#content-nav">Content and Navigation</a></li>
+					<li><a href="#ambiguity">Ambiguity</a></li>
+					<li><a href="#explicitness">Explicitness</a></li>			
+					<li><a href="#dark-pattern">Dark Patterns</a></li>
+					<li><a href="#summary">Summary</a></li>					
+			      </ul>
+			</li>
+			<li>
+				<a href="#solution">Solution</a>
+			      <ul>
+			      	<li><a href="#final">Final designs</a></li>			        
+			        <li><a href="#reflection">Reflections</a></li>			      			        
+			      </ul>
+			</li>
+			
+		</ul>
+	  <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+	    <path stroke="#444" stroke-width="2" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+	  </svg>
+	</nav>
+	</div>
+	<article class="contents">
+		<img class="cover" src="images/512-bg.png" alt="">
+		<section>
+		<div id="background">
+	    <div class="flex">
 					<div style="flex-basis: 70%;">
-						<h1>Redesigning amazon</h1>
-						<p style="color: #999; margin-bottom: 1em;">International User Experience</p>
+						<h1>Redesigning amazon.com</h1>
+						<h5>University of Washington</h5>						
+						<br>
+						<a href="#" class="btn">View final paper<i class="fas fa-arrow-right"></i></a>
+
 					</div>			
 					<div style="flex-basis: 30%;" class="project-info">								
-						<h3>Role</h3>
-						<p>Culture-Centered Design and Research</p>
+						<h3>Domain</h3>
+						<p>Culture-centered design, User Research</p>
 						<h3>Type</h3>
-						<p>Personal Case Study</p>
+						<p>Graduate Coursework [Individual]</p>
 						<h3>Timeline</h3>						
-						<p>Sep, 2018 - Dec, 2018 (3 Months)</p>
+						<p>Sep, 2018 - Dec, 2018 [3 Months]</p>
 					</div>
-				</div>			
-				<h2 id="intro" style="margin-top: 1em;">Introduction</h2>
-				<p>Design is never done – users want it to be more personal and accessible, at the same time being more functional as well. Amazon is one of the biggest companies in the world right who has its hand in every domain. But for now, the company assumes an indistinguishable design layout for all its global audience which can only serve them for so long with the growing usage of their website. This study is about how a culture-centered approach towards website design could produce experiences that are more accessible and usable for people in Russia.</p>			
-				<h2 id="one">1. Background</h2>
-				<p>From the outside, it seems tempting to translate the website into a local language for the sake of localization for a target market. But localization is more than that; it must reflect specific cultural preferences in content, navigation, layout, and color, making sure everything makes sense in a linguistic and cultural context when designing a website. <span class="yellow" style="font-weight: 400;">Put simply, website localization is creating a just as compelling experience for a target market as your home-based clientele. </span>Hofstede’s Cultural Dimensions neatly summarize the effect of a society’s culture on the behaviour of its members and provide us insight into what the above mentioned cultural preferences and context could denote. </p>
-				<img src="images/russia-dimensions.png" alt="">
-				<h3><span class="underline">1.1 Dimensions what?</span></h3>
-				<p>Design is all about how one views artifacts, and the cultural dimensions shape exactly that. Each of these dimensions correspond to a design requirement, which is summarized in the diagram below:</p>
-				<img src="images/dimensions-rule.png" alt="">
-				<h2 id="two">2. Current Scenario</h2>
-				<p>It is no secret that Russia is one of the most attractive target markets for foreign players such as Amazon, eBay, and AliExpress etc. right now. However, the dark horse leading the race of e-commerce in Russia is ‘Ulmart’ – despite the recession and shrinking consumer spending, Ulmart’s growth continued between 2015 and 2016 and one thing has served them well. Seeing Amazon flunk in the Russian market, Ulmart did things differently; their user research governed that most of the people in Russia live in apartments rather than houses; therefore, door-to-door delivery of goods might not be efficient. As a result, they employed a hybrid model between traditional brick-and-mortar stores and e-commerce stores where people pick up their goods, choosing from over 450 pick up points currently. The statement from the CEO of Ulmart-</p>
-				<p class="emp">"[Our model] is the next generation of internet retailing; we can even argue that we are faster and more reliable than Amazon. We bet that in a couple of years, Amazon will switch to our model”; <span style="display: block; color: #fff; font-size: 0.8em; font-style: normal;">Sergei Fedorinov</span></p>
-				<p>signifies the extensive research done by Ulmart to patronize the world’s biggest e-commerce website. It becomes evident that studying user buying habits, their context of use, and their constraints should all be taken into account no matter how successful a product might be. However, even if Amazon were to use the same business model as that of Ulmart, their mode of access, i.e. their website, would still be a mere facsimile of their local American website, except in Russian. Therefore, it is essential to enumerate the things that are out of cultural context in amazon.com:</p>
-				<h3><span class="underline">2.1 Content and navigation</span></h3>
-				<p>For a society with high power distance, providing them with the right information in a structured format without hampering their ability to navigate becomes a must when designing a website. In Fig. 2 below, the homepage of amazon.com does not conform with the above-mentioned guideline and describes the possible pain points that might conjure up in a Russian market usage:</p>
-				<img src="images/amazon-p1.png" alt="">
-				<h3><span class="underline">Ambiguity</span></h3>
-				<p>In a country with a high uncertainty avoidance index, an e-commerce website should almost always avoid experimenting with the user base, and that goes for both design and business choices. For instance, the current Amazon homepage has an ‘Unexpected gift ideas’, which increases user ambiguity about what that idea could be. In addition, the ‘Like-new’ category does nothing to ensure the user that they would be buying something significantly cheaper as compared to a ‘brand-new’ product. Even on the homepage, the banners give no information about when the deals begin or last till, obscuring the user decision-making. Figure 3 below elucidates on this design choice:</p>
-				<img src="images/amazon-p2.png" alt="">
-				<h3><span class="underline">Explicitness</span></h3>
-				<p>For a highly self-restraint society, prices are everything. Therefore, it is important to be explicit about product costs, discounts, and time periods for the same. For instance, the home page does a good job to grab the users attention, however, they are equivocal about the ‘Top Products’; are they top rated because of their price or reviews? What is the last day to avail these offers? What is their starting price range? All these make sense in the context of the user whose buying habits are entirely dependent on the price of the product. Figure 4 explains what’s wrong:</p>
-				<img src="images/amazon-p3.png" alt="">
-				<h3><span class="underline">Contact Us, If you can</span></h3>
-				<p>‘Dark Patterns’ are <span class="yellow" style="font-weight: 400">carefully crafted user interface elements that are meant to misdirect and confuse</span>, and amazon.com is replete with these elements [7]. It makes it almost impossible for the people to seek help with anything. For instance, deleting your account is seemingly impossible for anyone without any prior knowledge of doing so. It requires you to go all the way to the end of the page, then selecting ‘Contact Us’, then selecting ‘Need Additional Help’, and finally selecting ‘Login and Security’ which leads you to ‘Delete your account’. This inane process of deleting your account would make no sense if there had been an option just in ‘Your Account’ section. As a predominantly feminine society, Russian users are more likely to contact the website for assistance, and as a result, this may not help their cause.</p>
-				<h3><span class="underline">Summary of Design requirements</span></h3>
-				<p>Despite the pain-points discussed earlier, there are some dimensions that the site addresses well as shown in Fig. 5. For instance, the users have the option to view the most prevalent deals, view customer reviews for each product, and share those products on all the popular social media platforms, which is crucial for a collectivist society as they tend to make decisions as a group. Nevertheless, a redesign is imperative. Therefore, below is a list of design requirements based on the pain points discussed earlier:</p>
-				<ul style="margin-bottom: 2em;">
-					<li>Persistent navigation bar across all views for better overall navigation around the interface.</li>
-					<li>Straightforward information about the prices, deals, and discounts.</li>
-					<li>Segregated sections for managing orders, accounts, and wish lists.</li>
-					<li>Avoid usage of experimental design features.</li>
-					<li>Allow the user to contact the website for help or feedback at all times.</li>
-					<li>Use of a collectivist language with the ability to share everything across all popular social media platforms.</li>
-				</ul>
-				<img src="images/amazon-p4.png" alt="">				
-				<h2 id="three">Solution</h2>
+		</div>
+		
+	    <h2>1. Background</h2>
+	    <p>Design is never done – users want it to be more personal and accessible, at the same time being more functional as well. Amazon is one of the biggest companies in the world right who has its hand in every domain. But for now, the company assumes an indistinguishable design layout for all its global audience which can only serve them for so long with the growing usage of their website. This study is about how a culture-centered approach towards website design could produce experiences that are more accessible and usable for people in Russia.</p>
+		</div>
+		<div id="dimension">
+		<h3>1.1 Hofstede's Dimensions</h3>
+		<p>From the outside, it seems tempting to translate the website into a local language for the sake of localization for a target market. But localization is more than that; it must reflect specific cultural preferences in content, navigation, layout, and color, making sure everything makes sense in a linguistic and cultural context when designing a website. Put simply, website localization is creating a just as compelling experience for a target market as your home-based clientele. Hofstede’s Cultural Dimensions neatly summarize the effect of a society’s culture on the behaviour of its members and provide us insight into what the above mentioned cultural preferences and context could denote.</p>
+		<img src="images/russia-dimensions.png" alt="">
+		</div>
+		<div id="mapping">
+        <h3>1.2 Mapping dimensions to design requirements</h3>
+        <p>Design is all about how one views artifacts, and the cultural dimensions shape exactly that. Each of these dimensions correspond to a design requirement, which is summarized in the diagram below:</p>
+        <br>
+        <img src="images/dimensions-rule.png" alt="">
+        </div>
+        </section>
+	<section>
+		<div id="current">
+			<h2>2. Current Scenario</h2>
+			<p>
+				It is no secret that Russia is one of the most attractive target markets for foreign players such as Amazon, eBay, and AliExpress etc. right now. However, the dark horse leading the race of e-commerce in Russia is ‘Ulmart’ – despite the recession and shrinking consumer spending, Ulmart’s growth continued between 2015 and 2016 and one thing has served them well. Seeing Amazon flunk in the Russian market, Ulmart did things differently; their user research governed that most of the people in Russia live in apartments rather than houses; therefore, door-to-door delivery of goods might not be efficient. As a result, they employed a hybrid model between traditional brick-and-mortar stores and e-commerce stores where people pick up their goods, choosing from over 450 pick up points currently. The statement from the CEO of Ulmart-
+			</p>
+	      	<blockquote>
+	      		<p>"[Our model] is the next generation of internet retailing; we can even argue that we are faster and more reliable than Amazon. We bet that in a couple of years, Amazon will switch to our model”;</p>
+	      	</blockquote>
+	      	<p>signifies the extensive research done by Ulmart to patronize the world’s biggest e-commerce website. It becomes evident that studying user buying habits, their context of use, and their constraints should all be taken into account no matter how successful a product might be. However, even if Amazon were to use the same business model as that of Ulmart, their mode of access, i.e. their website, would still be a mere facsimile of their local American website, except in Russian. Therefore, it is essential to enumerate the things that are out of cultural context in amazon.com:</p>
+	    </div>
+
+		<div id="content-nav">
+			<h3>2.1 Content and Navigation</h3>
+			<p>For a society with high power distance, providing them with the right information in a structured format without hampering their ability to navigate becomes a must when designing a website. In Fig. 2 below, the homepage of amazon.com does not conform with the above-mentioned guideline and describes the possible pain points that might conjure up in a Russian market usage:</p>
+			<img src="images/amazon-p1.png" alt="">
+			<br>
+		</div>
+		<div id="ambiguity">
+			<h3>2.2 Ambiguity</h3>
+			<p>In a country with a high uncertainty avoidance index, an e-commerce website should almost always avoid experimenting with the user base, and that goes for both design and business choices. For instance, the current Amazon homepage has an ‘Unexpected gift ideas’, which increases user ambiguity about what that idea could be. In addition, the ‘Like-new’ category does nothing to ensure the user that they would be buying something significantly cheaper as compared to a ‘brand-new’ product. Even on the homepage, the banners give no information about when the deals begin or last till, obscuring the user decision-making. Figure 3 below elucidates on this design choice:</p>
+			<img src="images/amazon-p2.png" alt="">
+		</div>
+		
+		
+		<div id="explicitness">
+			<h3>2.3 Explicitness</h3>
+			<p>
+				For a highly self-restraint society, prices are everything. Therefore, it is important to be explicit about product costs, discounts, and time periods for the same. For instance, the home page does a good job to grab the users attention, however, they are equivocal about the ‘Top Products’; are they top rated because of their price or reviews? What is the last day to avail these offers? What is their starting price range? All these make sense in the context of the user whose buying habits are entirely dependent on the price of the product. Figure 4 explains what’s wrong:</p>
+			<img src="images/amazon-p3.png" alt="">					
+		</div>
+		<div id="dark-pattern">
+			<h3>2.4 'Contact Us', if you can</h3>
+			<p>‘Dark Patterns’ are carefully crafted user interface elements that are meant to misdirect and confuse, and amazon.com is replete with these elements. It makes it almost impossible for the people to seek help with anything. For instance, deleting your account is seemingly impossible for anyone without any prior knowledge of doing so. It requires you to go all the way to the end of the page, then selecting ‘Contact Us’, then selecting ‘Need Additional Help’, and finally selecting ‘Login and Security’ which leads you to ‘Delete your account’. This inane process of deleting your account would make no sense if there had been an option just in ‘Your Account’ section. As a predominantly feminine society, Russian users are more likely to contact the website for assistance, and as a result, this may not help their cause.</p>			
+		</div>
+		<div id="summary">
+			<h3>2.5 Summary</h3>
+			<p>Despite the pain-points discussed earlier, there are some dimensions that the site addresses well as shown in Fig. 5. For instance, the users have the option to view the most prevalent deals, view customer reviews for each product, and share those products on all the popular social media platforms, which is crucial for a collectivist society as they tend to make decisions as a group. Nevertheless, a redesign is imperative. Therefore, below is a list of design requirements based on the pain points discussed earlier:</p>
+			<ul>
+							<li>Persistent navigation bar across all views for better overall navigation around the interface.</li>
+							<li>Straightforward information about the prices, deals, and discounts.</li>
+							<li>Segregated sections for managing orders, accounts, and wish lists.</li>
+							<li>Avoid usage of experimental design features.</li>
+							<li>Allow the user to contact the website for help or feedback at all times.</li>
+							<li>Use of a collectivist language with the ability to share everything across all popular social media platforms.</li>
+						</ul>			
+		</div>
+	</section>
+	<section>		
+			<h2 id="solution">3. Solution</h2>
+			<div id="final">
+				<h3>3.1 Final Designs</h3>
 				<p>It is evident that the current Amazon website is not fit for introducing in the Russian market. The study here proposes some changes that could work for the better half of achieving that goal. Fig 6. Below is a mock-up of a possible amazon.com redesign (in Russian as well as the English language for easier comprehension). The mockup by no means is a perfect example of how the amazon.ru should look, however, it is a step in the right direction by giving cultural considerations the topmost priority.</p>
 				<div class="slider">
 	                <ul id="amazon-gallery" class="gallery list-unstyled cS-hidden">
@@ -116,26 +166,31 @@
 	                     </li>	                                         	                     
 	                </ul>
             	</div>
-            	<h2 id="four">Reflections</h2>
-            	<p>I feel website design is much more than coding and making design choices based on aesthetics. One golden rule of thumb every web designer should remember when crafting their sites is that <span class="yellow" style="font-weight: 400">the second a website becomes live, it is global.</span> Therefore, this case-study helped me reflect back at the times my redesign solutions were just based on making the website prettier. To sum up localization as a design solution, here are a list of factors that I keep in mind:</p>
-            	<ul>
-            		<li><span class="bullet">Content:</span> The content of the website should avoid anything that might offend the target audience, even innuendos that are sometimes meant to convey something in a funny way.</li>
-            		<li><span class="bullet">Color Considerations:</span> Some colors might be frowned upon, some might be considered holy. Avoid colors from national flags, symbols.</li>
-            		<li><span class="bullet">Graphic Considerations: </span>Avoiding iconography that might contain gestures, actions, or symbols considered repulsive or rude in a culture.</li>
-            		<li><span class="bullet">Overall Design and Layout: </span>Incorporating cultural dimensions to get insight into the overall information architecture of the website.</li>
-            		<li><span class="bullet">Mode of Access: </span>Not everyone has the same device hardware, operating system and frequency of usage.</li>
+			</div>
+			<div id="reflection">
+			<h3>3.2 Reflection</h3>
+			<p>I feel website design is much more than coding and making design choices based on aesthetics. One golden rule of thumb every web designer should remember when crafting their sites is that the second a website becomes live, it is global. Therefore, this case-study helped me reflect back at the times my redesign solutions were just based on making the website prettier. To sum up localization as a design solution, here are a list of factors that I keep in mind:</p>
+			<ul>
+				<li>Content: The content of the website should avoid anything that might offend the target audience, even innuendos that are sometimes meant to convey something in a funny way.</li>
+				<li>Color Considerations: Some colors might be frowned upon, some might be considered holy. Avoid colors from national flags, symbols.</li>
+				<li>Graphic Considerations: Avoiding iconography that might contain gestures, actions, or symbols considered repulsive or rude in a culture.</li>
+				<li>Overall Design and Layout: Incorporating cultural dimensions to get insight into the overall information architecture of the website.</li>
+				<li>Mode of Access: Not everyone has the same device hardware, operating system and frequency of usage.</li>
+			</ul>				
+			<br>
+			<br>
+	</section>
+	
+	
+</article>
+</div>
 
-            	</ul>
-			</div>					
-		</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="js/script.js"></script>	
-	<script src="js/lightslider.js"></script>	
+<!-- partial -->
+	<script src="js/scroll.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+<script src="js/lightslider.js"></script>
 	<script>
-		var changeLink = function(e) {
-			$(this).addClass("highlighted").siblings().removeClass("highlighted");
-		}
-		$(".index a").on('click', changeLink);
 		$(document).ready(function() {
 			
             $('#amazon-gallery').lightSlider({                
@@ -152,4 +207,6 @@
             
 		});
 	</script>
+	
 </body>
+</html>

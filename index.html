@@ -5,18 +5,17 @@
 	<title>Ayush Sharma :: Home</title>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139042266-1"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
+	  window.dataLar = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-
 	  gtag('config', 'UA-139042266-1');
 	</script>
 	<link rel="stylesheet" href="stylesheets/reset.css">
-	<link rel="stylesheet" href="stylesheets/normalize.css">
 	<link rel="stylesheet" href="stylesheets/sass/style.css">	
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
-	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="stylesheets/tachyons-animate.min.css">
 </head>
 <body>
 	<div class="container">
@@ -39,7 +38,7 @@
 	    </div>
 		<div class="left-nav">
 			<div class="logo">
-				<p>ayush<span style="color:#666;">sharma</span></p>
+				<p>ayush<span style="font-size: 1rem; color:#666; font-family: 'Ubuntu Mono', monospace;">sharma</span></p>
 			</div>
 			<div class="nav-items">
 				<div class="menu">
@@ -54,24 +53,23 @@
 			<div class="tabs">
 				<div id="home" class="tab">
 					<div class="tab-container">
-						<h2>Hi.</h2>
-						<h3>I am Ayush and I design <span id="app" class="typewrite">experiences</span></h3>
-						<h4>Currently pursuing Master's in Human-Centered Design and Engineering at University of Washington, Seattle.</h4>
-						<a href="#about" id="learn-more" class="btn fill">Learn More</a>
+						<h2 class="animated fadeInUp ease-out-circ d2 a-1">Hi.</h2>
+						<h3 class="animated fadeInUp ease-out-circ d-1 a-1">I am Ayush and I am a <span class="tooltip"><span style="font-family: 'Ubuntu Mono', monospace;"><span class="fancy-underline">full-stack designer</span>.</span>
+					<span class="tooltip-text">
+						<span style="font-weight: 500;">noun:</span><span style="font-style: italic;"></span> / fʊl-stæk /<br>
+						A designer who tries to be mindful of the constraints pertaining to research, design, and code.</span>
+					</span></h3>
+						<h4 class="animated fadeInUp ease-out-circ d-1 a-1">Currently Product Design at Credible and  Human-Centered Design at University of Washington.</h4>
+						<a href="#about" id="learn-more" class="btn animated fadeInUp ease-out-circ d-1 a-1">Learn More<i class="fas fa-arrow-right"></i></a>
 					</div>
 				</div>
 				<div id="about" class="tab">
 					<div class="tab-container">
-						<h4>I am a multi-disciplinary Visual Designer living in the Greater Seattle Area. <br>
-						A developer turned designer, I am mindful of the technical constraints that come into play in bringing digital experiences to life.</h4>
+						<h3>My strength is in my ability to comprehend code, and distill this to guide my decision-making and communication in designing interfaces.</h3>
+						<h4>Most recently, I was a Product Designer at <span class="link"><a target="_blank" href="https://www.credible.com">Credible</a></span>, which is a multi-lender marketplace that provides a one-stop-shop for consumers to comapare different loan offers.
+						<span class="line-break"></span>In addition, I have been involved in a slew of other design <span class="link"><a href="#work" id="work_link">work</a></span> spanning domains like usability, visual communication & branding, and accessibility.</h4>
 						
-						<div class="focus">
-							<h3 style="margin-top: 2.5em;">Focus</h3>
-							<h4><span style=" color: #aaa; ">Lately</span>  &rarr; Design Systems, User-Centered Design</h4>
-							<h4><span style=" color: #aaa; ">Broadly</span> &rarr; Visual Communication, Accessibilty, Responsive Design</h4>	
-						</div>
-						<h4>Learn more about my <span class="underline" style="padding-bottom: 0.20em;"><a id="work_link" href="#work">work</a></span>. Currently available for internship positions starting Summer, 2019.</h4>
-						<a href="https://drive.google.com/file/d/1vn6J442uUwunHKOKXzq_Y88lPw8ZLHxp/view?usp=sharing" target="_blank" class="btn fill">Resume</a>
+						<a href="https://drive.google.com/file/d/1QJCXnFLsOllhjmbyangNr73hpFWFehoB/view?usp=sharing" target="_blank" class="btn">View Resume<i class="fas fa-arrow-right"></i></a>
 					</div>
 				</div>
 				<div id="work" class="tab">
@@ -79,28 +77,29 @@
 						<h2>Work</h2>
 						<div class="card-div">												
 						    <div class="col">
-						        <a class="card card-3 stacked--up" href="#ucd-modal">
-						        	<i class="fas fa-external-link-alt"></i>
+						        <a class="card card-3 stacked--up" href="#cred-modal">
+						        	
 						            <div class="content">
-						            	<img src="images/ucdfall.png" alt="">
-						                <h4>TraumaWise</h4>
-						                <p><span>User-Centered Design</span><span>Prototyping</span></p>
+						            	<img src="images/credible-thumb.png" alt="">
+						                <h4>Credible</h4>
+						                <p><span>Interaction Design</span><span>Rapid Prototyping</span></p>
 						            </div>
-						            <div id="ucd-modal" class="modal-window">
+						            <div id="cred-modal" class="modal-window">
 									  <div>
 									    <a href="#!" title="Close" class="modal-close">Close</a>
-									    <h1>TraumaWise</h1>
-									    <!-- <div class="breadcrumb">
-									    	<p>User-Centered Design</p><p>Research</p><p>Prototyping</p>
-									    </div> -->
+									    <h1>Credible</h1>
+									    <div class="breadcrumb">
+									    	<p>Interaction Design</p><p>User Research</p><p>Rapid Prototyping</p>
+									    </div>
 									    <div class="modal-content">
-									    	<h3><span class="underline">Problem</span></h3>
-									    	<h4>There are currently limited tools that support the cognitive deficits of brain injury survivors for a comfortable driving experience. How can we, as designers, remediate that problem?</h4>
-									    	<h3><span class="underline">Solution</span></h3>
-									    	<h4>Designing a car dashboard interface working in tandem with a mobile application that addresses the executive functions of a driver and reduces their cognitive load while driving.</h4>
-									    	<h3><span class="underline">Impact</span></h3>
-									    	<h4>The very solutions employed to reduce the cognitive load could sometimes become the reason for distraction while driving.</h4>
-									    	<a href="traumawise.html" class="modal-action">Read full story &rarr;</a>
+									    	<h3>Problem</h3>
+									    	<h4>How can we redesign the current navigation architechture of the product with sustainability and end users in mind?</h4>
+									    	<h3>Solution</h3>
+									    	<h4>Starting from the ground up, laying down all possible inconsistencies in the system, finding out what a navigation means to users, and ultimately testing this on a functional web prototype that I created.</h4>
+									    	<h3>Impact</h3>
+									    	<h4>More than just user needs, you have to be mindful of the stakeholder needs, SEO needs, and even team constraints.</h4>
+
+									    	<a class="disabled">Case study coming soon</a>									    	
 									    </div>
 									    </div>
 									</div>
@@ -108,27 +107,27 @@
 						    </div>
 						    <div class="col">
 						        <a class="card card-3 stacked--up" href="#508-modal">
-						        	<i class="fas fa-external-link-alt"></i>
+						        	
 						            <div class="content">
-						            	<img src="images/508-thumb.png" alt="">
-						                <h4>Design Language for Seattle Works</h4>
+						            	<img src="images/seattle-works-thumb.png" alt="">
+						                <h4>SeattleWorks</h4>
 						                <p><span>Visual Communication</span><span>Branding</span></p>
 						            </div>
 						            <div id="508-modal" class="modal-window">
 									  <div>
 									    <a href="#!" title="Close" class="modal-close">Close</a>
-									    <h1>Design Language for Seattle Works</h1>
-									    <!-- <div class="breadcrumb">
-									    	<p>Culture-Centered Design</p><p>User Research</p><p>Visual Design</p>
-									    </div> -->
+									    <h1>Seattle Works</h1>
+									    <div class="breadcrumb">
+									    	<p>Visual Communication</p><p>Design Language</p><p>Branding</p>
+									    </div>
 									    <div class="modal-content">
-									    	<h3><span class="underline">Problem</span></h3>
-									    	<h4>Visual Design is more than just using pretty fonts and bright colors; the design should convey the story behind the brand's goals and missions.</h4>
-									    	<h3><span class="underline">Solution</span></h3>
-									    	<h4>Creating a visual design language from the ground-up for a non-profit in Seattle that reflects their personality by incorporating concepts from logo design, color theory, typography, grid systems and illustrations.</h4>
-									    	<h3><span class="underline">Impact</span></h3>
-									    	<h4>A system that is coherent, approachable, and representative of brand's core values.</h4>
-									    	<a href="seattleworks.html" class="modal-action">Read full story &rarr;</a>
+									    	<h3>Problem</h3>
+									    	<h4>Visual Design is more than just using fancy fonts and colors; how can the design convey the story behind a brand's goal and mission?</h4>
+									    	<h3>Solution</h3>
+									    	<h4>Creating a design language system that reflects a brand's personality by incorporating concepts from logo design, color theory, typography, and grid systems.</h4>
+									    	<h3>Result</h3>
+									    	<h4>A system that is coherent, approachable, and representative of brand's core values across different communication channels.</h4>
+									    	<a href="seattleworks.html" class="modal-action">Read full story <i class="fas fa-arrow-right"></i></a>
 									    </div>
 									    </div>
 									</div>
@@ -137,48 +136,73 @@
 						    
 						    
 					    <div class="col">
-					        <a class="card card-3 stacked--up" href="#dot-modal">
-					        	<i class="fas fa-external-link-alt"></i>
+					        <a class="card card-3 stacked--up" href="#dot-modal">					        	
 					            <div class="content">
-					            	<img src="images/517-thumb.png" alt="">
-					                <h4>Usability Studies for Seattle DOT</h4>
+					            	<img src="images/usability-thumb.png" alt="">
+					                <h4>Seattle Department of Transportation</h4>
 					                <p><span>User Research</span><span>Usability Testing</span></p>
 					            </div>
 					            <div id="dot-modal" class="modal-window">
 								  <div>
 								    <a href="#!" title="Close" class="modal-close">Close</a>
-								    <h1>Usability Studies for SDOT</h1>
-								    <!-- <div class="breadcrumb">
-								    	<p>Design Systems</p><p>Front-end Development</p><p>Learning Technologies</p>
-								    </div> -->
+								    <h1>Seattle Department of Transportation</h1>
+								    <div class="breadcrumb">
+								    	<p>Usability Testing</p><p>Design Scenarios</p><p>User Research</p>
+								    </div>
 								    <div class="modal-content">
-								    	<h3><span class="underline">Problem</span></h3>
+								    	<h3>Problem</h3>
 								    	<h4>Seattle is going through some major construction changes, how can users be informed of the same so as to help them plan their commute ahead of time?</h4>
-								    	<h3><span class="underline">Solution</span></h3>
-								    	<h4>Testing the usability of seattletraffic.org website - one-stop-shop for all resources, maps and tools - to make sure that people can get the information they need to plan their commute.</h4>
-								    	<h3><span class="underline">Impact</span></h3>
-								    	<h4>Popular applications like Google maps have a heavy influence on the user's mental model, which also shapes how the same people approach new experiences.</h4>
-								    	<a href="sdot.html" class="modal-action">Read Full Story &rarr;</a>
+								    	<h3>Solution</h3>
+								    	<h4>Testing the usability of seattletraffic.org website - a one-stop-shop for all resources, maps and tools - to make sure that people can get the information they need to plan their commute.</h4>
+								    	<h3>Impact</h3>
+								    	<h4>Popular applications like Google maps have a heavy influence on the user's mental model, which might also shape how the same people approach new experiences.</h4>
+								    	<a href="sdot.html" class="modal-action">Read Full Story <i class="fas fa-arrow-right"></i></a>
 								    </div>
 								    </div>
 								</div>
 					        </a>
 					    </div>
 					    <div class="col">
-						        <a class="card card-3 stacked--up" href="#okashi-modal">
-						        	<i class="fas fa-external-link-alt"></i>
+						        <a class="card card-3 stacked--up" href="#ucd-modal">						        	
+						            <div class="content">
+						            	<img src="images/508-thumb.png" alt="">
+						                <h4>Accessible in-car Design</h4>
+						                <p><span>User-Centered Design</span><span>Prototyping</span></p>
+						            </div>
+						            <div id="ucd-modal" class="modal-window">
+									  <div>
+									    <a href="#!" title="Close" class="modal-close">Close</a>
+									    <h1>Accesible in-car design</h1>
+									    <div class="breadcrumb">
+									    	<p>User-Centered Design</p><p>Research</p><p>Prototyping</p>
+									    </div>
+									    <div class="modal-content">
+									    	<h3>Problem</h3>
+									    	<h4>Currently, there are limited tools that address the cognitive deficits of brain injury survivors for a comfortable driving experience. How can we, as designers, remediate that problem?</h4>
+									    	<h3>Solution</h3>
+									    	<h4>Designing a car dashboard interface working in tandem with a mobile application that addresses the executive functions of a driver and reduces their cognitive load while driving.</h4>
+									    	<h3>Impact</h3>
+									    	<h4>The very solutions employed to reduce the cognitive load could sometimes become the reason for distraction while driving.</h4>
+									    	<a href="traumawise.html" class="modal-action">Read full story <i class="fas fa-arrow-right"></i></a>
+									    </div>
+									    </div>
+									</div>
+						        </a>
+						    </div>
+					    <div class="col">
+						        <a class="card card-3 stacked--up" href="#okashi-modal">						        	
 						            <div class="content">
 						            	<img src="images/amazon.png" alt="">
-						                <h4>Redesigning Amazon for Russia</h4>
+						                <h4>Redesigning Amazon.com</h4>
 						                <p><span>Culture-Centered Design</span><span>User Research</span></p>
 						            </div>
 						            <div id="okashi-modal" class="modal-window">
 									  <div>
 									    <a href="#!" title="Close" class="modal-close">Close</a>
-									    <h1>Redesigning Amazon for Russsia</h1>
-									    <!-- <div class="breadcrumb">
-									    	<p>Culture-Centered Design</p><p>User Research</p><p>Visual Design</p>
-									    </div> -->
+									    <h1>Redesigning Amazon.com</h1>
+									     <div class="breadcrumb">
+									    	<p>Culture-Centered Design</p><p>Visual Communication</p>
+									    </div>
 									    <div class="modal-content">
 									    	<h3><span class="underline">Problem</span></h3>
 									    	<h4>Amazon is one of the biggest e-commerce websites in the world. Why has the company not been able to establish its presence in Russia?</h4>
@@ -186,82 +210,29 @@
 									    	<h4>Redesigning amazon.com website to accommodate various cultural dimensions that play an important role in how people percieve experiences.</h4>
 									    	<h3><span class="underline">Impact</span></h3>
 									    	<h4>When it comes to culture, a one-size-fits all approach is never the right approach.</h4>
-									    	<a href="amazon.html" class="modal-action">Read full story &rarr;</a>
+									    	<a href="amazon.html" class="modal-action">Read full story <i class="fas fa-arrow-right"></i></a>
 									    </div>
 									    </div>
 									</div>
 						        </a>
-						    </div>
-						<div class="col">
-					        <a class="card card-3 stacked--up" href="#m-modal">
-					        	<i class="fas fa-external-link-alt"></i>
-					            <div class="content">
-					            	<img src="images/merken.png" alt="">
-					                <h4>Merken</h4>
-					                <p><span>Design Systems</span><span>Visual Design</span></p>
-					            </div>
-					            <div id="m-modal" class="modal-window">
-								  <div>
-								    <a href="#!" title="Close" class="modal-close">Close</a>
-								    <h1>Merken</h1>
-								    <!-- <div class="breadcrumb">
-								    	<p>Design Systems</p><p>Front-end Development</p><p>Learning Technologies</p>
-								    </div> -->
-								    <div class="modal-content">
-								    	<h3><span class="underline">Problem</span></h3>
-								    	<h4>Learning is hard, and even harder is the task of memorising something completely novel. How might we approach a problem that makes stuff stick in user's head?</h4>
-								    	<h3><span class="underline">Solution</span></h3>
-								    	<h4>Creating a web and mobile application that preaches three tenets: Flashcards, gamification, and rewards, to keep user engaged.</h4>
-								    	<h3><span class="underline">Impact</span></h3>
-								    	<h4>While most of the people liked the application and the idea behind enhancing the learning process, the app return rate was low due to a specific reason.</h4>
-								    	<a href="merken.html" class="modal-action">Read full story &rarr;</a>
-								    </div>
-								    </div>
-								</div>
-					        </a>
-					    </div>
-					    <div class="col">
-					        <a class="card card-3 stacked--up" href="#rec-modal">
-					        	<i class="fas fa-external-link-alt"></i>
-					            <div class="content">
-					            	<img src="images/rec-sys.png" alt="">
-					                <h4>Recommender Systems</h4>
-					                <p><span>Collaborative Filtering</span><span>Front-end Development</span></p>
-					            </div>
-					            <div id="rec-modal" class="modal-window">
-								  <div>
-								    <a href="#!" title="Close" class="modal-close">Close</a>
-								    <h1>Recommender System</h1>
-								    <!-- <div class="breadcrumb">
-								    	<p>Collaborative Filtering</p><p>Front-end Development</p><p>UX Design</p>
-								    </div> -->
-								    <div class="modal-content">
-								    	<h3><span class="underline">Problem</span></h3>
-								    	<h4>Many students are unsure what major to pursue after freshman year. Therefore, what if the college could analyse a students performance and informs them of what subjects to pick?</h4>
-								    	<h3><span class="underline">Solution</span></h3>
-								    	<h4>Developing a recommendation system that suggest courses to students by evaluating their performance in previous terms, along with the complete redesign of the existing college website.</h4>
-								    	<h3><span class="underline">Impact</span></h3>
-								    	<h4>Students liked the idea and the redesign, however the lack of student data became an impediment in the website's scalability.</h4>
-								    	<a href="recommender.html" class="modal-action">Read full story &rarr;</a>
-								    </div>
-								    </div>
-								</div>					        
-					    </div>
+						    </div> 						
 						</div>					
 				</div>
 				</div>
 				<div id="contact" class="tab">
 					<div class="tab-container">
-						<h2>Let's Talk</h2>
+						<h3>Let's Talk</h3>
 						<h4>If you have a project in mind or are simply interested in finding out more, get in touch and let’s get things moving.</h4>
-						<h3 style="margin: 1em 0 3em 0;"><a href="#" class="copy-click" data-tooltip-text="Click to copy" data-tooltip-text-copied="✔ Copied to clipboard">ayush95@uw.edu</a></h3>					
-						<h4 style="font-size: 1.1rem;">Elsewhere</h4>
-						<div class="social-handles">
-							<a href="https://linkedin.com/in/ayush95" target="_blank"><img src="images/linkedin.png" alt=""></a>
-							<a href="https://github.com/ayushsharma95" target="_blank"><img src="images/github.png" alt=""></a>
-							<a href="https://behance.net/ayush95" target="_blank"><img src="images/behance.png" alt=""></a>
-							<a href="https://twitter.com/ayushsharma95" target="_blank"><img src="images/twitter.png" alt=""></a>
+						<h3 style="font-family: 'Ubuntu Mono', monospace; font-size: 250%;"><a href="#" class="copy-click" data-tooltip-text="Click to copy" data-tooltip-text-copied="✔ Copied to clipboard">ayush95@uw.edu</a></h3>					
+						<div class="social-container">
+						<h5>Elsewhere</h5>
+						<div class="bar light">
+							<a href="https://www.behance.net/ayush95" target="_blank"><div class="fab fa-behance"></div></a>
+							<a href="https://www.linkedin.com/in/ayush95/" target="_blank"><div class="fab fa-linkedin"></div></a>
+							<a href="https://www.instagram.com/ayushsharma95/" target="_blank"><div class="fab fa-instagram"></div></a>
+							<a href="https://twitter.com/ayushsharma95" target="_blank"><div class="fab fa-twitter"></div></a>
 						</div>
+					</div>
 				</div>
 				</div>
 			</div>
@@ -270,13 +241,17 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
 	<script src="js/script.js"></script>
+
 	<script>
-		var typewriter = new Typewriter(app, {
-		    strings: ['interfaces', 'websites', 'experiences'],
-		    autoStart: true,
-		    loop: true  
-		});
-		$( document ).ready(function() {
+		setTimeout(function() {
+			$('#home h2').removeClass('animated fadeInUp');
+			$('#home h3').removeClass('animated fadeInUp ease-out-circ d1 a-1');
+			$('#home h4').removeClass('animated fadeInUp ease-out-circ d1 a-1');
+			$('#learn-more').removeClass('animated fadeInUp ease-out-circ d1 a-1');	
+		}, 4000);
+		
+
+		$(document ).ready(function() {
 		   var index = getParameterByName('index')
 		   if(index) {
 		   	back(index);	
@@ -284,13 +259,7 @@
 		   else {
 		   	$('#home').addClass('active').fadeIn().siblings().fadeOut().removeClass('active');    
 		   }
-		   // $('ul > li').not('#target' + index).hide()
-		   // $('div').not('#div' + index).hide()
-		   // $('#div'+ index).show();
-		   // $('#target' + index).addClass('active');
 		   
-		   
-		   // window.location = 'index.html#work';
 		});
 		function getParameterByName(name) {
 		    url = window.location.href;

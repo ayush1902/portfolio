@@ -1,90 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-	<meta charset="UTF-8">
-	<title>Work :: Design Language for Seattle Works</title>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-139042266-1');
-	</script>
-	<link rel="stylesheet" href="stylesheets/reset.css">
-	<link rel="stylesheet" href="stylesheets/normalize.css">
-	<link rel="stylesheet" href="stylesheets/sass/style.css">
-	<link rel="stylesheet" href="stylesheets/sass/work.css">	
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
-	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-	<link rel="stylesheet" href="stylesheets/lightslider.css">
+  <meta charset="UTF-8">
+  <title>SeattleWorks :: Ayush Sharma</title>
+  <meta name="viewport" content="width=700"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css'>
+  <link rel="stylesheet" href="stylesheets/reset.css">
+  <link rel="stylesheet" href="stylesheets/sass/style.css">
+  <link rel="stylesheet" href="stylesheets/lightslider.css">
 </head>
 <body>
-	<div class="container">
-		<div class="hot-nav">
-			<div id="side-nav" class="side-nav">			
+
+<div class="work-container">
+	<div class="hot-nav">
+			<!-- <div id="side-nav" class="side-nav">			
 			    <ul>
-			    	<li><a href="#one" onclick="toggle_nav();">Background</a></li>
-			    	<li><a href="#two" onclick="toggle_nav();">Branding</a></li>
-			    	<li><a href="#three" onclick="toggle_nav();">Components</a></li>
-			    	<li><a href="#four" onclick="toggle_nav();">Takeaways</a></li>
+			    	<li><a href="#one" onclick="toggle_nav();">Product</a></li>
+			    	<li><a href="#two" onclick="toggle_nav();">Methods</a></li>
+			    	<li><a href="#three" onclick="toggle_nav();">Study</a></li>
+			    	<li><a href="#four" onclick="toggle_nav();">Impact</a></li>
 			    </ul>
-			</div>
+			</div> -->
 			<p><a id="back" href="index.html?index=work" style="font-size: 0.75rem;">&larr; BACK TO WORK</a></p>
 		</div>
-
-	  	<div class="nav">
-	      <div id="toggle-nav" onclick="toggle_nav(this)">
-	        <div class="animated-icon">
-	          <div class="bar-1"></div>
-	          <div class="bar-2"></div>
-	          <div class="bar-3"></div>
-	        </div>
-	      </div>
-	    </div>
-		<div class="left-nav">
-			<div class="logo">
-				<p>ayush<span style="color:#666;">sharma</span></p>				
-			</div>
-			<div class="nav-items">
-				<div class="index">
-					<a href="#one" class="highlighted hover">Background</a>
-					<a href="#two" class="hover">Branding</a>
-					<a href="#three" class="hover">Components</a>
-					<a href="#four" class="hover">Takeaways</a>
-				</div>
-			</div>
-		</div>
-				<div class="main">
-		<img class="top-bg" src="images/508-bg.png" alt="">
-			<div class="ct">
-				
-				<div class="flex">
+	<div class="fixed-nav">
+		<nav class="toc">
+		<p class="back-link"><a id="back" href="index.html?index=work"><i class="fas fa-arrow-left"></i> Back to work</a></p>
+		<br>
+		<ul>
+			<li><a href="#background">Background</a></li>
+			<li>
+				<a href="#branding">Branding</a>
+				<ul>
+					<li><a href="#mission-stmt">Mission Statement</a></li>
+					<li><a href="#personality">Personality</a></li>
+					<li><a href="#moodboards">Moodboard</a></li>					
+				</ul>
+			</li>
+			<li>
+				<a href="#comms">Communication</a>
+			      <ul>
+			      	<li><a href="#logo">Logo Design</a></li>
+					<li><a href="#grid">Grid System and Layout</a></li>
+					<li><a href="#type">Typography</a></li>			
+					<li><a href="#color">Color</a></li>
+					<li><a href="#illustration">Illustrations and Imagery</a></li>
+					<li><a href="#final">Final Designs</a></li>
+			      </ul>
+			</li>
+			<li>
+				<a href="#takeaway">Takeaways</a>
+			      <ul>
+			      	<li><a href="#learnings">Key learnings</a></li>			        
+			        <li><a href="#steps">Next steps</a></li>			      			        
+			      </ul>
+			</li>
+			
+		</ul>
+	  <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+	    <path stroke="#444" stroke-width="2" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+	  </svg>
+	</nav>
+	</div>
+	<article class="contents">
+		<img class="cover" src="images/508-bg.png" alt="">
+		<section id="background">	 
+	    <div class="flex">
 					<div style="flex-basis: 70%;">
-						<h1 style="line-height: 1.65em;"><span style="font-weight: 100; font-size: 1.5rem;">Design Language for</span><br>
-						Seattle Works</h1>
-						<p style="color: #999; margin-bottom: 1em; font-size: 1em;">Visual Communication</p>	
-						<a href="https://drive.google.com/file/d/1AO8QXJll_9CDvFW84ya90sFLahFwLZng/view?usp=sharing" target="_blank" class="btn fill">View Brand Book</a>
+						<h1>SeattleWorks</h1>
+						<h5>University of Washington</h5>						
+						<br>
+						<a href="https://drive.google.com/file/d/1AO8QXJll_9CDvFW84ya90sFLahFwLZng/view?usp=sharing" target="_blank" class="btn">View Brand book<i class="fas fa-arrow-right"></i></a>
+
 					</div>			
 					<div style="flex-basis: 30%;" class="project-info">								
-						<h3>Role</h3>
-						<p>Branding and Identity Design, Visual Design</p>
+						<h3>Domain</h3>
+						<p>Visual Communication, branding, identity design</p>
 						<h3>Type</h3>
-						<p>Personal Work</p>
+						<p>Graduate Coursework [Individual]</p>
 						<h3>Timeline</h3>						
-						<p>Jan, 2019 - March, 2019 (3 Months)</p>
+						<p>Jan, 2019 - Mar, 2019 [3 Months]</p>
 					</div>
-				</div>								
-				<h2 id="one">1. Who is Seattle Works</h2>
-				<p>Seattle works is a non-profit organization based in the Greater Seattle Area and are centered around connection volunteers across the city, to ultimately make a better community. Before getting straight into the visual design, it was important to ask myself - <span class="yellow" style="font-weight: 400;">"Does SeattleWorks even need a new identity?"</span> Once I knew what was missing in their current system, only then I could've filled the voids.</p>
-				<h3><span class="underline">1.1 Current Design</span></h3>
-				<p>Below are some of the key issues that were evident straight away from a visual communication perspective: [Refer the carousel below for a detailed description.]</p>
-				<ul>
-					<li><span style="font-weight: 400; font-style: italic;">Consistency</span> <br> A visual experience should feel consistent across pages, tabs, interfaces, and platforms. That's what establishes a connection with the people and ensures continuity.</li>
-					<li><span style="font-weight: 400; font-style: italic;">Hierarchy</span> <br> The order with which user processes information on a page is crucial; we don't want people distracted by visual elements amidst important content.</li>
-					<li><span style="font-weight: 400; font-style: italic;">Personality</span> <br> The visual design should be able to speak user's language, and the user should be able to understand it - it is important to elicit the brand's values through visual artifacts.</li>
-				</ul>
-				<br>
-				<div class="slider">
+		</div>
+		
+	    <h2>1. Background</h2>
+	    <p>Seattle works is a non-profit organization based in the Greater Seattle Area and are centered around connection volunteers across the city, to ultimately make a better community. Before getting straight into the visual design, it was important to ask myself - "Does SeattleWorks even need a new identity?" Once I knew what was missing in their current system, only then I could've filled the voids.</p>
+		
+		<h3>1.1 Current Design</h3>
+		<p>Below are some of the key issues that were evident straight away from a visual communication perspective: [Refer the carousel below for a detailed description.]</p>
+		<ul>
+			<li>Consistency <br>
+				A visual experience should feel consistent across pages, tabs, interfaces, and platforms. That's what establishes a connection with the people and ensures continuity.</li>
+			<li>Hierarchy <br>
+				The order with which user processes information on a page is crucial; we don't want people distracted by visual elements amidst important content.</li>
+			<li>Personality <br>
+				The visual design should be able to speak user's language, and the user should be able to understand it - it is important to elicit the brand's values through visual artifacts.</li>
+		</ul>
+		<div class="slider">
 	                <ul id="issue-gallery" class="gallery list-unstyled cS-hidden">
 	                    <li data-thumb="images/thumb/issue-1.png"> 
 	                        <img src="images/issue-1.png" />
@@ -97,24 +110,52 @@
 	                     </li>     	                    
 	                </ul>
             	</div>
-				<h3><span class="underline">1.2 Who is it for</span></h3>
-				<p>The user base Seattle Works predominantly targets was 'Youth' - which means teenagers, people in their 20s, even 30s. However, it was more than just this age bracket - the website might also used by the people currently at Seattle works. Therefore beyond the primary users, the secondary and tertiary audience includes current employees and even competitors. The visual design is the 'face' that interacts with the entire world and one thing that really stuck with me during the lectures was - </p>
-				<p class="emp">'You cannot be everything to everyone.'</p>
-				<img src="images/user-profile.png" alt="">
-				<h2 id="two">2. What is a 'Brand'</h2>				
-				<p>I walked into the class knowing that I am acquainted with what it means to design a visual system, but this more than just a visual system. Sometimes your previous domain knowledge can get in the way of learning new things. Therefore, I made sure to leave behind everything I knew and start fresh with what it means to create a 'brand' and an 'identity'. I would be lying if I didn't think of it as a design system in the begining.</p>
-				<img src="images/brand.png" alt="">
-				<h3><span class="underline">2.1 Mission Statement</span></h3>
-				<p>With a clearer picture of what a brand means, I was somewhat sure how to proceed. I wanted to engender these words (maybe all of them, or even one) from the target users as soon as they come across seattle works - 'Growth', 'Connection', 'Diversity', and 'Care'. Therefore, I decided to come up with a new mission statement for Seattle works which laid the foundation for everything</p>
-				<p class="emp">"Let's build a better community, together."</p>
-				<h3><span class="underline">2.2 Speaking of Personality</span></h3>
-				<img src="images/scale.png" alt="">
-				<p>I began thinking of Seattle Works as a human being - if I were to talk to them right now what would be my first impressions about their personality, behavior, mindset, and what would that make me feel as well. I decided to come up with some random personality traits and keywords, trying to fit Seattle Works somewhere along the line.</p>				
-				<h2 id="three">3. Getting in the mood</h2>
-				<p>Moodboards not only do a great job visualizing the overall theme of the brand, but also act as a check towards whether that mood aligns with the intended vision of the brand. Moreover, it also helps bridge the gap between language and visuals - it ensures everyone is on the same page before proceeding into the design phase. Therefore, I went with two distinct moodbards - a tonal and a literal board.</p>
-				<img src="images/moodboard.png" alt="">
-				<p>I went ahead with the literal one - while compiling images for the board, I sensed a strong color scheme, as well as abstract concepts such as 'overlap' denoting 'togetherness', which laid the stepping stones for wireframes and final designs. </p>
-				<h2>3.1 Logo Design</h2>
+            <h3>1.2 Who is it for?</h3>
+            <p>The user base Seattle Works predominantly targets was 'Youth' - which means teenagers, people in their 20s, even 30s. However, it was more than just this age bracket - the website might also used by the people currently at Seattle works. Therefore beyond the primary users, the secondary and tertiary audience includes current employees and even competitors. The visual design is the 'face' that interacts with the entire world and one thing that really stuck with me during the lectures was -</p>
+            <blockquote>
+            	<p>'You cannot be everything to everyone.'</p>
+            </blockquote>
+            <br>
+            <img src="images/user-profile.png" alt="">
+	</section>
+
+	<section>
+		<div id="branding">
+			<h2>2. What makes a 'Brand'</h2>
+			<p>
+				I walked into the class knowing that I am acquainted with what it means to design systems, but this was more than conjuring up yet another visual system - it was partly also about connecting with the brand emotionally to express its goals throught the medium of design. Sometimes your previous domain knowledge can get in the way of learning new things. Therefore, I made sure to leave behind everything I knew and start fresh with what it means to create a 'brand' and an 'identity'. I would be lying if I didn't think of it as a design system in the begining.
+			</p>
+	      	<img src="images/brand.png" alt="">
+	    </div>
+
+		<div id="mission-stmt">
+			<h3>2.1 Mission Statement</h3>
+			<p>With a clearer picture of what a brand means, I was somewhat sure how to proceed. My goal was to engender a set of emotions through design, specifically the emotions of 'Growth', 'Connection', 'Diversity', and 'Care'. Therefore, I decided to come up with a new mission statement for Seattle works which laid the foundation for everything, that would become the foundation of my design to come.</p>
+			<blockquote>
+				<p>"Let's build a community, together."</p>
+			</blockquote>
+			<br>
+		</div>
+		<div id="personality">
+			<h3>2.2 Personaility</h3>
+			<img src="images/scale.png" alt="">
+			<p>I began thinking of Seattle Works as a human being - if I were to talk to them right now what would be my first impressions about its personality, behavior, mindset, and what would that make me feel as well. I decided to come up with some random personality traits and keywords, trying to fit Seattle Works somewhere along the line.</p>
+		</div>
+		
+		
+		<div id="moodboards">
+			<h3>2.3 Moodboard</h3>
+			<p>
+				Moodboards not only do a great job visualizing the overall theme of the brand, but also act as a check towards whether that mood aligns with the intended vision of the brand. Moreover, it also helps bridge the gap between language and visuals - it ensures everyone is on the same page before proceeding into the design phase. Therefore, I went with two distinct moodbards - a tonal and a literal board.
+			</p>
+			<img src="images/moodboard.png" alt="">
+			<p>I went ahead with the literal one - while compiling images for the board, I sensed a strong color scheme, as well as abstract concepts such as 'overlap' denoting 'togetherness', which laid the stepping stones for wireframes and final designs.</p>			
+		</div>
+	</section>
+	<section>		
+			<h2 id="comms">3. Communication</h2>
+			<div id="logo">
+				<h3>3.1 Logo Design</h3>
 				<p>Logos can act as a face and an identifying marker for a product. Consumer attachment is everything when creating a logo, and hence, I felt that the companies core beliefs should be instantly relfected in the logo design. Keeping in mind the key words that define Seattle Works - 'Growth', 'Connection', 'Diversity', and 'Care'.</p>
 				<div class="slider">
 	                <ul id="logo-gallery" class="gallery list-unstyled cS-hidden">
@@ -132,15 +173,20 @@
 	                     </li>     	                    
 	                </ul>
             	</div>
-            	<h2>3.2 Grid System and Wireframes</h2>
-            	<p><span style="font-weight: 500; letter-spacing: 2px;">Question: </span>How do you decide on a grid system?<br>
-            		<span style="font-weight: 500; letter-spacing: 2px;">Answer: </span>You do not, your content decides it. <br>
-            		Fixating on a grid system beforehand only led me to alter my layout choices and content. Therefore, I let the content inform my grid choice. I fiddled around with 12pt and 16pt grids, and ultimately I found the 12pt grid to have the balance between complexity and flexibility. In addition, it is practically impossible to have absolute widths for columns/margins/gutters due to the growing variation in resolutions today. So I decided to take a relative approach from the very beginning.</p>
-            	<img src="images/grid.png" alt="">
-            	
-            	<h2>3.3 Typography</h2>
-            	<p>For me, typography makes or breaks a design. Text is one of the primary ways that users communicate with a brand. While people may not appreciate or admit it straightaway, type matters - and that's the beauty of it. It almost becomes invisibile when it strikes that connection with the user. In addition, visual communication is like a pipeline - every previous decision affects the next design choice. </p>
-            	<div class="slider">
+			</div>
+			<div id="grid">
+			<h3>3.2 Grid systems and Layout</h3>
+			<p>
+				<span style="font-weight: 600; margin-bottom: 2%">Question: </span> How do you decide on a grid system? <br>
+				<span style="font-weight: 600; margin-bottom: 2%">Solution: </span>You do not, your content does.
+			</p>
+			<p>Fixating on a grid system beforehand only led me to alter my layout choices and content. Therefore, I let the content inform my grid choice. I fiddled around with 12pt and 16pt grids, and ultimately I found the 12pt grid to have the balance between complexity and flexibility. In addition, it is practically impossible to have absolute widths for columns/margins/gutters due to the growing variation in resolutions today. So I decided to take a relative approach from the very beginning.</p>
+			<img src="images/grid.png" alt="">
+			</div>
+			<div id="type">
+			<h3>3.3 Typography</h3>
+			<p>For me, typography makes or breaks a design. Text is one of the primary ways that users communicate with a brand. While people may not appreciate or admit it straightaway, type matters - and that's the beauty of it. It almost becomes invisibile when it strikes that connection with the user. In addition, visual communication is like a pipeline - every previous decision affects the next design choice.</p>
+			<div class="slider">
 	                <ul id="type-gallery" class="gallery list-unstyled cS-hidden">
 	                    <li data-thumb="images/thumb/type-1.png"> 
 	                        <img src="images/type-1.png" />
@@ -155,53 +201,67 @@
 	                </ul>
             	</div>
             	<ul>
-            		<li>Legibility - A trait not a goal <br>
-            		My goal was not to find a legible typeface. However, the large open counters, small x-heights, and subtle weight changes - all of that made our typeface choice legible as well as emotional. </li>
-            		<li>Readability <br>
+            		<li>Legibility: The traits of a typeface <br>
+            		My goal was not to find a legible typeface. However, the large open counters, small x-heights, and subtle weight changes - all of that made our typeface choice legible as well as emotional.</li>
+            		<li>Readability: The goal of a typeface <br>
             		Neue Haas Unica has over 12 weights, which obviated the need for any additional font for this system. It provides enough flexibility, as well as retains the properties that makes it unique.</li>
             	</ul>
-            	<h2>3.4 Color Palette</h2>
+			</div>
+			<div id="color">
+            	<h3>3.4 Color</h3>
             	<p>I wanted to use colors to mirror 'action' - as a non-profit, Seattle Works is constantly bringing about change to the community. Out of all the palettes, I felt the Split-complementary palette resonated with me the most. For one, it gave variety as well as contrast, but also contrast between warm and cool colors helped a sense of 'action'. A warm and energetic background contrasted almost perfectly with a bold, but cool foreground. <br>
-            	Use of pastel shades also played an important role to give an 'earthy' feel to the overall visual design. Moreover, each hue had a meaning behind it - the light orange for Joy and Warmth; the teal accent for a calm and refreshing look; and a deep red to show conviction and determination in what Seattle Works stands for.</p>
-            	<p class="emp">"Colors, like features, follow change of emotions."</p>
-            	<img src="images/color.png" alt="">
-            	<h2>3.5 Illustrations and Imagery</h2>
-            	<p><span style="font-style: italic; font-weight: 400;">Why Illustrations over stock photography?</span>
-            		<br>
-            	I feel illustrations can freely ignore reality and express abstracts themes and concepts, not to forget the control you have as 'you' are creating them. As we see an illustration beside some text, it can make reluctant users curious as well - it can engender a feeling that the brand actually goes the extra mile, even to convey simplest of messages.<br>
-            	<img src="images/illustrations.png" alt="">
-            <span style='margin-left: 1em;'>&nbsp;</span>I also feel since I am not selling a product, it makes more sense to capture the theme rather than some people just smiling in a bright background. Finally, I wanted to show how much Seattle Work cares about its users; I wanted to establish a deeper, more personalized connection using Illustrations.<br>
-        	<span style="font-style: italic; color: #666;">[Resource: Humaans Illustrations, available online]</span></p>
-        	<h2>3.6 Putting it all together</h2>
-        	<p>After laying down the foundation, it was just a matter of drag and drop to put down the final pieces. You can view the detailed designs in the link below, along with the 'Brand Guidelines Book'.</p>
-        	<img src="images/final.png" alt="">
-
-        	<a href="https://drive.google.com/file/d/1AO8QXJll_9CDvFW84ya90sFLahFwLZng/view?usp=sharing" target='_blank' class="btn fill" style="margin: 2em 0;">View Final Design</a>
-        	<br>
-        	<h2 id="four">4. Key Learnings</h2>
-        	<ul>
-        		<li><span style="font-style: italic;">Design System != Design Language</span><br>
-        		Coming into this project, I thought of a design language as something similar to a design system; I learnt these are completely different things. Design language is more about laying the stepping stones towards a design system, a language that your brand speaks and users understand.</li>
-        		<li><span style="font-style: italic;">Never take your designer hat off</span> <br>
-        		While I was instructed that the class is more about learning design, it was hard not to be cognizant of what users want. I tried to make it not just about a designer designing something, at every step I kept the target users at the center, rather than just brushing up my skills as a visual designer.</li>
-        	</ul>
-        	<h2>What's Next</h2>
-        	<ul>
-        		<li>A definitive research is still wanting - thorough competitive analyis, brand audit survey, understanding employee needs as well.</li>
-        		<li>Next natural step would be to be more precise about guidelines and rules, lay them out, and transform the design language into a coherent design system, which can be used by other people as well.</li>
-        	</ul>
-			</div>					
+				Use of pastel shades also played an important role to give an 'earthy' feel to the overall visual design. Moreover, each hue had a meaning behind it - the light orange for Joy and Warmth; the teal accent for a calm and refreshing look; and a deep red to show conviction and determination in what Seattle Works stands for.</p>
+				<blockquote>
+					<p>"Colors, like features, follow change of emotions."</p>
+				</blockquote>
+				<img src="images/color.png" alt="">
+			</div>
+			<div id="illustration">
+				<h3>3.5 Illustrations and Imagery</h3>
+				<h4 style="font-style: italic; font-weight: 500;">"Why did I pick illustrations over stock photography?"</h4>
+				<p>I feel illustrations can freely ignore reality and express abstracts themes and concepts, not to forget the control you have as 'you' are creating them. As we see an illustration beside some text, it can make reluctant users curious as well - it can engender a feeling that the brand actually goes the extra mile, even to convey simplest of messages.</p>
+				<img src="images/illustrations.png" alt="">
+				<p> I also feel since I am not selling a product, it makes more sense to capture the theme rather than some people just smiling in a bright background. Finally, I wanted to show how much Seattle Work cares about its users; I wanted to establish a deeper, more personalized connection using Illustrations.</p>
+				<p style="color: #666; font-style: italic;">[Resource: Humaans Illustrations, available online]</p>
+				<h3></h3>
+			</div>
+			<div id="final">
+				<h3>3.6 Putting it all together</h3>
+				<p>After laying down the foundation, it was just a matter of drag and drop to put down the final pieces. You can view the detailed designs in the link below, along with the 'Brand Guidelines Book'.</p>
+				<img src="images/final.png" alt="">
+			</div>		
+	</section>
+	<section>
+		<h2 id="takeaway">4. Takeaways</h2>
+		<div id="learnings">
+		<h3>4.1 Key learnings</h3>
+		<ul>
+			<li>Design System != Design Language <br>
+			Walking into this project, I thought of a design language as something similar to a design system; I learnt these are completely different things. Design language is more about laying the stepping stones towards a design system, a language that your brand speaks and users understand.</li>
+			<li> Never take your designer/researcher hat off <br>
+			While I was instructed that the class is more about learning design, it was hard not to be cognizant of what users want. I tried to make it not just about a designer designing something, at every step I kept the target users at the center, rather than just brushing up my skills as a visual designer.</li>
+		</ul>
 		</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<div id="steps">
+			<h3>4.2 What's next</h3>
+			<ul>
+				<li>A definitive research is still wanting - thorough competitive analyis, brand audit survey, understanding employee needs as well.</li>
+				<li>Next natural step would be to be more precise about guidelines and rules, lay them out, and transform the design language into a coherent design system, which can be used by other people as well.</li>
+			</ul>
+			<br>
+		</div>
+	</section>
+	
+</article>
+</div>
+
+<!-- partial -->
+	<script src="js/scroll.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
 	<script src="js/script.js"></script>
-	<script src="js/lightslider.js"></script>	
+<script src="js/lightslider.js"></script>
 	<script>
-		var changeLink = function(e) {
-			$(this).addClass("highlighted").siblings().removeClass("highlighted");
-		}
-		$(".index a").on('click', changeLink);
-		$(document).ready(function() {			
-            $('#issue-gallery').lightSlider({                                
+		$('#issue-gallery').lightSlider({                                
                 item:1,             
                 slideMargin: 0,                              
                 speed:500,                
@@ -209,7 +269,7 @@
                     $('#issue-gallery').removeClass('cS-hidden');
                 }  
             });
-            $('#logo-gallery').lightSlider({                                
+		$('#logo-gallery').lightSlider({                                
                 item:1,             
                 slideMargin: 0,                              
                 speed:500,                
@@ -217,7 +277,7 @@
                     $('#logo-gallery').removeClass('cS-hidden');
                 }  
             });
-            $('#type-gallery').lightSlider({                                
+		$('#type-gallery').lightSlider({                                
                 item:1,             
                 slideMargin: 0,                              
                 speed:500,                
@@ -225,6 +285,7 @@
                     $('#type-gallery').removeClass('cS-hidden');
                 }  
             });
-		});
 	</script>
-</body>		
+	
+</body>
+</html>

@@ -2,13 +2,13 @@ var app = document.getElementById('app');
 var toggle_nav = function(x) {
   nav = document.getElementById("side-nav");
   button = document.getElementById("toggle-nav");
-  if(nav.style.width == '40%') {
+  if(nav.style.width == '50%') {
     $('.menu-items').fadeOut('fast');
     nav.style.width = 0;
     button.classList.toggle('animate');
   }
   else {
-    nav.style.width = '40%';
+    nav.style.width = '50%';
     $('.menu-items').fadeIn();
     button.classList.toggle('animate');
   }
@@ -74,6 +74,7 @@ $(document).ready(function() {
   $("#learn-more").on('click', redirect);
   $('.menu a').on('click', navigate);
   $(".mobile-nav a").on('click', navigate);
-  $('#work_link').on('click', redirect);  
+  $('#work_link').on('click', redirect);
+    
 });
 
