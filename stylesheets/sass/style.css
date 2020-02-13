@@ -650,10 +650,11 @@ a {
     display: block; } }
 @media screen and (max-width: 1050px) {
   .btn {
-    padding: 1em; }
+    padding: 1em;
+    font-size: 2rem; }
 
   .disabled {
-    font-size: 1.25rem; }
+    font-size: 1.5rem; }
 
   .fixed-nav {
     display: none; }
@@ -706,10 +707,6 @@ a {
   .main {
     width: 100%;
     margin-left: 0; }
-
-  .btn {
-    font-size: 150%;
-    border: 4px solid #fff; }
 
   #home h2 {
     font-size: 600%; }
