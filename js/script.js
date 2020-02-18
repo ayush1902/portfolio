@@ -2,13 +2,13 @@ var app = document.getElementById('app');
 var toggle_nav = function(x) {
   nav = document.getElementById("side-nav");
   button = document.getElementById("toggle-nav");
-  if(nav.style.width == '50%') {
+  if(nav.style.width == '60%') {
     $('.menu-items').fadeOut('fast');
     nav.style.width = 0;
     button.classList.toggle('animate');
   }
   else {
-    nav.style.width = '50%';
+    nav.style.width = '60%';
     $('.menu-items').fadeIn();
     button.classList.toggle('animate');
   }

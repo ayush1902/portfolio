@@ -86,14 +86,14 @@ html {
   -webkit-transition: 0.25s ease-in; }
 
 .animate .bar-1 {
-  -webkit-transform: rotate(-45deg) translate(-10px, 10px);
-  transform: rotate(-45deg) translate(-0.5rem, 0.5rem); }
+  -webkit-transform: rotate(-45deg) translate(-0.5rem, 0.56rem);
+  transform: rotate(-45deg) translate(-0.5rem, 0.56rem); }
 
 .animate .bar-2 {
   opacity: 0; }
 
 .animate .bar-3 {
-  -webkit-transform: rotate(45deg) translate(-10px, -10px);
+  -webkit-transform: rotate(45deg) translate(-0.5rem, -0.5rem);
   transform: rotate(45deg) translate(-0.5rem, -0.5rem); }
 
 .side-nav {
@@ -121,7 +121,10 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Ubuntu Mono';
+  letter-spacing: 3px;
+  text-transform: uppercase; }
 
 .hot-nav ul {
   width: 90%;
@@ -150,7 +153,8 @@ html {
     font-family: 'Ubuntu Mono', monospace; }
 
 .mobile-nav li {
-  font-size: 0.9em;
+  font-size: 3rem;
+  font-weight: 700;
   margin: 1.5em 0; }
 
 a {
@@ -160,7 +164,8 @@ a {
 .main {
   width: 83%;
   margin-left: 17%;
-  background: #111;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox='0 0 44 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 12v-2L0 0v10l4 2h16zm18 0l4-2V0L22 10v2h16zM20 0v8L4 0h16zm18 0L22 8V0h16z' fill='%23222222' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
   color: #fff; }
 
 .container {
@@ -209,9 +214,9 @@ a {
   cursor: pointer;
   display: inline-block;
   line-height: 1;
-  padding: 1rem;
+  padding: 1.15rem;
   -webkit-border-radius: 3px;
-  font-size: 1rem;
+  font-size: 115%;
   -moz-border-radius: 3px;
   border-radius: 100px;
   color: #fff;
@@ -275,7 +280,10 @@ a {
   text-align: left;
   font-weight: 500;
   margin: auto;
-  font-size: 0.9rem; }
+  font-size: 1rem;
+  font-family: 'Ubuntu Mono';
+  text-transform: uppercase;
+  letter-spacing: 0.08rem; }
 
 .menu a,
 .index a {
@@ -296,11 +304,9 @@ a {
   padding-bottom: 4em; }
 
 #work h2 {
-  font-weight: 300;
-  margin: 2em 0 1em 0;
-  font-size: 200%; }
+  margin-bottom: 2%; }
   #work h2:first-child {
-    margin-top: 10%; }
+    margin-top: 15%; }
 
 .tab {
   display: none; }
@@ -310,20 +316,22 @@ a {
   align-items: center;
   justify-content: left; }
 
-#home h2 {
+#home h2, #about h2, #work h2, #contact h2 {
   font-size: 250%;
-  font-weight: 400; }
+  font-weight: 500;
+  font-family: 'Ubuntu Mono'; }
 
 #home h3, #contact h3, #about h3 {
-  font-size: 200%;
-  font-weight: 200;
-  line-height: 125%;
+  font-size: 175%;
+  font-weight: 300;
+  line-height: 150%;
   color: #eee; }
 
 #home h4,
 #contact h4,
-#about h4 {
-  font-size: 115%;
+#about h4,
+#work h5 {
+  font-size: 125%;
   line-height: 175%;
   font-weight: 400;
   color: #888; }
@@ -426,7 +434,7 @@ a {
   margin: 1em 0 0.75em 0;
   color: #eee;
   font-weight: 400;
-  font-size: 100%; }
+  font-size: 120%; }
 
 .content img {
   width: 100%;
@@ -443,7 +451,7 @@ a {
 
 .modal-window {
   position: fixed;
-  background-color: rgba(10, 10, 10, 0.93);
+  background-color: rgba(10, 10, 10, 0.92);
   top: 0;
   right: 0;
   bottom: 0;
@@ -459,19 +467,19 @@ a {
     pointer-events: auto; }
   .modal-window > div {
     border-radius: 5px;
-    width: 45%;
+    width: 48%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 2em 2em 2.75em 2em;
+    padding: 3%;
     background: #222; }
   .modal-window header {
     font-weight: 700; }
   .modal-window h1 {
-    font-size: 125%;
+    font-size: 135%;
     font-weight: 500;
-    margin-bottom: 1%; }
+    margin-bottom: 2%; }
 
 .modal-close {
   color: #888;
@@ -513,23 +521,25 @@ a {
 .modal-content h3 {
   font-family: 'Ubuntu Mono', monospace;
   color: #eee;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   font-weight: 700;
-  font-size: 110%;
+  font-size: 100%;
   margin-bottom: 1%;
-  margin-top: 1%; }
+  margin-top: 3%; }
 
 .modal-content h4 {
-  color: #aaa;
+  color: #888;
   margin-bottom: 4%;
   line-height: 150%;
-  font-weight: 300; }
+  font-weight: 400; }
 
 .breadcrumb {
   display: flex;
   margin: 2% 0 4% 0; }
 
 .breadcrumb p {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-weight: 500;
   background: #333;
   color: #888;
@@ -564,10 +574,11 @@ a {
     position: absolute;
     top: calc(100% + 1em);
     left: 50%;
-    padding: 0 0.75em;
+    padding: 1rem;
     font-size: 0.9rem;
     font-family: 'Inter';
     color: #fff;
+    line-height: 1;
     white-space: nowrap;
     background-color: #222;
     border: 1px solid #fff;
@@ -708,30 +719,38 @@ a {
     width: 100%;
     margin-left: 0; }
 
-  #home h2 {
-    font-size: 600%; }
+  #home h2, #about h2, #work h2, #contact h2 {
+    font-size: 500%; }
 
   #home h3,
   #about h3,
   #contact h3 {
-    font-size: 400%;
+    font-size: 350%;
     line-height: 150%; }
 
   #home h4,
   #about h4,
-  #contact h4 {
-    font-size: 200%;
-    line-height: 175%; }
+  #contact h4,
+  #work h5 {
+    font-size: 225%;
+    line-height: 175%;
+    margin-top: 4%; }
+
+  #home * {
+    margin-bottom: 10%; }
+
+  #about * {
+    margin-bottom: 5%; }
+
+  #contact * {
+    margin-bottom: 8%; }
 
   #contact h5 {
-    font-size: 200%; }
-
-  #home *, #contact *, #about * {
-    margin-bottom: 7%; }
+    font-size: 2rem; }
 
   .fancy-underline {
     padding-bottom: 0.75rem;
-    border-bottom: 5px dashed #DCE775; }
+    border-bottom: 4px dashed #DCE775; }
 
   .card-div {
     display: block; }
