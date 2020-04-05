@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Credible :: Ayush Sharma</title>
+  <meta name="viewport" content="width=700"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css'>
+  <link rel="stylesheet" href="stylesheets/reset.css">
+  <link rel="stylesheet" href="stylesheets/sass/style.css">
+  <link rel="stylesheet" href="stylesheets/lightslider.css">
+</head>
+<body>
+
+<div class="work-container">
+	<div class="hot-nav">			
+			<p><a id="back" href="index.html?index=work" style="font-size: 0.75rem;">&larr; BACK TO WORK</a></p>
+		</div>
+	<div class="fixed-nav">
+		<nav class="toc">
+		<p class="back-link"><a id="back" href="index.html?index=work"><i class="fas fa-arrow-left"></i> Back to work</a></p>
+		<br>
+		<ul>
+			<li><a href="#problem">Problem Statement</a></li>
+			<li>
+				<a href="#objectives">Objectives</a>
+				<!-- <ul>
+					<li><a href="#business-goals">Business goals</a></li>
+					<li><a href="#user-goal">User goals</a></li>
+				</ul> -->
+			</li>
+			<li>
+				<a href="#constraints">Constraints</a>			      
+			</li>
+			<li>
+				<a href="#discovery">Discovery</a>
+			      <ul>
+
+			      	<li><a href="#inconsistencies">Current Inconsistencies</a></li>
+			      	<li><a href="#site-map">Site Map</a></li>
+					<li><a href="#scenarios">Scenarios</a></li>
+					<li><a href="#cpa">Competitive analysis</a></li>			
+					
+			      </ul>
+			</li>			
+			<li><a href="#ideation">Ideation</a>
+				<ul>
+					<li><a href="#explorations">Initial Explorations</a></li>
+					<li><a href="#iterations">Iterations</a></li>
+				</ul>
+			</li>
+			<li><a href="#testing">Testing</a>
+				<ul>
+					<li><a href="#results">Usability Test Results</a></li>
+					<li><a href="#refine">Making a decision</a></li>				
+				</ul>
+			</li>
+			<li>
+				<a href="#final">Final Designs</a>
+				<ul>
+  					<li><a href="#desktop">Desktop</a></li>
+  					<li><a href="#mobile">Mobile</a></li>
+  				</ul>			      				
+			</li>
+			<li>
+				<a href="#takeaway">Reflections</a>			      				
+			</li>
+
+		</ul>
+	  <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+	    <path stroke="#444" stroke-width="2" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+	  </svg>
+	</nav>
+	</div>
+	<article class="contents">
+		<img class="cover" src="images/credible-cover.png" alt="">
+		<section id="background">	 
+	    <div class="flex">
+					<div style="flex-basis: 70%;">
+						<h1>Credible</h1>
+						<h5>San Francisco, California</h5>						
+						<br>
+						<a href="https://credible.com" target="_blank" class="btn">Visit Credible.com<i class="fas fa-arrow-right"></i></a>
+
+					</div>			
+					<div style="flex-basis: 30%;" class="project-info">								
+						<h3>Domain</h3>
+						<p>Interaction Design, User Research, Navigation Design</p>
+						<h3>Type</h3>
+						<p>Summer Internship [Individual]</p>
+						<h3>Timeline</h3>						
+						<p>June, 2019 - Sept, 2019 [3 Months]</p>
+					</div>
+		</div>
+		<div id="problem">
+	    <h2>1. Problem Statement</h2>
+	    <p>Helping users navigate should always be the top priority for every website and application. More than just navigation, it should also indicate the system status at all times so that the user never feels lost when navigating across interfaces. The following project was about: </p>
+	    <blockquote>How can we re-design a navigation system that aims to solve not just the user pain points, but addresses business goals as well?</blockquote>
+		</div>
+	</section>
+
+	<section>
+		<div id="objectives">
+			<h2>2. Objectives</h2>
+			<p>The project was prioritized for a number of reasons–there was a desire to move towards something that derives learnings from current user research and analytics and problems that other team members were facing in scaling and maintaining the current system. It was also essential to not get carried away with the stakeholder goals at the cost of user end goals.</p>
+			<img src="images/objectives.png" alt="">
+		</div>
+		<!-- <div id="business-goals">
+			<h3>2.1 Desired business objectives</h3>
+			<ul>
+				<li><span style="font-weight: 600">Engineering</span><br>We had multiple code bases for the existing navigation system; it wasn’t clear in what contexts the navigation would change across views, which had a direct impact on the end-user experience.</li>
+				<li><span style="font-weight: 600">Search Engine Optimization</span><br>There was also an opportunity to explore how can the new design incorporate additional links to ‘Blog Articles’, ‘FAQs’, the boost SEO of the product.</li>
+				<li><span style="font-weight: 600">Partnerships</span><br>Credible is accessed by not just end-users, but also by a slew of partnership constituencies. Therefore, it became pertinent to provide a consistent experience for them as well</li>
+				<li><span style="font-weight: 600">Co-branding</span><br>Finally, it was also important to make sure that the flow isn’t disrupted in case when the header supports the partner co-branding elements.</li>
+			</ul>
+			
+	    </div>
+
+		<div id="user-goal">
+			<h3>2.2 Desired user goals</h3>
+			<p>It was also imperative to not get carried away with the stakeholder goals at the cost of user end goals. Like any other navigation, the higher-level goals for any end-user were:</p>
+			<ul>
+				<li><span style="font-weight: 600">Usability</span><br>The navigation should act as a ‘road-map’ for new users and ‘source of action’ for returning users</li>
+				<li><span style="font-weight: 600">Visual Design</span><br>Iconography, typography, and color scheme should be consistent with what the user is familiar</li>
+				<li><span style="font-weight: 600">Interaction Design</span><br>Identifying if there are bottlenecks in the entire product site-map where the user can get stuck, and whether they can get to every view from any screen</li>
+				<li><span style="font-weight: 600">Contextual changes</span><br>Laying down all the possible use-cases where the navigation could potentially change, and how to address that problem in a way that doesn’t change the user’s mental model frequently</li>
+			</ul>
+		</div> -->
+		<div id="constraints">
+			<h2>3. Constraints</h2>
+			<p>The list of objectives was pretty exhaustive, and going in I was aware I wouldn’t be able to tackle each one of them individually in a span of 3 months. Therefore, it was pivotal to prioritize the objectives and move in with a clear picture of how would you measure the same. Moreover, I decided to tackle business and user goals that were interrelated, simultaneously.</p>
+			<img src="images/constraints.png" alt="">
+			<ul>
+				<li>Engineering and finding the use-cases went hand-in-hand since the different code bases were due to the navigation bar changing based on different contexts.</li>
+				<li>SEO and Interaction design went together since during this step we would be creating the new site map, which can also help us ensure how to handle links that boost SEO</li>
+				<li>Partnerships accessibility was party related with the usability of the navigation, where we can check if the users are able to access different pages using tree testing</li>
+				<li>Finally, visual inconsistencies and co-branding came in the very end</li>
+			</ul>
+		</div>
+		
+		
+		<div id="discovery">
+			<h2>4. Discovery</h2>
+			<p>As a starting point, I decided to lay down all the current visual/usability inconsistencies in our existing navigation. This indirectly helped in formulating the different use-cases where the structure of the navigation changes.</p>
+			<img src="images/discovery-flow.png" alt="">
+		</div>
+		<div id="inconsistencies">
+			<h3>4.1 Current inconsistencies</h3>			
+			<p>
+				Upon doing a quick audit of our current system, I found out we had 8 different iterations of the navigation, which changed based what page the user was on:
+			</p>
+			
+			
+			<div class="slider">
+	                <ul id="inconsistency-gallery" class="gallery list-unstyled cS-hidden">	                    
+	                     <li> 
+	                        <img src="images/inconsistency-1.png" alt="">
+	                     </li>
+	                     <li> 
+	                        <img src="images/inconsistency-2.png" alt="">
+	                     </li>                    	                     
+	                </ul>
+            </div>			
+		</div>
+		<div id="site-map">
+			<h3>4.2 Site map</h3>
+			<p>While we did have an XML sitemap in our code, we didn't have a visual sitemap that could be used by other designers/managers as well. I felt a visual sitemap could help understand the taxonomy, map user flows that we might think of in future, and more importantly unearth dead-ends in those user flows.</p>
+			<img src="images/sitemap.png" alt="">
+			<a href="https://sitemap.mockflow.com/view/M2e9c2dd8b86d1b25df703f40752967361583016556666" class="btn" target="_blank">Link to visual sitemap <i class="fas fa-arrow-right"></i></a>
+		</div>
+		<div id="scenarios">
+			<h3>4.3 Potential scenarios of change</h3>
+			Therefore, as the next step, I decided to enumerate what could be the possible scenarios where the header changed on navigation from one interface to the other, and listed the pages where there was an inconsistency:
+			<div class="slider">
+	                <ul id="scenario-gallery" class="gallery list-unstyled cS-hidden">	                    
+	                     <li> 
+	                        <img src="images/scenario-1.png" alt="">
+	                     </li>
+	                     <li> 
+	                        <img src="images/scenario-2.png" alt="">
+	                     </li>
+	                     <li> 
+	                        <img src="images/scenario-3.png" alt="">
+	                     </li>                    	                     
+	                </ul>
+            </div>
+		</div>
+		<div id="cpa">
+			<h3>4.4 Competitive Analysis</h3>
+			<p>Seeing what the competitors are doing out there helped me gauge what can be spectrum of explorations to permutate across–therefore, I did a quick competitive analysis to have starting point of explorations</p>
+			<div class="slider">
+	                <ul id="cpa-gallery" class="gallery list-unstyled cS-hidden">	                    
+	                     <li> 
+	                        <img src="images/cpa-1.png" alt="">
+	                     </li>
+	                     <li> 
+	                        <img src="images/cpa-2.png" alt="">
+	                     </li>
+	                     <li> 
+	                        <img src="images/cpa-3.png" alt="">
+	                     </li>                    	                     
+	                </ul>
+            </div>
+		</div>
+
+	</section>
+	
+	<div class="blur">
+		
+	<section>		
+		<h6>&nbsp;</h6>
+			<h2 id="ideation">5. Ideation</h2>
+			<img src="images/ideation-flow.png" alt="">
+			<div id="explorations">
+				<h3>5.1 Initial Explorations</h3>
+				<p>For the first set of iterations, I wanted to focus more on the skeleton and the overal structure of the navigation and get some internal feedback from the weekly design and product syncs. As a direct result of the competitive analysis, I came with a set of permuations across the range of 'everything' and 'barely anything'. In addition, I asked the SEO team what all link they envision in the new system to be surfaced.</p>				
+				<div class="slider">
+	                <ul id="ideation-gallery" class="gallery list-unstyled cS-hidden">
+	                    <li data-thumb="images/thumb/explore-1.png"> 
+	                        <img src="images/explore-1.png" />
+	                         </li>
+	                    <li data-thumb="images/thumb/explore-2.png"> 
+	                        <img src="images/explore-2.png" />
+	                     </li>
+	                     <li data-thumb="images/thumb/explore-3.png"> 
+	                        <img src="images/explore-3.png"/>
+	                     </li>
+	                     <li data-thumb="images/thumb/explore-4.png"> 
+	                        <img src="images/explore-4.png"/>
+	                     </li>     	                    
+	                </ul>
+            	</div>
+			</div>
+
+			<div id="iterations">
+				<h3>5.2 Iterating, constantly</h3>				
+				<p>For a while I kept iterating based on internal feedback from managers, designers. SEO teams to the point it was ready for usability testing on real users. Every iteration included:</p>
+				<ul>
+					<li>A better UX copy</li>
+					<li>A better clarity on SEO goals with the team</li>
+					<li>Design system feedback from the design team</li>
+				</ul>
+				<div class="slider">
+	                <ul id="refine-gallery" class="gallery list-unstyled cS-hidden">
+	                    <li> 
+	                        <img src="images/refine-1.png" />
+	                         </li>
+	                    <li> 
+	                        <img src="images/refine-2.png" />
+	                     </li>
+	                     <li> 
+	                        <img src="images/refine-3.png"/>
+	                     </li>	                     
+	                </ul>
+            	</div>
+			</div>
+		</section>
+		<section>			
+			<div id="testing">						
+				<h2>6. Testing</h2>	
+				<blockquote>
+					No matter what design we picked, the biggest challenge was to gauge how much the extraneous links clouded the user decision-making in taking the action.
+				</blockquote>
+				<p>It all boiled-down to either show everything at once and let the user decide, or do the heavy-lifting for them–specifically fighting between active and passive actions. Should we show resources alongside actions? Does that interfere with what the user has to pick? How many times they got confused? And there was only one way to find out:</p>
+				<img src="images/testplan.png" alt="">
+			</div>
+			<div id="results">
+				<h3>6.1 Test results</h3>
+				<p>To carry out the test, I used usabilitytesting.com, and for creating a shareable prototype, I created them in inVision. For a test to be a fair test and eliminate confirmation bias, 'Design A' was shown first in first test, and 'Design B' was shown first in the other.</p>
+				<div class="slider">
+	                <ul id="test-gallery" class="gallery list-unstyled cS-hidden">
+	                    <li> 
+	                        <img src="images/test-1.png" />
+	                         </li>
+	                    <li> 
+	                        <img src="images/test-2.png" />
+	                     </li>
+	                     <li> 
+	                        <img src="images/test-3.png"/>
+	                     </li>	                     
+	                </ul>
+            	</div>
+			</div>
+			<div id="refine">
+				<h3>6.2 Pick and refine</h3>
+				<p>Based on the test results, we decided to go forward with 'Design A' due to the following reasons:</p>
+				<ul>
+					<li>Scalability: With more products and services, the extended height of the navigation in active state can become too large</li>
+					<li>Usability: Users found it easier to drag their mouse down directly from top-to-bottom instead of left-to-right</li>
+					<li>Time: Since there was also mobile design to cover, time was always a constraint and we felt the above metrics justified picking 'Design A'</li>
+				</ul>
+			</div>			
+	</section>
+	<section>
+		<h2 id="final">7. The final countdown</h2>
+		<div id="desktop">
+			<h3>7.1 Desktop</h3>
+			<p>Upon incorporating the above usability feedback, and a better grip on the copy for list items alongside minor visual changs, we arrived at the following desktop designs:</p>
+			<div class="slider">
+		                <ul id="desktop-gallery" class="gallery list-unstyled cS-hidden">	                    
+		                    <li> 
+		                        <img src="images/desk-1.png" />
+		                    </li>
+		                    <li> 
+		                        <img src="images/desk-2.png" />
+		                     </li>
+		                     <li> 
+		                        <img src="images/desk-3.png"/>
+		                     </li>
+		                     <li> 
+		                        <img src="images/desk-4.png"/>
+		                     </li>
+		                     <li> 
+		                        <img src="images/desk-5.png"/>
+		                     </li>
+		                     <li> 
+		                        <img src="images/desk-6.png"/>
+		                     </li>	                     
+		                </ul>
+            	</div>
+		</div>
+		<div id="mobile">
+			<h3>7.2 Mobile</h3>
+			<p>For mobile designs, the level of nesting was maintained and everything was squeezed inside the hamburger to the left. The motivation behind this was two-fold:</p>
+			<ul>
+				<li>Consistency: Keeping it consistent from a usability standpoint [Levels 1, 2, and 3]</li>
+				<li>Functionality: In case when the navigation changes, the menu affordance wouldn't change and would not create any new design patterns</li>
+			</ul>
+			<div class="slider">
+		                <ul id="mobile-gallery" class="gallery list-unstyled cS-hidden">	                    
+		                    <li> 
+		                        <img src="images/mobile-1.png" />
+		                    </li>
+		                    <li> 
+		                        <img src="images/mobile-2.png" />
+		                     </li>		                     
+		                </ul>
+            	</div>
+		</div>
+		<div id="takeaway">
+			<h3>8. Reflections</h3>
+			<p>There were a lot of things I achieved in a span of 3 months, but there also a few things that I was unable to address:</p>
+			<ul>
+				<li>Tree-jack testing and Click testing: While the initial test plan comprised of doing the former as well, due to time constraint, a more in-depth knowledge about which links are completely ignore, and which are focussed more could've helped decide on the level of cognitive load inside the navigation</li>
+				<li>Re-using design components: Throughout the project, there could've been instances where the need for a new component could've been obviated, therefore reducing the load on the design system side.</li>
+				<li>I was pretty happy with how thorough my initial research was and how much it helped shape the foundation of the navigation system, for both desktop and mobile</li>
+				<li>Finally, the idea of a functional web-prototype, though sounded practical on paper, but didn't render itself as useful in testing as it would be in handing-off the design to developers, which was totally unexpected.</li>
+			</ul>
+			<br>
+		</div>
+	</section>
+	</div>
+</article>
+</div>
+<div id="slidebox">
+	<div class="hidden-content">
+		<div class="hidden-img">
+			<img src="images/hidden.png" alt="">
+		</div>
+		<div>
+			<h5 style="font-family: 'Ubuntu Mono', monospace;">Wait, why is this blurred?</h5>
+			<p>Due to the nature of unreleased work, I can't show all the artifacts as of now. However, I would love to show them in person. <br><br>Curious? <span class="link underline"><a href="mailto: ayush95@uw.edu" target="_blank">Get in touch </a></span>to know more.</p>
+		</div>
+	</div>
+</div>
+
+<!-- partial -->
+	<script src="js/scroll.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+	<script src="js/jquery.slideBox.js"></script>		
+	<script src="js/script.js"></script>
+	<script src="js/lightslider.js"></script>
+	
+	<script>
+		jQuery(function($) {	    
+		    $('#slidebox').slideBox({
+		        position: 'bottom right', // can be [bottom|middle|top] and [left|center|right]
+		        appearsFrom: 'right', // can be [left|top|right|bottom]
+		        slideDuration: 500, // animation duration in ms
+		        target: 'h6', // can be a string (jQuery selector) or an offset (in px)
+		        closeLink: '#close' // a string that is the jQuery selector of the closing element
+		    }).on('sb.hidden', function() {
+		        console.log('hidden');
+		    }).on('sb.shown', function() {
+		        console.log('shown');
+		    });
+		});		
+		$('#inconsistency-gallery').lightSlider({                                
+                item:1,             
+                slideMargin: 0,                              
+                speed:500,                
+                onSliderLoad: function() {
+                    $('#inconsistency-gallery').removeClass('cS-hidden');
+                }  
+            });
+		$('#scenario-gallery').lightSlider({                                
+                item:1,             
+                slideMargin: 0,                              
+                speed:500,                
+                onSliderLoad: function() {
+                    $('#scenario-gallery').removeClass('cS-hidden');
+                }  
+            });
+		$('#cpa-gallery').lightSlider({                                
+                item:1,             
+                slideMargin: 0,                              
+                speed:500,                
+                onSliderLoad: function() {
+                    $('#cpa-gallery').removeClass('cS-hidden');
+                }  
+            });
+		$('#ideation-gallery').lightSlider({                                
+                item:1,             
+                slideMargin: 0,                              
+                speed:500,                
+                onSliderLoad: function() {
+                    $('#ideation-gallery').removeClass('cS-hidden');
+                }  
+            });
+		$('#refine-gallery').lightSlider({                                
+                item:1,             
+                slideMargin: 0,                              
+                speed:500,                
+                onSliderLoad: function() {
+                    $('#refine-gallery').removeClass('cS-hidden');
+                }  
+            });
+		$('#test-gallery').lightSlider({                                
+                item:1,             
+                slideMargin: 0,                              
+                speed:500,                
+                onSliderLoad: function() {
+                    $('#test-gallery').removeClass('cS-hidden');
+                }  
+            });
+		$('#desktop-gallery').lightSlider({                                
+                item:1,             
+                slideMargin: 0,                              
+                speed:500,                
+                onSliderLoad: function() {
+                    $('#desktop-gallery').removeClass('cS-hidden');
+                }  
+            });
+		$('#mobile-gallery').lightSlider({                                
+                item:1,             
+                slideMargin: 0,                              
+                speed:500,                
+                onSliderLoad: function() {
+                    $('#mobile-gallery').removeClass('cS-hidden');
+                }  
+            });
+	</script>
+	
+</body>
+</html>

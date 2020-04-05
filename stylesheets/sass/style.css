@@ -317,7 +317,7 @@ a {
   justify-content: left; }
 
 #home h2, #about h2, #work h2, #contact h2 {
-  font-size: 250%;
+  font-size: 270%;
   font-weight: 500;
   font-family: 'Ubuntu Mono'; }
 
@@ -660,6 +660,13 @@ a {
   .tooltip {
     display: block; } }
 @media screen and (max-width: 1050px) {
+  #slidebox {
+    width: 80% !important;
+    margin-bottom: 20vh;
+    font-size: 1.35rem; }
+    #slidebox p {
+      font-size: 1.25rem !important; }
+
   .btn {
     padding: 1em;
     font-size: 2rem; }
@@ -749,8 +756,8 @@ a {
     font-size: 2rem; }
 
   .fancy-underline {
-    padding-bottom: 0.75rem;
-    border-bottom: 4px dashed #DCE775; }
+    padding-bottom: 0.5rem;
+    border-bottom: 5px dashed #DCE775; }
 
   .card-div {
     display: block; }
@@ -848,16 +855,27 @@ a {
   .work-container h1 {
     font-size: 250%; }
   .work-container h2 {
-    font-size: 135%;
+    font-size: 170%;
     margin-bottom: 0.75%;
     font-family: 'Ubuntu Mono', monospace; }
   .work-container h3 {
-    font-size: 125%;
+    font-size: 140%;
     font-family: 'Ubuntu Mono', monospace; }
   .work-container h5 {
     font-size: 0.9rem;
     color: #888;
     margin-bottom: 2%; }
+
+.blur {
+  filter: blur(25px);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
+  transform: translate3d(0, 0, 0);
+  transform: translateZ(0); }
 
 .fixed-nav {
   width: 15%;
@@ -900,6 +918,26 @@ a {
 
 .toc-marker path {
   transition: all 0.3s ease; }
+
+#slidebox {
+  background: #222;
+  width: 30%;
+  padding: 2em; }
+  #slidebox .hidden-content {
+    display: flex;
+    color: #fff;
+    align-item: flex-start; }
+    #slidebox .hidden-content .hidden-img {
+      flex-basis: 35%;
+      margin-right: 1em; }
+      #slidebox .hidden-content .hidden-img img {
+        width: 100%; }
+    #slidebox .hidden-content * {
+      line-height: 150%; }
+    #slidebox .hidden-content p {
+      margin-top: 2%;
+      font-size: 1rem;
+      color: #888; }
 
 .contents {
   margin-left: 20%;
