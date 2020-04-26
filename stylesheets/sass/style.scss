@@ -10,21 +10,21 @@ $tertiary-text: #888;
 $card-bg: #fff;
 $modal-action: #66BB6A;
 $accent: #DCE775;
+// @import url('https://rsms.me/inter/inter.css');
+// html { font-family: 'Inter', sans-serif; }
 
-@import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
-
-@supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
-}
+// @supports (font-variation-settings: normal) {
+//   html { font-family: 'Inter var', sans-serif; }
+// }
 html {
 	background: $nav-color;
 	scroll-behavior: smooth;
+	font-family: 'Manrope';
 }
 .fancy-underline {
 	border-bottom: 2px dashed $accent;
 	color: $accent;
-	padding-bottom: 0.5rem;
+	padding-bottom: 0.25rem;
 }
 .link {
 	color: $secondary-text;
@@ -134,7 +134,7 @@ html {
 	align-items: center;
 	justify-content: center;
 	text-align: center;	
-	font-family: 'Ubuntu Mono';
+	font-family: 'Nanum Gothic Coding';
 	letter-spacing: 3px;
 	text-transform: uppercase;	
 }
@@ -167,7 +167,7 @@ html {
 			padding: 1rem;
 			font-weight: 400;
 			text-align: center;
-			font-family: 'Ubuntu Mono', monospace;
+			font-family: 'Nanum Gothic Coding', monospace;
 		}
 	}
 }
@@ -317,7 +317,7 @@ a {
 	font-weight: 500;
 	margin: auto;
 	font-size: 1rem;	
-	font-family: 'Ubuntu Mono';
+	font-family: 'Nanum Gothic Coding';
 	text-transform: uppercase;
 	letter-spacing: 0.08rem;
 }
@@ -355,13 +355,16 @@ a {
 }
 
 #home h2, #about h2, #work h2, #contact h2 {
-	font-size: 270%;	
-	font-weight: 500;
-	font-family: 'Ubuntu Mono';
+	font-size: 240%;	
+	font-weight: 300;
+	font-family: 'Nanum Gothic Coding';
 }
+// #home h2 {
+// 	font-size: 250%;font-weight: 300;
+// }
 #home h3, #contact h3, #about h3 {
-	font-size: 175%;	
-	font-weight: 300;	
+	font-size: 165%;	
+	font-weight: 400;	
 	line-height: 150%;
 	color: $secondary-text;
 }
@@ -577,7 +580,7 @@ a {
 }
 
 .modal-content h3 {
-	font-family: 'Ubuntu Mono', monospace;
+	font-family: 'Nanum Gothic Coding', monospace;
 	color: $secondary-text;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -628,7 +631,6 @@ a {
   font-weight: 400;
   cursor: copy;
   color: $accent;
-  border-bottom: 2px dashed $accent;
   transition: background-color calc(var(--duration) * 2) var(--ease);
   
   &:after {
@@ -1002,11 +1004,11 @@ a {
   h2 {
   	font-size: 170%;
   	margin-bottom: 0.75%;
-  	font-family: 'Ubuntu Mono', monospace;
+  	font-family: 'Nanum Gothic Coding', monospace;
   }
   h3 {
   	font-size: 140%;
-  	font-family: 'Ubuntu Mono', monospace;	
+  	font-family: 'Nanum Gothic Coding', monospace;	
   }
   h5 {
   	font-size: 0.9rem;
@@ -1051,6 +1053,7 @@ transform: translateZ(0);
 	padding: 0.25em 0;
 	margin-bottom: 0.25em;
  	color: $tertiary-text;
+ 	font-weight: 400;
   	transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .toc li.visible > a {
@@ -1131,7 +1134,7 @@ transform: translateZ(0);
   	font-weight: 500;
   }
   h1 {
-  	font-family: Ubuntu Mono;
+  	font-family: 'Nanum Gothic Coding';
   }
   ul {
   	list-style-type: circle;
@@ -1188,7 +1191,7 @@ transform: translateZ(0);
 	h3 {
 		font-size: 0.9rem !important;
 		font-weight: bold;
-		font-family: 'Ubuntu Mono', monospace;
+		font-family: 'Nanum Gothic Coding', monospace;
 		padding: 0 !important;
 		color: $secondary-text !important;
 	}
